@@ -9,12 +9,12 @@ const theme = extendTheme({
   config,
   colors: {
     light: {
-      primary: "#1A202C",
+      primary: "#4a3967",
       background: "#f9f4da"
     },
     dark: {
       primary: "#F9F4DA",
-      background: "#1A202C"
+      background: "#4a3967"
     }
   },
   fonts: {
