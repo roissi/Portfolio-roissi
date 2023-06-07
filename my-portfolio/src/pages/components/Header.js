@@ -1,7 +1,8 @@
 import React from 'react';
-import { Heading, Text, Box, IconButton, useColorMode, VStack, HStack, Button, Link } from "@chakra-ui/react";
+import { Heading, Text, Box, IconButton, useColorMode, VStack, HStack, Button } from "@chakra-ui/react";
 import { MoonIcon, SunIcon } from '@chakra-ui/icons';
 import { useRouter } from 'next/router';
+import Link from 'next/link';
 
 const Header = () => {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -13,7 +14,7 @@ const Header = () => {
       align="center"
       h="auto"
       bg={colorMode === "light" ? "light.background" : "dark.background"}
-      color={colorMode === "light" ? "#1a202c" : "#f9f4da"}
+      color={colorMode === "light" ? "#4a3967" : "#f9f4da"}
       position="relative"
     >
       <Box h="4vh"/>
@@ -25,7 +26,9 @@ const Header = () => {
           m='6' 
           mb={4}>WELCOME TO MY PORTFOLIO
         </Heading>
-          <Text fontSize="2xl" textAlign="center">Hi, I'm <span style={{ fontSize: "2rem", fontWeight: "bold" }}>Cyril</span>, and I look forward to working with <span style={{ fontSize: "2.5rem", fontWeight: "bold" }}>you</span>.</Text>
+        <Text fontSize="2xl" textAlign="center">
+          Hi, I'm <Text as="span" fontSize="2rem" fontWeight="bold">Cyril</Text>, a Fullstack Javascript Developer, and I look forward to working with <Text as="span" fontSize="2.5rem" fontWeight="bold">you</Text>.
+        </Text>
 
           <HStack spacing={20} marginTop={50} justify="center">
           <Button
@@ -35,7 +38,10 @@ const Header = () => {
             _hover={{
               bg: "#f0f25a",
               color: "#1a202c"
-            }}>Hard skills
+            }}>
+              <Link href="/#hard-skills">
+              {"Hard skills"}
+              </Link>
           </Button>
           <Button
             width="150px"
@@ -44,7 +50,10 @@ const Header = () => {
             _hover={{
               bg: "#8fdbf2",
               color: "#1a202c"
-            }}>My projects
+            }}>
+              <Link href="/#my-projects">
+              {"Works"}
+              </Link>
           </Button>
           <Button
             width="150px"
@@ -66,7 +75,7 @@ const Header = () => {
             }}
             pointerEvents={router.pathname === '/components/Resume' ? 'none' : 'auto'}>
           <Link
-            href="./components/Resume"
+            href="/components/Resume"
             textDecoration="none"
             _hover={{textDecoration: "none"}}
             color={
@@ -85,7 +94,10 @@ const Header = () => {
             _hover={{
               bg: "#51d695",
               color: "#1a202c"
-            }}>Soft skills
+            }}>
+            <Link href="/#soft-skills">
+            {"Soft skills"}
+            </Link>
           </Button>
           <Button
             width="150px"

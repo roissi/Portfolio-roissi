@@ -1,9 +1,14 @@
-import Resume from './components/Resume';
+import { VStack } from "@chakra-ui/react";
+import HardSkills from './components/Hard_skills';
+import MyProjects from './components/My_projects';
+import SoftSkills from './components/Soft_skills';
 
 const HomePage = () => (
-  <div>
-    {/* Pas de contenu ici pour le moment */}
-  </div>
+  <VStack spacing={6} align="stretch">
+    <HardSkills />
+    <MyProjects />
+    <SoftSkills />
+  </VStack>
 );
 
 export default HomePage;
