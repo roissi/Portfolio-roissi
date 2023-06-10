@@ -14,30 +14,30 @@ const Header = () => {
       align="center"
       h="auto"
       bg={colorMode === "light" ? "light.background" : "dark.background"}
-      color={colorMode === "light" ? "#4a3967" : "#f9f4da"}
+      color={colorMode === "light" ? "#0e1a29" : "#f9f4da"}
       position="relative"
     >
       <Box h="4vh"/>
       <Box p={5}>
+      <Text fontSize="2xl" textAlign="center">
+          Hi, I'm <Text as="span" fontSize="2rem" fontWeight="bold">Cyril</Text>, a freelance Fullstack Javascript Developer, and I look forward to working with <Text as="span" fontSize="2.5rem" fontWeight="bold">you</Text>.
+        </Text>
         <Heading 
           textAlign="center"
-          fontSize="8xl" 
-          textShadow={colorMode === "light" ? '1px 1px #f9f4da, 2px 2px #1a202c' : '1px 1px #1a202c, 2px 2px #f9f4da'}
-          m='6' 
+          fontSize="7xl" 
+          textShadow={colorMode === "light" ? '1px 1px #f9f4da, 2px 2px #0e1a29' : '1px 1px #0e1a29, 2px 2px #f9f4da'}
+          m='2' 
           mb={4}>WELCOME TO MY PORTFOLIO
         </Heading>
-        <Text fontSize="2xl" textAlign="center">
-          Hi, I'm <Text as="span" fontSize="2rem" fontWeight="bold">Cyril</Text>, a Fullstack Javascript Developer, and I look forward to working with <Text as="span" fontSize="2.5rem" fontWeight="bold">you</Text>.
-        </Text>
 
           <HStack spacing={20} marginTop={50} justify="center">
           <Button
             width="150px"
             bg="#fcba28"
-            color="#1a202c"
+            color="#0e1a29"
             _hover={{
               bg: "#f0f25a",
-              color: "#1a202c"
+              color: "#0e1a29"
             }}>
               <Link href="/#hard-skills">
               {"Hard skills"}
@@ -46,10 +46,10 @@ const Header = () => {
           <Button
             width="150px"
             bg="#049dc9"
-            color="#1a202c"
+            color="#0e1a29"
             _hover={{
               bg: "#8fdbf2",
-              color: "#1a202c"
+              color: "#0e1a29"
             }}>
               <Link href="/#my-projects">
               {"Works"}
@@ -59,19 +59,19 @@ const Header = () => {
             width="150px"
             bg={
             router.pathname === '/components/Resume' 
-            ? (colorMode === "light" ? '#1a202c' : '#f9f4da') 
+            ? (colorMode === "light" ? '#0e1a29' : '#f9f4da') 
             : '#f73b68'
             }
             color={
             router.pathname === '/components/Resume' 
-            ? (colorMode === "light" ? '#f9f4da' : '#1a202c') 
-            : '#1a202c'
+            ? (colorMode === "light" ? '#f9f4da' : '#0e1a29') 
+            : '#0e1a29'
             }
             _hover={{
               bg: router.pathname === '/components/Resume'
-              ? (colorMode === "light" ? '#1a202c' : '#f9f4da') 
+              ? (colorMode === "light" ? '#0e1a29' : '#f9f4da') 
               : '#ed809a',
-              color: "#1a202c"
+              color: "#0e1a29"
             }}
             pointerEvents={router.pathname === '/components/Resume' ? 'none' : 'auto'}>
           <Link
@@ -80,8 +80,8 @@ const Header = () => {
             _hover={{textDecoration: "none"}}
             color={
             router.pathname === '/components/Resume' 
-            ? (colorMode === "light" ? '#f9f4da' : '#1a202c') 
-            : '#1a202c'
+            ? (colorMode === "light" ? '#f9f4da' : '#0e1a29') 
+            : '#0e1a29'
             }
             disabled={router.pathname === '/components/Resume'}>
             Resume
@@ -90,10 +90,10 @@ const Header = () => {
           <Button
             width="150px"
             bg="#02ad59"
-            color="#1a202c"
+            color="#0e1a29"
             _hover={{
               bg: "#51d695",
-              color: "#1a202c"
+              color: "#0e1a29"
             }}>
             <Link href="/#soft-skills">
             {"Soft skills"}
@@ -102,10 +102,10 @@ const Header = () => {
           <Button
             width="150px"
             bg="#f55e0a"
-            color="#1a202c"
+            color="#0e1a29"
             _hover={{
               bg: "#f58445",
-              color: "#1a202c"
+              color: "#0e1a29"
             }}>Contacts
           </Button>
           </HStack>

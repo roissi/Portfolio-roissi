@@ -1,0 +1,79 @@
+$color-purple: #8B5CF6;
+$color-green: #02ad59;
+$color-greenhover: #51d695;
+$color-gray: #9CA3AF;
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  padding: 20px;
+}
+
+.nav-button {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #f9f4da;
+  background-color: $color-green;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+
+  &:hover {
+    background-color: darken($color-greenhover, 10%);
+  }
+
+  &:disabled {
+    background-color: $color-gray;
+    cursor: not-allowed;
+  }
+
+  &.prev {
+    left: 200px;
+  }
+
+  &.next {
+    right: 200px;
+  }
+}
+
+.card-holder {
+  display: flex;
+  width: calc(100% - 400px); 
+  position: relative;
+  margin: 0 auto;
+}
+
+.card-container {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 350px; // Ajouter une hauteur
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+
+  &.active {
+    opacity: 1;
+    transform: translateX(0);
+    z-index: 2;
+  }
+
+  &.prev,
+  &.next {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+}

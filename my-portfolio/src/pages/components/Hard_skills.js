@@ -7,11 +7,11 @@ const HardSkills = () => {
   return (
     <Box py={10} textAlign="center" id="hard-skills">
       <Box h="4vh"/>
-  <Heading as="h2" size="4xl" mb={20} style={{
+  <Heading as="h2" size="3xl" mb={20} style={{
           textShadow: `-1px 0 #fcba28, 0 1px #fcba28, 5px 0 #fcba28, 0 -5px #fcba28`
         }}
       >
-    Hard skills
+    HARD SKILLS
   </Heading>
   <VStack spacing={50} align="center">
     {/* Première ligne */}

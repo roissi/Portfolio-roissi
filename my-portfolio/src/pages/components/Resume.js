@@ -15,10 +15,10 @@ const ResumePage = () => {
         <Button
             width="150px"
             bg="#f73b68"
-            color="#1a202c"
+            color="#0e1a29"
             _hover={{
               bg: "#ed809a",
-              color: "#1a202c",
+              color: "#0e1a29",
               textDecoration: "none"
             }}
             mt={4} >
