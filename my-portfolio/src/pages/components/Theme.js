@@ -21,6 +21,19 @@ const theme = extendTheme({
     heading: "Paytone One, sans-serif",
     body: "Outfit, sans-serif"
   },
+  components: {
+    Input: {
+      variants: {
+        focusBorder: {
+          field: {
+            _focus: {
+              borderColor: '#f55e0a',
+            },
+          },
+        },
+      },
+    },
+  },
 })
 
 export default theme;
