@@ -9,11 +9,7 @@ import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 const ContactForm = () => {
   const { register, handleSubmit, reset, formState: { errors, isSubmitting } } = useForm();
   const { colorMode } = useColorMode();
-  const [isHovered, setIsHovered] = useState(null);
-
-  useEffect(() => {
-    setIsHovered(false);
-  }, []);
+  const [isHovered, setIsHovered] = useState(false);
 
   const onSubmit = async (data) => {
     const response = await fetch('https://formspree.io/f/xwkjgkpl', {
