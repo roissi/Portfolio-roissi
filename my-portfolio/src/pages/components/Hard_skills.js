@@ -5,13 +5,21 @@ import { SiPostgresql, SiExpress, SiNextdotjs, SiChakraui, SiSequelize, SiGithub
 
 const HardSkills = () => {
   return (
-    <Box py={10} textAlign="center" id="hard-skills">
-      <Box h="4vh"/>
-  <Heading as="h2" size="3xl" mb={20} style={{
-          textShadow: `-1px 0 #fcba28, 0 1px #fcba28, 5px 0 #fcba28, 0 -5px #fcba28`
-        }}
-      >
-    HARD SKILLS
+    <Box py={10} textAlign="center" letterSpacing="wide">
+    <Box h="4vh"/>
+    <Heading 
+      as="h2" 
+      size="3xl" 
+      mb={20} 
+      style={{
+        textShadow: `-1px 0 #fcba28, 0 1px #fcba28, 5px 0 #fcba28, 0 -5px #fcba28`
+      }}
+      id="hard-skills" // Déplacez l'ID vers le composant de titre
+      paddingTop="100px" // Ajoute un rembourrage supérieur à l'élément.
+      marginTop="-100px" // Déplace l'élément vers le haut de la même quantité pour masquer le rembourrage lorsque vous faites défiler la page normalement.
+      bg="transparent" // Assure que le rembourrage est invisible.
+    >
+      HARD SKILLS
   </Heading>
   <VStack spacing={50} align="center">
     {/* Première ligne */}

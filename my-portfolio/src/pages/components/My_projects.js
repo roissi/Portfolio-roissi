@@ -56,12 +56,20 @@ const MyProjects = () => {
   ];
 
   return (
-    <Box py={4} textAlign="center" id="my-projects">
-      <Heading as="h2" size="3xl" mb={20} style={{
-          textShadow: `-1px 0 #049dc9, 0 1px #049dc9, 5px 0 #049dc9, 0 -5px #049dc9`
-        }}
-      >
-        WORKS
+    <Box py={4} textAlign="center" letterSpacing="wide">
+    <Heading 
+      as="h2" 
+      size="3xl" 
+      mb={20} 
+      style={{
+        textShadow: `-1px 0 #049dc9, 0 1px #049dc9, 5px 0 #049dc9, 0 -5px #049dc9`
+      }}
+      id="my-projects" // Déplacez l'ID vers le composant de titre
+      paddingTop="100px" // Ajoute un rembourrage supérieur à l'élément.
+      marginTop="-100px" // Déplace l'élément vers le haut de la même quantité pour masquer le rembourrage lorsque vous faites défiler la page normalement.
+      bg="transparent" // Assure que le rembourrage est invisible.
+    >
+      WORKS
       </Heading>
       <Grid templateColumns={["repeat(1, 1fr)", "repeat(2, 1fr)"]} gap={6} m={16}>
         {projects.map((project, index) => (
@@ -75,7 +83,7 @@ const MyProjects = () => {
         _hover={{ borderColor: "#049dc9" }}
       >
         <VStack align="center" spacing={4}>
-          <Text fontWeight="bold" fontSize="5xl">
+          <Text fontWeight="bold" letterSpacing="wide" fontSize="5xl">
             {project.title}
           </Text>
           <Image 
@@ -93,7 +101,7 @@ const MyProjects = () => {
             }}
           />
           <Text fontSize="2xl">{project.role}</Text>
-          <Text as='i'>{project.description}</Text>
+          <Text as='i' letterSpacing="wide">{project.description}</Text>
             <HStack spacing={4}>
             {project.techStack.map((tech, index) => (
                 <Badge key={index} color="#f9f4da" bg="#049dc9" fontSize="sm" p="1.5">{tech}</Badge>

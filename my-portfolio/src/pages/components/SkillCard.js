@@ -1,34 +1,64 @@
 import React from 'react';
-import { Box, Text } from "@chakra-ui/react";
-import { useColorModeValue } from "@chakra-ui/react";
-import styles from '../styles/carousel.module.scss';
+import { Box, Text, useColorModeValue } from "@chakra-ui/react";
+import styles from '../styles/skillcard.module.scss';
+import ReactCardFlip from 'react-card-flip';
 
-const SkillCard = ({ skill, description, example }) => {
-  const bgColor = useColorModeValue("#0e1a29","#f9f4da");
-  const textColor = useColorModeValue("#f9f4da","#0e1a29");
+const SkillCard = ({ id, skill, description, example, isFlipped, flipCard }) => {
+  const handleClick = () => {
+    if(isFlipped) {
+      flipCard(null);
+    } else {
+      flipCard(id);
+    }
+  };
+
+  const bgColor = useColorModeValue(isFlipped ? "#02ad59" : "#f9f4da", isFlipped ? "#02ad59" : "#0e1a29");
+  const textColor = useColorModeValue(isFlipped ? "#0e1a29" : "#02ad59", isFlipped ? "#f9f4da" : "#02ad59");
 
   return (
-    <Box 
-      borderWidth="1px" 
-      borderRadius="lg" 
-      overflow="hidden" 
-      className={styles['card']}
-      bg={bgColor}
-    >
+    <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal">
+      <Box
+        onClick={handleClick}
+        cursor="pointer"
+        borderWidth="1px"
+        borderColor="#02ad59"
+        borderWidth="2px"
+        borderRadius="lg"
+        overflow="hidden"
+        className={styles['card']}
+        bg={bgColor}
+        display="flex"
+        justifyContent="center"
+        alignItems="center"
+      >
       <Box p="7">
         <Box d="flex" alignItems="baseline">
-          <Text color="#02ad59" mr="2" fontSize="2xl" fontWeight="semibold" letterSpacing="wide">{skill}</Text>
-        </Box>
-
-        <Box mt="8" fontWeight="semibold" as="h4" lineHeight="tight" color={textColor}>
-          {description}
-        </Box>
-
-        <Box mt="2" color={textColor}>
-          {example}
+          <Text color={textColor} fontSize="4xl" fontWeight="semibold" letterSpacing="wide">{skill}</Text>
         </Box>
       </Box>
-    </Box>
+      </Box>
+      
+      <Box 
+        onClick={handleClick}
+        cursor="pointer"
+        borderWidth="1px"
+        borderColor="#02ad59" 
+        borderRadius="lg" 
+        overflow="hidden" 
+        className={styles['card']}
+        bg={bgColor}
+      >
+        <Box p="3">
+          <Box mt="8" fontSize="lg" fontWeight="semibold" as="h4" letterSpacing="wide" lineHeight="tight" color={textColor}>
+            {description}
+          </Box>
+
+          <Box mt="2" letterSpacing="wide" color={textColor}>
+            {example}
+          </Box>
+        </Box>
+      </Box>
+    </ReactCardFlip>
   );
 };
 
