@@ -20,7 +20,6 @@ const SkillCard = ({ id, skill, description, example, isFlipped, flipCard }) => 
       <Box
         onClick={handleClick}
         cursor="pointer"
-        borderWidth="1px"
         borderColor="#02ad59"
         borderWidth="2px"
         borderRadius="lg"

@@ -20,7 +20,7 @@ const Header = () => {
       <Box h="4vh"/>
       <Box p={5}>
       <Text fontSize="2xl" textAlign="center" letterSpacing="wide">
-          Hi, I'm <Text as="span" fontSize="2rem" fontWeight="bold">Cyril</Text>, a freelance Fullstack Javascript Developer, and I look forward to working with <Text as="span" fontSize="2.5rem" fontWeight="bold">you</Text>.
+          Hi, I&apos;m <Text as="span" fontSize="2rem" fontWeight="bold">Cyril</Text>, a freelance Fullstack Javascript Developer, and I look forward to working with <Text as="span" fontSize="2.5rem" fontWeight="bold">you</Text>.
         </Text>
         <Heading 
           textAlign="center"

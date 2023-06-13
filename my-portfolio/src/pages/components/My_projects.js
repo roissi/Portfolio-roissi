@@ -5,10 +5,9 @@ import { SiGithub } from "react-icons/si";
 
 const MyProjects = () => {
   const bg = useColorModeValue("#e0daba", "#212e40");
+  const shadowColor = useColorModeValue('#0e1a29B3', '#f9f4daB3'); 
+  const isLightMode = useColorModeValue(true, false); // Hook to determine the current color mode
 
-  const shadowColorLightMode = '#0e1a29B3'; // change this to the actual color you want in light mode
-  const shadowColorDarkMode = '#f9f4daB3'; // change this to the actual color you want in dark mode
-  const shadowColor = useColorModeValue(shadowColorLightMode, shadowColorDarkMode);
 
   // A mock of your project data
   const projects = [
@@ -87,19 +86,19 @@ const MyProjects = () => {
             {project.title}
           </Text>
           <Image 
-            borderRadius="md" 
-            src={
-              project.title === "My portfolio" 
-                ? useColorModeValue(project.imgSrcLight, project.imgSrcDark)
-                : project.imgSrc
-            } 
-            alt={project.title} 
-            maxH="400px"  // Maximum height
-            maxW="600px"  // Maximum width
-            style={{
-              boxShadow: `5px 5px 0px ${shadowColor}`,
-            }}
-          />
+              borderRadius="md" 
+              src={
+                project.title === "My portfolio" 
+                  ? isLightMode ? project.imgSrcLight : project.imgSrcDark
+                  : project.imgSrc
+              } 
+              alt={project.title} 
+              maxH="400px"  // Maximum height
+              maxW="600px"  // Maximum width
+              style={{
+                boxShadow: `5px 5px 0px ${shadowColor}`,
+              }}
+            />
           <Text fontSize="2xl">{project.role}</Text>
           <Text as='i' letterSpacing="wide">{project.description}</Text>
             <HStack spacing={4}>
