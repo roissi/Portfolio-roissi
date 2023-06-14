@@ -1,7 +1,7 @@
 import Header from './Header';
 import { Box, useColorModeValue } from "@chakra-ui/react";
 
-const Layout = ({ children }) => {
+const Layout = ({ children, showIntro = true }) => {
   const bgColor = useColorModeValue('light.background', 'dark.background');
   const textColor = useColorModeValue('light.primary', 'dark.primary');
 
@@ -15,7 +15,7 @@ const Layout = ({ children }) => {
       p="0"
       boxSizing="border-box"
     >
-      <Header />
+      <Header showIntro={showIntro} />
       {children}
     </Box>
   );

@@ -12,7 +12,7 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <ChakraProvider theme={customTheme}>
-      <Layout>
+      <Layout showIntro={Component.showIntro}>
         <Component {...pageProps} />
       </Layout>
     </ChakraProvider>

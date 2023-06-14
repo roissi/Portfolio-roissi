@@ -4,7 +4,7 @@ import { MoonIcon, SunIcon } from '@chakra-ui/icons';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 
-const Header = () => {
+const Header = ({ showIntro = true }) => {
   const { colorMode, toggleColorMode } = useColorMode();
   const router = useRouter();
 
@@ -18,19 +18,22 @@ const Header = () => {
       position="relative"
     >
       <Box h="4vh"/>
-      <Box p={5}>
-      <Text fontSize="2xl" textAlign="center" letterSpacing="wide">
-          Hi, I&apos;m <Text as="span" fontSize="2rem" fontWeight="bold">Cyril De Graeve</Text>, a freelance Fullstack Javascript Developer, and I look forward to working with <Text as="span" fontSize="2.5rem" fontWeight="bold">you</Text>.
-        </Text>
-        <Heading 
-          textAlign="center"
-          fontSize="7xl"
-          letterSpacing="wide"
-          textShadow={colorMode === "light" ? '1px 1px #f9f4da, 2px 2px #0e1a29' : '1px 1px #0e1a29, 2px 2px #f9f4da'}
-          m='2' 
-          mb={-3}>WELCOME TO MY PORTFOLIO
-        </Heading>
-
+      <Box p={5} pt={showIntro ? "60px" : "1px"}>
+        {showIntro && (
+        <>
+          <Text fontSize="2xl" textAlign="center" letterSpacing="wide">
+            Hi, I&apos;m <Text as="span" fontSize="2rem" fontWeight="bold">Cyril De Graeve</Text>, a freelance Fullstack Javascript Developer, and I look forward to working with <Text as="span" fontSize="2.5rem" fontWeight="bold">you</Text>.
+          </Text>
+          <Heading 
+            textAlign="center"
+            fontSize="7xl"
+            letterSpacing="wide"
+            textShadow={colorMode === "light" ? '1px 1px #f9f4da, 2px 2px #0e1a29' : '1px 1px #0e1a29, 2px 2px #f9f4da'}
+            m='2' 
+            mb={-3}>WELCOME TO MY PORTFOLIO
+          </Heading>
+        </>
+        )}
         <Box 
           position="fixed"
           top="0"
@@ -42,14 +45,14 @@ const Header = () => {
         <Flex
           justifyContent="center"
           width="100%"
-          marginTop={5}
+          marginTop={8}
         >
         
         <HStack
           spacing={20}
           justify="center"
           width="100%"
-          mb={6}
+          mb={7}
         >
         <Link href="/#hard-skills" passHref>
           <Button

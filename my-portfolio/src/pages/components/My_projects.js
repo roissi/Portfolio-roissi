@@ -26,7 +26,7 @@ const MyProjects = () => {
       imgSrc: "/projects/Adopte_1.png",
       alt: "HomePage J'adopte un humain",
       role: "Product Owner & Dev Back-end",
-      description: "French application of a fictional animal shelter that allows future adopters to choose the companion best suited to their desires, values, and needs. Our ambition is to revamp the existing showcase sites, which are rather dull and lack interaction, and to provide shelters with a simplified and secure animal management system. The key idea behind J'adopte un humain is based on a matching system between the profile filled in by the user during their connection and the profile of the animals filled in by the caregivers.",
+      description: "French application in responsive design of a fictional animal shelter that allows future adopters to choose the companion best suited to their desires, values, and needs. Our ambition is to revamp the existing showcase sites, which are rather dull and lack interaction, and to provide shelters with a simplified and secure animal management system. The key idea behind J'adopte un humain is based on a matching system between the profile filled in by the user during their connection and the profile of the animals filled in by the caregivers.",
       techStack: ["React", "Sass", "Node.js", "Express", "PosgreSQL", "JWT", "Bcrypt", "Swagger", "Jest"],
       githubUrl: "https://github.com/roissi/JadopteUnHumain",
       liveUrl: "https://j-adopte-un-humain.netlify.app/",
