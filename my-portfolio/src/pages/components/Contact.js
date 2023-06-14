@@ -47,7 +47,7 @@ const ContactForm = () => {
   <Grid templateColumns={["repeat(1, 1fr)", "1.5fr 1fr"]} gap={2} px={4} mx="auto">
     <Box w="100%" textAlign="center" p={20}>
       <Text fontSize="2xl" letterSpacing="wide" mb={4}>
-      Please, leave a message so I can better understand your needs in creating, redesigning and optimizing websites and mobile applications on both front-end and back-end. <Text>You&apos;re also welcome to visit my social media pages and my profile on marketplace platforms like Malt, where I offer my services.</Text><Text>Again, sincerely, I look forward to working with you.</Text>
+      Please, leave a message so I can better understand your needs in creating, redesigning and optimizing websites and mobile applications on both front-end and back-end. <Text>You&apos;re also welcome to visit my social media pages and my profile on marketplace platforms like Malt, where I offer my services.</Text>
       </Text>
       <Flex justifyContent="center" mt={20}>
         <Link href="https://www.malt.fr/profile/yourusername" isExternal mx={35}>
