@@ -47,7 +47,7 @@ const MyProjects = () => {
       imgSrcDark: "/projects/Portfolio_light.png",
       alt: "HomePage J'adopte un humain",
       role: "Personnal project",
-      description: "The portfolio you are currently browsing can be viewed in light or dark mode according to your preferences. I am delighted to present some of my achievements here. Stay tuned, as I will soon add amazing new things...",
+      description: "The portfolio you are currently browsing, which is constantly evolving, can be viewed in light or dark mode according to your preferences. I am delighted to present some of my achievements here. Stay tuned, as I will soon add amazing new things...",
       techStack: ["React", "Next.js", "Chakra UI", "Node.js", "Express"],
       githubUrl: "https://github.com/roissi/Portfolio-roissi",
       liveUrl: "https://porfolio-roissi.vercel.app/",
