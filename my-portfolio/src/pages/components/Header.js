@@ -20,7 +20,7 @@ const Header = () => {
       <Box h="4vh"/>
       <Box p={5}>
       <Text fontSize="2xl" textAlign="center" letterSpacing="wide">
-          Hi, I&apos;m <Text as="span" fontSize="2rem" fontWeight="bold">Cyril</Text>, a freelance Fullstack Javascript Developer, and I look forward to working with <Text as="span" fontSize="2.5rem" fontWeight="bold">you</Text>.
+          Hi, I&apos;m <Text as="span" fontSize="2rem" fontWeight="bold">Cyril De Graeve</Text>, a freelance Fullstack Javascript Developer, and I look forward to working with <Text as="span" fontSize="2.5rem" fontWeight="bold">you</Text>.
         </Text>
         <Heading 
           textAlign="center"
@@ -51,7 +51,9 @@ const Header = () => {
           width="100%"
           mb={6}
         >
+        <Link href="/#hard-skills" passHref>
           <Button
+            as="a"
             letterSpacing="wide"
             width="150px"
             bg="#fcba28"
@@ -59,12 +61,14 @@ const Header = () => {
             _hover={{
               bg: "#f0f25a",
               color: "#0e1a29"
-            }}>
-              <Link href="/#hard-skills">
-              {"Hard skills"}
-              </Link>
+            }}
+          >
+          {"Hard skills"}
           </Button>
+        </Link>
+        <Link href="/#my-projects">
           <Button
+            as="a"
             letterSpacing="wide"
             width="150px"
             bg="#049dc9"
@@ -73,30 +77,9 @@ const Header = () => {
               bg: "#8fdbf2",
               color: "#0e1a29"
             }}>
-              <Link href="/#my-projects">
               {"Works"}
-              </Link>
-          </Button>
-          <Button
-            letterSpacing="wide"
-            width="150px"
-            bg={
-            router.pathname === '/components/Resume' 
-            ? (colorMode === "light" ? '#0e1a29' : '#f9f4da') 
-            : '#f73b68'
-            }
-            color={
-            router.pathname === '/components/Resume' 
-            ? (colorMode === "light" ? '#f9f4da' : '#0e1a29') 
-            : '#0e1a29'
-            }
-            _hover={{
-              bg: router.pathname === '/components/Resume'
-              ? (colorMode === "light" ? '#0e1a29' : '#f9f4da') 
-              : '#ed809a',
-              color: "#0e1a29"
-            }}
-            pointerEvents={router.pathname === '/components/Resume' ? 'none' : 'auto'}>
+            </Button>
+          </Link>
           <Link
             href="/components/Resume"
             textDecoration="none"
@@ -107,10 +90,33 @@ const Header = () => {
             : '#0e1a29'
             }
             disabled={router.pathname === '/components/Resume'}>
-            Resume
+            <Button
+              as="a"
+              letterSpacing="wide"
+              width="150px"
+              bg={
+              router.pathname === '/components/Resume' 
+              ? (colorMode === "light" ? '#0e1a29' : '#f9f4da') 
+              : '#f73b68'
+              }
+              color={
+              router.pathname === '/components/Resume' 
+              ? (colorMode === "light" ? '#f9f4da' : '#0e1a29') 
+              : '#0e1a29'
+              }
+              _hover={{
+                bg: router.pathname === '/components/Resume'
+                ? (colorMode === "light" ? '#0e1a29' : '#f9f4da') 
+                : '#ed809a',
+                color: "#0e1a29"
+              }}
+              pointerEvents={router.pathname === '/components/Resume' ? 'none' : 'auto'}>
+              Resume
+            </Button>
           </Link>
-          </Button>
-          <Button
+          <Link href="/#soft-skills">
+            <Button
+            as="a"
             letterSpacing="wide"
             width="150px"
             bg="#02ad59"
@@ -119,11 +125,12 @@ const Header = () => {
               bg: "#51d695",
               color: "#0e1a29"
             }}>
-            <Link href="/#soft-skills">
             {"Soft skills"}
-            </Link>
-          </Button>
-          <Button
+            </Button>
+          </Link>
+          <Link href="/#contact">
+            <Button
+            as="a"
             letterSpacing="wide"
             width="150px"
             bg="#f55e0a"
@@ -132,11 +139,9 @@ const Header = () => {
               bg: "#f58445",
               color: "#0e1a29"
             }}>
-              <Link href="/#contact">
                 Contacts
-              </Link>
-          </Button>
-
+            </Button>
+          </Link>
           
           <IconButton
             variant='unstyled'
