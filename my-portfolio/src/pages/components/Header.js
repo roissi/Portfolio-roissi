@@ -1,18 +1,30 @@
-import React from 'react';
-import { Heading, Text, Box, IconButton, useColorMode, Flex, VStack, HStack, Button } from "@chakra-ui/react";
+import React, { useEffect, useState } from 'react';
+import { Heading, Text, Box, IconButton, useColorMode, Flex, VStack, HStack, Button, useBreakpointValue } from "@chakra-ui/react";
 import { MoonIcon, SunIcon } from '@chakra-ui/icons';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
+import MobileNavigation from './mobile/MobileNavigation';
 
 const Header = ({ showIntro = true }) => {
   const { colorMode, toggleColorMode } = useColorMode();
   const router = useRouter();
+
+  // Définir le state local
+  const [currentPath, setCurrentPath] = useState("");
+
+  // Mettre à jour currentPath lorsqu'un changement de route se produit
+    useEffect(() => {
+      setCurrentPath(router.pathname);
+    }, [router.pathname]);
+
+  const isMobile = useBreakpointValue({ base: true, md: false });
 
   return (
     <VStack
       justify="start"
       align="center"
       h="auto"
+      w="100%"
       bg={colorMode === "light" ? "light.background" : "dark.background"}
       color={colorMode === "light" ? "#0e1a29" : "#f9f4da"}
       position="relative"
@@ -26,7 +38,7 @@ const Header = ({ showIntro = true }) => {
           </Text>
           <Heading 
             textAlign="center"
-            fontSize="7xl"
+            fontSize={{ base: "4xl", sm: "5xl", md: "6xl", lg: "7xl" }}
             letterSpacing="wide"
             textShadow={colorMode === "light" ? '1px 1px #f9f4da, 2px 2px #0e1a29' : '1px 1px #0e1a29, 2px 2px #f9f4da'}
             m='2' 
@@ -39,6 +51,7 @@ const Header = ({ showIntro = true }) => {
           top="0"
           left="0"
           right="0"
+          w="100%"
           zIndex="1"
           bg={colorMode === "light" ? "light.background" : "dark.background"}
         >
@@ -46,8 +59,10 @@ const Header = ({ showIntro = true }) => {
           justifyContent="center"
           width="100%"
           marginTop={8}
-        >
-        
+          >
+            {isMobile ? (
+              <MobileNavigation />
+            ) : (
         <HStack
           spacing={20}
           justify="center"
@@ -69,7 +84,7 @@ const Header = ({ showIntro = true }) => {
           {"Hard skills"}
           </Button>
         </Link>
-        <Link href="/#my-projects">
+        <Link href="/#my-projects" passHref>
           <Button
             as="a"
             letterSpacing="wide"
@@ -83,41 +98,36 @@ const Header = ({ showIntro = true }) => {
               {"Works"}
             </Button>
           </Link>
-          <Link
-            href="/components/Resume"
-            textDecoration="none"
-            _hover={{textDecoration: "none"}}
-            color={
-            router.pathname === '/components/Resume' 
-            ? (colorMode === "light" ? '#f9f4da' : '#0e1a29') 
-            : '#0e1a29'
-            }
-            disabled={router.pathname === '/components/Resume'}>
-            <Button
-              as="a"
-              letterSpacing="wide"
-              width="150px"
-              bg={
-              router.pathname === '/components/Resume' 
-              ? (colorMode === "light" ? '#0e1a29' : '#f9f4da') 
-              : '#f73b68'
-              }
-              color={
-              router.pathname === '/components/Resume' 
-              ? (colorMode === "light" ? '#f9f4da' : '#0e1a29') 
-              : '#0e1a29'
-              }
-              _hover={{
-                bg: router.pathname === '/components/Resume'
-                ? (colorMode === "light" ? '#0e1a29' : '#f9f4da') 
-                : '#ed809a',
-                color: "#0e1a29"
-              }}
-              pointerEvents={router.pathname === '/components/Resume' ? 'none' : 'auto'}>
-              Resume
-            </Button>
-          </Link>
-          <Link href="/#soft-skills">
+          <Link href="/components/Resume" passHref>
+  <Button
+    as="a"
+    letterSpacing="wide"
+    width="150px"
+    bg={
+      currentPath === '/components/Resume' 
+      ? (colorMode === "light" ? '#0e1a29' : '#f9f4da') 
+      : '#f73b68'
+    }
+    color={
+      currentPath === '/components/Resume' 
+      ? (colorMode === "light" ? '#f9f4da' : '#0e1a29') 
+      : '#0e1a29'
+    }
+    _hover={{
+      bg: currentPath === '/components/Resume'
+      ? (colorMode === "light" ? '#0e1a29' : '#f9f4da') 
+      : '#ed809a',
+      color: "#0e1a29",
+      textDecoration: "none"
+    }}
+    pointerEvents={currentPath === '/components/Resume' ? 'none' : 'auto'}
+    textDecoration="none"
+    opacity={currentPath === '/components/Resume' ? '0.6' : '1'}
+  >
+    Resume
+  </Button>
+</Link>
+          <Link href="/#soft-skills" passHref>
             <Button
             as="a"
             letterSpacing="wide"
@@ -131,7 +141,7 @@ const Header = ({ showIntro = true }) => {
             {"Soft skills"}
             </Button>
           </Link>
-          <Link href="/#contact">
+          <Link href="/#contact" passHref>
             <Button
             as="a"
             letterSpacing="wide"
@@ -156,8 +166,9 @@ const Header = ({ showIntro = true }) => {
             right={5}
           />
           </HStack>
-  </Flex>
-</Box>
+          )}
+          </Flex>
+          </Box>
         </Box>
       </VStack>
   )

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Grid, GridItem, Heading, Image, Text, Badge, VStack, HStack, Link, useColorModeValue } from "@chakra-ui/react";
+import { Box, Grid, GridItem, Heading, Image, Text, Badge, VStack, HStack, Link, useColorModeValue, useBreakpointValue } from "@chakra-ui/react";
 import { LinkIcon } from '@chakra-ui/icons';  // Import the icons you need from Chakra UI
 import { SiGithub } from "react-icons/si";
 
@@ -8,6 +8,9 @@ const MyProjects = () => {
   const shadowColor = useColorModeValue('#0e1a29B3', '#f9f4daB3'); 
   const isLightMode = useColorModeValue(true, false); // Hook to determine the current color mode
 
+  const gridTemplateColumns = useBreakpointValue({ base: "repeat(1, 1fr)", md: "repeat(2, 1fr)" });
+  const maxW = useBreakpointValue({ base: "80%", sm: "70%", md: "60%" });
+  const m = useBreakpointValue({ base: 8, sm: 12, md: 16 });
 
   // A mock of your project data
   const projects = [
@@ -70,7 +73,7 @@ const MyProjects = () => {
     >
       WORKS
       </Heading>
-      <Grid templateColumns={["repeat(1, 1fr)", "repeat(2, 1fr)"]} gap={6} m={16}>
+      <Grid templateColumns={gridTemplateColumns} gap={6} m={m}>
         {projects.map((project, index) => (
         <GridItem key={index}>
       <Box 
@@ -93,8 +96,8 @@ const MyProjects = () => {
                   : project.imgSrc
               } 
               alt={project.title} 
-              maxH="400px"  // Maximum height
-              maxW="600px"  // Maximum width
+              maxH="60%"
+              maxW={maxW}
               style={{
                 boxShadow: `5px 5px 0px ${shadowColor}`,
               }}

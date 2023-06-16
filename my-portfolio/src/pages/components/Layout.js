@@ -10,7 +10,7 @@ const Layout = ({ children, showIntro = true }) => {
       bg={bgColor}
       color={textColor}
       minH="100vh"
-      minW="100vw"
+      width="100%"
       m="0"
       p="0"
       boxSizing="border-box"

@@ -1,6 +1,5 @@
 import React from 'react';
 import { Box, Text, useColorModeValue } from "@chakra-ui/react";
-import styles from '../styles/skillcard.module.scss';
 import ReactCardFlip from 'react-card-flip';
 
 const SkillCard = ({ id, skill, description, example, isFlipped, flipCard }) => {
@@ -24,7 +23,8 @@ const SkillCard = ({ id, skill, description, example, isFlipped, flipCard }) => 
         borderWidth="2px"
         borderRadius="lg"
         overflow="hidden"
-        className={styles['card']}
+        width="400px"
+        height="300px"
         bg={bgColor}
         display="flex"
         justifyContent="center"
@@ -44,7 +44,8 @@ const SkillCard = ({ id, skill, description, example, isFlipped, flipCard }) => 
         borderColor="#02ad59" 
         borderRadius="lg" 
         overflow="hidden" 
-        className={styles['card']}
+        width="400px"
+        height="300px"
         bg={bgColor}
       >
         <Box p="3">
