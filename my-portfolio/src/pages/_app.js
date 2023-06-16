@@ -1,9 +1,9 @@
-import { ChakraProvider, extendTheme } from "@chakra-ui/react";
+import { ChakraProvider, extendTheme, Box } from "@chakra-ui/react";
 import theme from '../../config/Theme';
 import Layout from './components/Layout';
+import './styles/global.css';
 
 function MyApp({ Component, pageProps }) {
-
   const config = {
     useSystemColorMode: false,
   }
@@ -12,9 +12,11 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <ChakraProvider theme={customTheme}>
-      <Layout showIntro={Component.showIntro}>
-        <Component {...pageProps} />
-      </Layout>
+      <Box minH="100vh">
+        <Layout showIntro={Component.showIntro}>
+          <Component {...pageProps} />
+        </Layout>
+      </Box>
     </ChakraProvider>
   );
 }
