@@ -62,7 +62,6 @@ export const SoftSkills = () => {
       description: "Dedicated, meticulous, punctual, curious, receptive, open-minded, and mature. Embracing my human imperfections.",
       example: "Consistently demonstrated integrity and reliability in professional settings. I acknowledge my shortcomings and constantly strive for personal growth and improvement.",
     },
-    // Ajoutez ici vos propres compétences...
   ];
 
   return (
@@ -74,10 +73,10 @@ export const SoftSkills = () => {
       style={{
         textShadow: `-1px 0 #02ad59, 0 1px #02ad59, 5px 0 #02ad59, 0 -5px #02ad59`
       }}
-      id="soft-skills" // Déplacez l'ID vers le composant de titre
-      paddingTop="100px" // Ajoute un rembourrage supérieur à l'élément.
-      marginTop="-100px" // Déplace l'élément vers le haut de la même quantité pour masquer le rembourrage lorsque vous faites défiler la page normalement.
-      bg="transparent" // Assure que le rembourrage est invisible.
+      id="soft-skills"
+      paddingTop="100px"
+      marginTop="-100px"
+      bg="transparent"
     >
       SOFT SKILLS
       </Heading>

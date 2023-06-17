@@ -4,8 +4,8 @@ import { IoLogoNodejs } from "react-icons/io";
 import { SiPostgresql, SiExpress, SiNextdotjs, SiChakraui, SiSequelize, SiGithub, SiVercel } from "react-icons/si";
 
 const HardSkills = () => {
-  const spacing = useBreakpointValue({ base: 10, md: 50 }); // Ici, l'espacement sera de 10 en mobile et 50 en desktop
-  const techBoxSize = useBreakpointValue({ base: 40, md: 80 });
+  const spacing = useBreakpointValue({ base: 10, md: 50 });
+  const techBoxSize = useBreakpointValue({ base: 50, md: 80 });
 
   return (
     <Box py={10} textAlign="center" letterSpacing="wide">
@@ -17,10 +17,10 @@ const HardSkills = () => {
       style={{
         textShadow: `-1px 0 #fcba28, 0 1px #fcba28, 5px 0 #fcba28, 0 -5px #fcba28`
       }}
-      id="hard-skills" // Déplacez l'ID vers le composant de titre
-      paddingTop="100px" // Ajoute un rembourrage supérieur à l'élément.
-      marginTop="-100px" // Déplace l'élément vers le haut de la même quantité pour masquer le rembourrage lorsque vous faites défiler la page normalement.
-      bg="transparent" // Assure que le rembourrage est invisible.
+      id="hard-skills"
+      paddingTop="100px"
+      marginTop="-100px"
+      bg="transparent"
     >
       HARD SKILLS
   </Heading>
