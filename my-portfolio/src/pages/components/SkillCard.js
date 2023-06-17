@@ -1,8 +1,10 @@
 import React from 'react';
 import { Box, Text, useColorModeValue } from "@chakra-ui/react";
 import ReactCardFlip from 'react-card-flip';
+import { useBreakpointValue } from "@chakra-ui/react";
 
 const SkillCard = ({ id, skill, description, example, isFlipped, flipCard }) => {
+  const cardWidth = useBreakpointValue({ base: "350px", md: "400px" });
   const handleClick = () => {
     if(isFlipped) {
       flipCard(null);
@@ -23,7 +25,7 @@ const SkillCard = ({ id, skill, description, example, isFlipped, flipCard }) => 
         borderWidth="2px"
         borderRadius="lg"
         overflow="hidden"
-        width="400px"
+        width={cardWidth}
         height="300px"
         bg={bgColor}
         display="flex"
@@ -44,7 +46,7 @@ const SkillCard = ({ id, skill, description, example, isFlipped, flipCard }) => 
         borderColor="#02ad59" 
         borderRadius="lg" 
         overflow="hidden" 
-        width="400px"
+        width={cardWidth}
         height="300px"
         bg={bgColor}
       >

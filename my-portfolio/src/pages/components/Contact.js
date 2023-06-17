@@ -1,15 +1,21 @@
 import React from 'react';
 import { useState, useEffect } from "react";
 import { useForm } from 'react-hook-form';
-import { Box, Button, FormControl, FormLabel, Flex, Image, Link, Grid, Input, Heading, Text, Textarea } from "@chakra-ui/react";
+import { Box, Button, FormControl, FormLabel, Wrap, Flex, Image, Link, Grid, Input, Heading, Text, Textarea, useBreakpointValue } from "@chakra-ui/react";
 import { useColorMode } from "@chakra-ui/react";
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
-
 
 const ContactForm = () => {
   const { register, handleSubmit, reset, formState: { errors, isSubmitting } } = useForm();
   const { colorMode } = useColorMode();
   const [isHovered, setIsHovered] = useState(false);
+
+  const gridTemplateColumns = useBreakpointValue({ base: null, md: "1.5fr 1fr" });
+  const GridOrBox = gridTemplateColumns ? Grid : Box;
+  const m = useBreakpointValue({ base: 1, sm: 12, md: 16 });
+  const Container = useBreakpointValue({ base: Wrap, md: Flex });
+  const spacing = useBreakpointValue({ base: 10, md: 35 });
+  const boxContactPadding = useBreakpointValue({ base: 5, md: 20 }); 
 
   const onSubmit = async (data) => {
     const response = await fetch('https://formspree.io/f/xwkjgkpl', {
@@ -44,35 +50,35 @@ const ContactForm = () => {
     >
       CONTACT
   </Heading>
-  <Grid templateColumns={["repeat(1, 1fr)", "1.5fr 1fr"]} gap={2} px={4} mx="auto">
-    <Box w="100%" textAlign="center" p={20}>
+  <GridOrBox templateColumns={gridTemplateColumns} gap={2} px={4} mx="auto" m={m} overflow="hidden">
+    <Box w="100%" textAlign="center" p={boxContactPadding}>
       <Text fontSize="2xl" letterSpacing="wide" mb={4}>
       Please, leave a message so I can better understand your needs in creating, redesigning and optimizing websites and mobile applications on both front-end and back-end. You&apos;re also welcome to visit my social media pages and my profile on marketplace platforms like Malt, where I offer my services.
       </Text>
-      <Flex justifyContent="center" mt={20}>
-        <Link href="https://www.malt.fr/profile/yourusername" isExternal mx={35}>
+      <Container justify="center" mt={20} spacing={spacing}>
+        <Link href="https://www.malt.fr/profile/yourusername" isExternal mx={spacing}>
         <Image
           src={isHovered ? "/Malt_logo_hover.png" : (colorMode === 'dark' ? "/Malt_logo_darkmode.png" : "/Malt_logo_lightmode.png")}
           alt="Malt logo"
-          width="170px"
+          maxWidth={["150px", "170px"]}
           height="auto"
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
         />
         </Link>
-        <Link href="https://github.com/roissi" isExternal mx={35}>
+        <Link href="https://github.com/roissi" isExternal mx={spacing}>
           <Box as={FaGithub} size="60px" _hover={{ color: "#f55e0a" }} />
         </Link>
-        <Link href="https://www.linkedin.com/in/cyril-de-graeve/" isExternal mx={35}>
+        <Link href="https://www.linkedin.com/in/cyril-de-graeve/" isExternal mx={spacing}>
           <Box as={FaLinkedin} size="60px" _hover={{ color: "#f55e0a" }} />
         </Link>
-        <Link href="https://twitter.com/roissi" isExternal mx={35}>
+        <Link href="https://twitter.com/roissi" isExternal mx={spacing}>
           <Box as={FaTwitter} size="60px" _hover={{ color: "#f55e0a" }} />
         </Link>
-      </Flex>
+      </Container>
     </Box>
 
-    <Box textAlign="left" p={20}>
+    <Box textAlign="left" p={boxContactPadding}>
       <form onSubmit={handleSubmit(onSubmit)}>
         <FormControl id="name" isRequired>
         <FormLabel>Name</FormLabel>
@@ -121,7 +127,7 @@ const ContactForm = () => {
           </Button>
       </form>
     </Box>
-  </Grid>
+  </GridOrBox>
     </Box>
   );
 };
