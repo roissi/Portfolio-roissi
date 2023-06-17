@@ -1,8 +1,10 @@
-import { Box, Button, Link, Center, useColorMode } from "@chakra-ui/react";
-import Layout from './Layout'; // Assurez-vous que c'est le bon chemin pour le composant Layout
+import { Box, Button, Link, Center, useColorMode, Image, useBreakpointValue } from "@chakra-ui/react";
+import Layout from './Layout';
 
 const ResumePage = () => {
+
   const { colorMode } = useColorMode();
+  const isMobile = useBreakpointValue({ base: true, sm: false });
 
   const bgColor = colorMode === 'light' ? 'light.background' : 'dark.background';
   const textColor = colorMode === 'light' ? 'light.primary' : 'dark.primary';
@@ -36,6 +38,11 @@ const ResumePage = () => {
               </Link>
           </Button>
         </Center>
+        {isMobile && (
+          <Center>
+            <Image src="/CV_modal.png" alt="CV Preview" maxWidth="90%" mt={10}/>
+          </Center>
+        )}
         <Box p={5}>
           <iframe
             src="/CV_CyrilDeGraeve_juin2023.pdf"
@@ -47,6 +54,6 @@ const ResumePage = () => {
   );
 };
 
-ResumePage.showIntro = false; // Ici, nous définissons que pour cette page, nous ne voulons pas afficher l'introduction.
+ResumePage.showIntro = false;
 
 export default ResumePage;

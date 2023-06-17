@@ -9,10 +9,11 @@ const Header = ({ showIntro = true }) => {
   const { colorMode, toggleColorMode } = useColorMode();
   const router = useRouter();
 
-  // Définir le state local
+  const sizeFontIntro = useBreakpointValue({ base: "2xl", md: "2xl" });
+  const spaceBeforeWTMP = useBreakpointValue({ base: "8", md: "4" });
+
   const [currentPath, setCurrentPath] = useState("");
 
-  // Mettre à jour currentPath lorsqu'un changement de route se produit
     useEffect(() => {
       setCurrentPath(router.pathname);
     }, [router.pathname]);
@@ -33,15 +34,15 @@ const Header = ({ showIntro = true }) => {
       <Box p={5} pt={showIntro ? "60px" : "1px"}>
         {showIntro && (
         <>
-          <Text fontSize="2xl" textAlign="center" letterSpacing="wide">
-            Hi, I&apos;m <Text as="span" fontSize="2rem" fontWeight="bold">Cyril De Graeve</Text>, a freelance Fullstack Javascript Developer, and I look forward to working with <Text as="span" fontSize="2.5rem" fontWeight="bold">you</Text>.
+          <Text fontSize={sizeFontIntro} textAlign="center" letterSpacing="wide">
+            Hi, I&apos;m <Text as="span" fontSize="2rem" fontWeight="bold" lineHeight="1.2">Cyril De Graeve</Text>, a freelance Fullstack Javascript Developer, and I look forward to working with <Text as="span" fontSize="2rem" fontWeight="bold" lineHeight="1.2">you</Text>.
           </Text>
           <Heading 
             textAlign="center"
-            fontSize={{ base: "4xl", sm: "5xl", md: "6xl", lg: "7xl" }}
+            fontSize={{ base: "5xl", sm: "5xl", md: "6xl", lg: "8xl" }}
             letterSpacing="wide"
             textShadow={colorMode === "light" ? '1px 1px #f9f4da, 2px 2px #0e1a29' : '1px 1px #0e1a29, 2px 2px #f9f4da'}
-            m='2' 
+            m={spaceBeforeWTMP} 
             mb={-3}>WELCOME TO MY PORTFOLIO
           </Heading>
         </>

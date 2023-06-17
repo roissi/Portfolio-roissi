@@ -27,7 +27,6 @@ const ContactForm = () => {
     });
 
     if (response.ok) {
-      // if the submission was successful, reset the form
       reset();
       alert('Thank you for your message! I will get back to you soon.');
     } else {
@@ -43,10 +42,10 @@ const ContactForm = () => {
       style={{
         textShadow: `-1px 0 #f55e0a, 0 1px #f55e0a, 5px 0 #f55e0a, 0 -5px #f55e0a`
       }}
-      id="contact" // Déplacez l'ID vers le composant de titre
-      paddingTop="100px" // Ajoute un rembourrage supérieur à l'élément.
-      marginTop="-100px" // Déplace l'élément vers le haut de la même quantité pour masquer le rembourrage lorsque vous faites défiler la page normalement.
-      bg="transparent" // Assure que le rembourrage est invisible.
+      id="contact"
+      paddingTop="100px"
+      marginTop="-100px"
+      bg="transparent"
     >
       CONTACT
   </Heading>

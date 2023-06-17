@@ -8,8 +8,8 @@ const MyProjects = () => {
   const shadowColor = useColorModeValue('#0e1a29B3', '#f9f4daB3'); 
   const isLightMode = useColorModeValue(true, false);
 
-  const gridTemplateColumns = useBreakpointValue({ base: null, md: "repeat(2, 1fr)" }); // base est défini comme null
-  const GridOrBox = gridTemplateColumns ? Grid : Box; // Si gridTemplateColumns est null, utilisez Box, sinon utilisez Grid
+  const gridTemplateColumns = useBreakpointValue({ base: null, md: "repeat(2, 1fr)" });
+  const GridOrBox = gridTemplateColumns ? Grid : Box;
   const maxW = useBreakpointValue({ base: "80%", sm: "70%", md: "60%" });
   const m = useBreakpointValue({ base: 1, sm: 12, md: 16 });
 
@@ -66,10 +66,10 @@ const MyProjects = () => {
       style={{
         textShadow: `-1px 0 #049dc9, 0 1px #049dc9, 5px 0 #049dc9, 0 -5px #049dc9`
       }}
-      id="my-projects" // Déplacez l'ID vers le composant de titre
-      paddingTop="100px" // Ajoute un rembourrage supérieur à l'élément.
-      marginTop="-100px" // Déplace l'élément vers le haut de la même quantité pour masquer le rembourrage lorsque vous faites défiler la page normalement.
-      bg="transparent" // Assure que le rembourrage est invisible.
+      id="my-projects"
+      paddingTop="100px"
+      marginTop="-100px"
+      bg="transparent"
     >
       WORKS
       </Heading>
