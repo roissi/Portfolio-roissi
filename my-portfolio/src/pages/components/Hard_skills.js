@@ -5,6 +5,7 @@ import { SiPostgresql, SiExpress, SiNextdotjs, SiChakraui, SiSequelize, SiGithub
 
 const HardSkills = () => {
   const spacing = useBreakpointValue({ base: 10, md: 50 }); // Ici, l'espacement sera de 10 en mobile et 50 en desktop
+  const techBoxSize = useBreakpointValue({ base: 40, md: 80 });
 
   return (
     <Box py={10} textAlign="center" letterSpacing="wide">
@@ -29,7 +30,7 @@ const HardSkills = () => {
       <Box>
         <HStack>
           <Link href="https://html.spec.whatwg.org/" target="_blank" rel="noreferrer">
-            <Box as={FaHtml5} size={80} _hover={{ color: "#fcba28" }} />
+            <Box as={FaHtml5} size={techBoxSize} _hover={{ color: "#fcba28" }} />
           </Link>
             <Text>HTML 5</Text>
           </HStack>
@@ -37,7 +38,7 @@ const HardSkills = () => {
       <Box>
         <HStack>
           <Link href="https://www.css3.com/" target="_blank" rel="noreferrer">
-          <Box as={FaCss3} size={80} _hover={{ color: "#fcba28" }} />
+          <Box as={FaCss3} size={techBoxSize} _hover={{ color: "#fcba28" }} />
           </Link>
           <Text>CSS 3</Text>
         </HStack>
@@ -45,7 +46,7 @@ const HardSkills = () => {
       <Box>
         <HStack>
           <Link href="https://www.javascript.com/" target="_blank" rel="noreferrer">
-          <Box as={FaJs} size={80} _hover={{ color: "#fcba28" }} />
+          <Box as={FaJs} size={techBoxSize} _hover={{ color: "#fcba28" }} />
           </Link>
           <Text>JavaScript</Text>
         </HStack>
@@ -57,7 +58,7 @@ const HardSkills = () => {
       <Box>
         <HStack>
           <Link href="https://nodejs.org/" target="_blank" rel="noreferrer">
-          <Box as={IoLogoNodejs} size={80} _hover={{ color: "#fcba28" }} />
+          <Box as={IoLogoNodejs} size={techBoxSize} _hover={{ color: "#fcba28" }} />
           </Link>
           <Text>Node.js</Text>
         </HStack>
@@ -65,7 +66,7 @@ const HardSkills = () => {
       <Box>
         <HStack>
           <Link href="https://expressjs.com/" target="_blank" rel="noreferrer">
-          <Box as={SiExpress} size={80} _hover={{ color: "#fcba28" }} />
+          <Box as={SiExpress} size={techBoxSize} _hover={{ color: "#fcba28" }} />
           </Link>
           <Text>Express.js</Text>
         </HStack>
@@ -73,7 +74,7 @@ const HardSkills = () => {
       <Box>
         <HStack>
           <Link href="https://www.postgresql.org/" target="_blank" rel="noreferrer">
-          <Box as={SiPostgresql} size={80} _hover={{ color: "#fcba28" }} />
+          <Box as={SiPostgresql} size={techBoxSize} _hover={{ color: "#fcba28" }} />
           </Link>
           <Text>PostgreSQL</Text>
         </HStack>
@@ -81,7 +82,7 @@ const HardSkills = () => {
       <Box>
         <HStack>
           <Link href="https://sequelize.org/" target="_blank" rel="noreferrer">
-          <Box as={SiSequelize} size={80} _hover={{ color: "#fcba28" }} />
+          <Box as={SiSequelize} size={techBoxSize} _hover={{ color: "#fcba28" }} />
           </Link>
           <Text>Sequelize</Text>
         </HStack>
@@ -93,7 +94,7 @@ const HardSkills = () => {
       <Box>
         <HStack>
           <Link href="https://legacy.reactjs.org/" target="_blank" rel="noreferrer">
-          <Box as={FaReact} size={80} _hover={{ color: "#fcba28" }} />
+          <Box as={FaReact} size={techBoxSize} _hover={{ color: "#fcba28" }} />
           </Link>
           <Text>React</Text>
         </HStack>
@@ -101,7 +102,7 @@ const HardSkills = () => {
       <Box>
         <HStack>
           <Link href="https://nextjs.org/" target="_blank" rel="noreferrer">
-          <Box as={SiNextdotjs} size={80} _hover={{ color: "#fcba28" }} />
+          <Box as={SiNextdotjs} size={techBoxSize} _hover={{ color: "#fcba28" }} />
           </Link>
           <Text>Next.js</Text>
         </HStack>
@@ -109,7 +110,7 @@ const HardSkills = () => {
       <Box>
         <HStack>
           <Link href="https://chakra-ui.com/" target="_blank" rel="noreferrer">
-          <Box as={SiChakraui} size={80} _hover={{ color: "#fcba28" }} />
+          <Box as={SiChakraui} size={techBoxSize} _hover={{ color: "#fcba28" }} />
           </Link>
           <Text>Chakra UI</Text>
         </HStack>
@@ -121,7 +122,7 @@ const HardSkills = () => {
       <Box>
         <HStack>
           <Link href="https://github.com/" target="_blank" rel="noreferrer">
-          <Box as={SiGithub} size={80} _hover={{ color: "#fcba28" }} />
+          <Box as={SiGithub} size={techBoxSize} _hover={{ color: "#fcba28" }} />
           </Link>
           <Text>GitHub</Text>
         </HStack>
@@ -129,7 +130,7 @@ const HardSkills = () => {
       <Box>
         <HStack>
           <Link href="https://vercel.com/" target="_blank" rel="noreferrer">
-          <Box as={SiVercel} size={80} _hover={{ color: "#fcba28" }} />
+          <Box as={SiVercel} size={techBoxSize} _hover={{ color: "#fcba28" }} />
           </Link>
           <Text>Vercel</Text>
         </HStack>

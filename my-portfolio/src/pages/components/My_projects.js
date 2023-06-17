@@ -1,18 +1,18 @@
 import React from 'react';
 import { Box, Grid, GridItem, Heading, Image, Text, Badge, VStack, HStack, Link, useColorModeValue, useBreakpointValue } from "@chakra-ui/react";
-import { LinkIcon } from '@chakra-ui/icons';  // Import the icons you need from Chakra UI
+import { LinkIcon } from '@chakra-ui/icons';
 import { SiGithub } from "react-icons/si";
 
 const MyProjects = () => {
   const bg = useColorModeValue("#e0daba", "#212e40");
   const shadowColor = useColorModeValue('#0e1a29B3', '#f9f4daB3'); 
-  const isLightMode = useColorModeValue(true, false); // Hook to determine the current color mode
+  const isLightMode = useColorModeValue(true, false);
 
-  const gridTemplateColumns = useBreakpointValue({ base: "repeat(1, 1fr)", md: "repeat(2, 1fr)" });
+  const gridTemplateColumns = useBreakpointValue({ base: null, md: "repeat(2, 1fr)" }); // base est défini comme null
+  const GridOrBox = gridTemplateColumns ? Grid : Box; // Si gridTemplateColumns est null, utilisez Box, sinon utilisez Grid
   const maxW = useBreakpointValue({ base: "80%", sm: "70%", md: "60%" });
-  const m = useBreakpointValue({ base: 8, sm: 12, md: 16 });
+  const m = useBreakpointValue({ base: 1, sm: 12, md: 16 });
 
-  // A mock of your project data
   const projects = [
     {
       title: "CyNoche",
@@ -73,7 +73,7 @@ const MyProjects = () => {
     >
       WORKS
       </Heading>
-      <Grid templateColumns={gridTemplateColumns} gap={6} m={m}>
+      <GridOrBox templateColumns={gridTemplateColumns} gap={6} m={m} overflow="hidden">
         {projects.map((project, index) => (
         <GridItem key={index}>
       <Box 
@@ -103,10 +103,10 @@ const MyProjects = () => {
               }}
             />
           <Text fontSize="2xl">{project.role}</Text>
-          <Text as='i' letterSpacing="wide">{project.description}</Text>
-            <HStack spacing={4}>
+          <Text as='i' letterSpacing="wide" wordwrap="break-word">{project.description}</Text>
+            <HStack spacing={4} wrap="wrap" justifyContent="center">
             {project.techStack.map((tech, index) => (
-                <Badge key={index} color="#f9f4da" bg="#049dc9" fontSize="sm" p="1.5">{tech}</Badge>
+                <Badge key={index} color="#f9f4da" bg="#049dc9" fontSize="sm" p="1.5" style={{ overflowWrap: "break-word", wordWrap: "break-word", hyphens: "auto", wordBreak: "break-word" }}>{tech}</Badge>
                 ))}
             </HStack>
             <HStack spacing={4} justify="center">
@@ -121,7 +121,7 @@ const MyProjects = () => {
         </Box>
         </GridItem>
       ))}
-      </Grid>
+      </GridOrBox>
     </Box>
   );
 };
