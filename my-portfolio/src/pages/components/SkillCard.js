@@ -26,7 +26,7 @@ const SkillCard = ({ id, skill, description, example, isFlipped, flipCard }) => 
         borderRadius="lg"
         overflow="hidden"
         width={cardWidth}
-        height="300px"
+        height="350px"
         bg={bgColor}
         display="flex"
         justifyContent="center"
@@ -47,11 +47,11 @@ const SkillCard = ({ id, skill, description, example, isFlipped, flipCard }) => 
         borderRadius="lg" 
         overflow="hidden" 
         width={cardWidth}
-        height="300px"
+        height="350px"
         bg={bgColor}
       >
         <Box p="3">
-          <Box mt="8" fontSize="lg" fontWeight="semibold" as="h4" letterSpacing="wide" lineHeight="tight" color={textColor}>
+          <Box mt="6" fontSize="lg" fontWeight="semibold" as="h4" letterSpacing="wide" lineHeight="tight" color={textColor}>
             {description}
           </Box>
 

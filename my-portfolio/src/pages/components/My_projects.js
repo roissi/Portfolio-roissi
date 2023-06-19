@@ -2,8 +2,10 @@ import React from 'react';
 import { Box, Grid, GridItem, Heading, Image, Text, Badge, VStack, HStack, Link, useColorModeValue, useBreakpointValue } from "@chakra-ui/react";
 import { LinkIcon } from '@chakra-ui/icons';
 import { SiGithub } from "react-icons/si";
+import { useTranslation } from 'next-i18next';
 
 const MyProjects = () => {
+  const { t } = useTranslation('common');
   const bg = useColorModeValue("#e0daba", "#212e40");
   const shadowColor = useColorModeValue('#0e1a29B3', '#f9f4daB3'); 
   const isLightMode = useColorModeValue(true, false);
@@ -12,14 +14,16 @@ const MyProjects = () => {
   const GridOrBox = gridTemplateColumns ? Grid : Box;
   const maxW = useBreakpointValue({ base: "80%", sm: "70%", md: "60%" });
   const m = useBreakpointValue({ base: 1, sm: 12, md: 16 });
+  const boxShadow = useBreakpointValue({ base: "none", md: "0px 10px 15px -3px rgba(4, 157, 201, 0.8), 0px 4px 6px -2px rgba(4, 157, 201, 0.6)"});
+
 
   const projects = [
     {
       title: "CyNoche",
       imgSrc: "/projects/CyNoche_1.png",
       alt: "HomePage J'adopte un humain",
-      role: "Personnal project",
-      description: "CyNoche is a web application that catalogs (almost) every movie I've seen in my life. The application is built with React and Chakra UI and uses an API to provide data (movies, ratings, directors, release years, posters, and summaries). Features: Display of a movie catalog / Star rating system (out of 5) / Sort by movie names, directors' names, release years, and ratings / Add and/or update and/or delete a movie from the database / Search for movies (titles and/or directors) / Select a movie's card (poster + summary) / Summaries in English or French / Dark or light mode. You can use my data (about 2000 movies) or yours if you fill the database with your own movies.",
+      role: t('cynoche.role'),
+      description: t('cynoche.description'),
       techStack: ["React", "Chakra UI", "Node.js", "Express", "PosgreSQL"],
       githubUrl: "https://github.com/roissi/CyNoche",
       liveUrl: "https://cynoche.netlify.app/",
@@ -28,8 +32,8 @@ const MyProjects = () => {
       title: "J'adopte un humain",
       imgSrc: "/projects/Adopte_1.png",
       alt: "HomePage J'adopte un humain",
-      role: "Product Owner & Dev Back-end",
-      description: "French application in responsive design of a fictional animal shelter that allows future adopters to choose the companion best suited to their desires, values, and needs. Our ambition is to revamp the existing showcase sites, which are rather dull and lack interaction, and to provide shelters with a simplified and secure animal management system. The key idea behind J'adopte un humain is based on a matching system between the profile filled in by the user during their connection and the profile of the animals filled in by the caregivers.",
+      role: t('jadopte.role'),
+      description: t('jadopte.description'),
       techStack: ["React", "Sass", "Node.js", "Express", "PosgreSQL", "JWT", "Bcrypt", "Swagger", "Jest"],
       githubUrl: "https://github.com/roissi/JadopteUnHumain",
       liveUrl: "https://j-adopte-un-humain.netlify.app/",
@@ -38,8 +42,8 @@ const MyProjects = () => {
       title: "Don Efficace",
       imgSrc: "/projects/DE_1.png",
       alt: "HomePage J'adopte un humain",
-      role: "Dev Front-end & Back-end",
-      description: "I participated in the internationalization (with the i18next framework) of the Giving What We Can association's website to create the French version of the new Don Efficace site, a nonprofit NGO intended to finance actions to reduce the suffering of all sentient beings (human and non-human) as efficiently as possible, directly or indirectly. I also updated the Marketing part of the site using Sanity, an open-source headless CMS written in JavaScript and designed with developers in mind.",
+      role: t('donefficace.role'),
+      description: t('donefficace.description'),
       techStack: ["React", "Next.js", "TypeScript", "Node.js", "Express", "Jest", "Sanity"],
       githubUrl: "https://github.com/centre-for-effective-altruism/lyra/tree/french-gwwc",
       liveUrl: "https://givingwhatwecan-git-french-gwwc-centreea.vercel.app/fr",
@@ -49,8 +53,8 @@ const MyProjects = () => {
       imgSrcLight: "/projects/Portfolio_dark.png",
       imgSrcDark: "/projects/Portfolio_light.png",
       alt: "HomePage J'adopte un humain",
-      role: "Personnal project",
-      description: "The portfolio you are currently browsing, which is constantly evolving, can be viewed in light or dark mode according to your preferences. I am delighted to present some of my achievements here. Stay tuned, as I will soon add amazing new things...",
+      role: t('portfolio.role'),
+      description: t('portfolio.description'),
       techStack: ["React", "Next.js", "Chakra UI", "Node.js", "Express"],
       githubUrl: "https://github.com/roissi/Portfolio-roissi",
       liveUrl: "https://porfolio-roissi.vercel.app/",
@@ -71,17 +75,17 @@ const MyProjects = () => {
       marginTop="-100px"
       bg="transparent"
     >
-      WORKS
+      {t('title.works')}
       </Heading>
-      <GridOrBox templateColumns={gridTemplateColumns} gap={6} m={m} overflow="hidden">
+      <GridOrBox templateColumns={gridTemplateColumns} gap={6} m={m}>
         {projects.map((project, index) => (
         <GridItem key={index}>
       <Box 
         bg={bg} 
         p={2.5} 
         borderRadius="md" 
-        borderWidth="1px" 
-        boxShadow="0px 10px 15px -3px rgba(4, 157, 201, 0.8), 0px 4px 6px -2px rgba(4, 157, 201, 0.6)"
+        borderWidth="2px" 
+        boxShadow={boxShadow}
         _hover={{ borderColor: "#049dc9" }}
       >
         <VStack align="center" spacing={4}>
@@ -103,13 +107,13 @@ const MyProjects = () => {
               }}
             />
           <Text fontSize="2xl">{project.role}</Text>
-          <Text as='i' letterSpacing="wide" wordwrap="break-word">{project.description}</Text>
+          <Text letterSpacing="wide" wordwrap="break-word" p={4}>{project.description}</Text>
             <HStack spacing={4} wrap="wrap" justifyContent="center">
             {project.techStack.map((tech, index) => (
                 <Badge key={index} color="#f9f4da" bg="#049dc9" fontSize="sm" p="1.5" style={{ overflowWrap: "break-word", wordWrap: "break-word", hyphens: "auto", wordBreak: "break-word" }}>{tech}</Badge>
                 ))}
             </HStack>
-            <HStack spacing={4} justify="center">
+            <HStack spacing={4} justify="center" mb={3}>
             <Link href={project.githubUrl} isExternal>
               <Box as={SiGithub} size="30" _hover={{ color: "#049dc9" }} />
             </Link>

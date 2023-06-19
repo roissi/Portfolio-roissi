@@ -1,0 +1,121 @@
+{
+    "greeting": {
+      "part1": "Hello, je suis ",
+      "name": "Cyril De Graeve",
+      "part2": ", développeur Javascript Fullstack en freelance, et j'ai hâte de travailler avec ",
+      "you": "vous",
+      "part3": "."
+    },
+
+    "welcome": {
+      "portfolio": "BIENVENUE DANS MON PORTFOLIO"
+    },
+
+    "menu": {
+      "hardskills": "Hard skills",
+      "works": "Projets",
+      "resume": "Mon CV",
+      "softskills": "Soft skills",
+      "contact": "Contact"
+    },
+
+    "title": {
+      "hardskills": "HARD SKILLS",
+      "works": "PROJETS",
+      "softskills": "SOFT SKILLS",
+      "contact": "CONTACT"
+    },
+
+    "cynoche": {
+      "role": "Projet personnel",
+      "description": "CyNoche est une application web qui répertorie (presque) tous les films que j'ai vus dans ma vie. L'application est réalisée avec React et Chakra UI, et elle utilise une API pour fournir des données (films, notes, réalisateurs, années de sortie, affiches et résumés). Fonctionnalités : Affichage d'un catalogue de films / Système de classement par étoiles (sur 5) / Tri par noms de films, noms de réalisateurs, années de sortie et notes / Ajout et/ou mise à jour et/ou suppression d'un film de la base de données / Recherche des films par titres et/ou réalisateurs / Sélection de la fiche d'un film (affiche + résumé) / Résumés en anglais ou français / Dark ou light mode. Vous pouvez utiliser mes données (environ 2000 films) ou les vôtres si vous remplissez la base de données avec vos propres films."
+    },
+
+    "jadopte": {
+      "role": "Product Owner & Dev Back-end",
+      "description": "Application responsive design d'un refuge fictif pour animaux qui permet aux futurs adoptants de choisir le compagnon le mieux adapté à leurs envies, valeurs et besoins. À travers ce projet, il s'agit de dépoussiérer les sites vitrines existants, plutôt fades et sans grandes interactions, et de permettre de fournir aux refuges un système de gestion des animaux simplifié et sécurisé. L'idée maîtresse de J'adopte un humain repose sur un un système de matching entre le profil renseigné par l'utilisateur durant sa connexion et le profil des animaux renseignés par les soignants (staff)."
+    },
+
+    "donefficace": {
+      "role": "Dev Front-end & Back-end",
+      "description": "J'ai participé à l'internationalisation (avec le framework 'i18next') du site de l'association Giving What We Can pour créer la version française du nouveau site de Don Efficace, une ONG à but non lucratif destinée à financer des actions pour réduire la souffrance de tous les êtres sensibles (humains et non-humain) aussi efficacement que possible, directement ou indirectement. J'ai également mis à jour la partie marketing du site en utilisant Sanity, un CMS open-source headless écrit en JavaScript et conçu pour les développeurs."
+    },
+
+    "portfolio": {
+      "role": "Projet personnel",
+      "description": "Le portfolio que vous parcourez actuellement, en constante évolution, peut être visualisé en dark ou light mode, sur ordinateur de bureau ou sur smartphone, selon vos préférences. Vous pouvez le lire en français ou en anglais. Je suis ravi de présenter ici quelques-unes de mes réalisations. J'ajouterai bientôt de nouvelles réalisations étonnantes."
+    },
+
+    "softskill1": {
+      "skill": "COMPÉTENCES RÉDACTIONNELLES",
+      "description": "Grandes compétences éditoriales, pour de l'édition, de la rédaction et de la réécriture (français et anglais) / Diplôme d'études supérieures en journalisme.",
+      "example": "Pendant 20 ans, j'ai été journaliste (GQ, Paris-Match...). J'ai également fondé un magazine cyberculturel sur Internet et en kiosque, dont j'ai été le rédacteur en chef pendant plus de 15 ans."
+    },
+
+    "softskill2": {
+      "skill": "DIRECTION D'ÉQUIPE ET AUTONOMIE",
+      "description": "Manager expérimenté et travailleur indépendant avec un historique de gestion d'équipes et de projets autonomes.",
+      "example": "J'ai dirigé une équipe de 40 journalistes, tout en faisant preuve d'autonomie dans l'exécution de missions créatives et innovantes. Cette combinaison de leadership et d'autonomie me permet de gérer efficacement des rôles complexes."
+    },
+
+    "softskill3": {
+      "skill": "SUIVI DES TENDANCES",
+      "description": "Capacité d'observation et d'analyse des dernières tendances culturelles, sociétales et technologiques.",
+      "example": "Je m'évertue à capter les intérêts d'un public jeune et connecté en dénichant des contenus et des techniques de pointe, résultat d'une surveillance parmanente des tendances pour être et agir dans l'air du temps."
+    },
+
+    "softskill4": {
+      "skill": "RÉSEAUX SOCIAUX ET WEB 3",
+      "description": "Excellente maîtrise des réseaux sociaux et bonne compréhension de la dynamique du Web 3.",
+      "example": "Je sais optimiser une présence en ligne, avec une utilisation stratégique des réseaux sociaux, tout en me tenant activement informer des développements du Web 3, afin d'améliorer l'engagement et la portée du public."
+    },
+
+    "softskill5": {
+      "skill": "FLEXIBLE ET DISPONIBLE",
+      "description": "Grande flexibilité et disponibilité, adepte du télétravail et des horaires atypiques.",
+      "example": "Je gère sans difficulté des projets à distance et sur différents fuseaux horaires, en fournissant constamment à mes partenaires un suivi de mes réalisations et des résultats probants."
+    },
+
+    "softskill6": {
+      "skill": "CULTURE GEEK ET JEUX VIDÉO",
+      "description": "Cinéphile, gamer et fan de cyberpunk. Profondément immergé dans les cultures numériques depuis le début des années 1990.",
+      "example": "J'ai connu et utilisé une grande variété de consoles de jeu, de mondes ouverts, d'ordinateurs (Apple IIe, Amstrad, Atari ST, Amiga, Mac, PC...). Cette passion a alimenté mon immersion dans les cultures numériques, en me permettant de comprendre et de m'adapter aux tendances émergentes."
+    },
+
+    "softskill7": {
+      "skill": "ANIMAUX / MACHINES",
+      "description": "Passionné de technologie avec un profond amour pour les animaux, chérissant à la fois l'innovation et les êtres vivants.",
+      "example": "Vivant avec deux compagnons humains et une chienne, j'aspire à un avenir rempli de technologies de pointe et d'animaux de compagnie diversifiés. En tant qu'humain vegan et antispéciste, je respecte toutes les formes de vie, qu'elles soient animales, végétales ou numériques."
+    },
+
+    "softskill8": {
+      "skill": "FORCES ET FAIBLESSES",
+      "description": "Dévoué, minutieux, ponctuel, curieux, à l'écoute, ouvert d'esprit et mature. Humble, j'accueille avec sérénité mes imperfections (d'humain).",
+      "example": "Je fais preuve d'intégrité et de fiabilité, constamment démontrées dans les milieux professionnels. Non sans erreur et lacune, mais en m'efforcant constamment d'apprendre et d'améliorer mes compétences."
+    },
+
+    "contact": {
+      "leavemessage": "Veuillez laisser un message afin que je puisse mieux comprendre vos besoins en matière de création, de refonte et d'optimisation de sites Web et d'applications mobiles, tant en front-end qu'en back-end. Je vous invite également à visiter mes espaces sur les réseaux sociaux, ainsi que mon profil sur des plateformes de marché comme Malt, où je propose mes services.",
+      "formname": "Votre nom",
+      "formorganisation": "Organisation",
+      "formemail": "Votre adresse email",
+      "formmessage": "Votre message",
+      "formsubmit": "Soumettre"
+    },
+
+    "resume": {
+      "cv": "Téléchargez CV"
+    },
+
+    "mobilemenu": {
+      "hardskills": "Hard skills",
+      "works": "Projets",
+      "resume": "Mon CV",
+      "softskills": "Soft skills",
+      "contact": "Contact",
+      "dark": "Choisir dark mode",
+      "light": "Choisir light mode",
+      "switchfr": "Choisir le français",
+      "switchen": "Choisir l'anglais"
+    }
+}

@@ -1,71 +1,73 @@
 import React, { useState } from 'react';
 import { Box, Flex, Heading } from "@chakra-ui/react";
 import SkillCard from './SkillCard';
+import { useTranslation } from 'next-i18next';
 
 export const SoftSkills = () => {
+  const { t } = useTranslation('common'); 
   const [flippedCardId, setFlippedCardId] = useState(null);
 
   const skills = [
     {
       id: '1',
       index: 0,
-      skill: "WRITING SKILLS",
-      description: "Great editing, writing and rewriting skills (French & English) / Graduate Diploma in Journalism.",
-      example: "For 20 years, I was a journalist (GQ, Paris-Match...). I also founded a cybercultural magazine on the Internet and on newsstands, of which I was the editor-in-chief for more than 15 years.",
+      skill: t('softskill1.skill'),
+      description: t('softskill1.description'),
+      example: t('softskill1.example'),
     },
     {
       id: '2',
       index: 1,
-      skill: "LEADERSHIP & AUTONOMY",
-      description: "Experienced leader and independent worker with a history of managing teams and self-directing projects.",
-      example: "Successfully led a team of 40 journalists, while demonstrating autonomy through resourceful and independent task completion. This combination of leadership and self-direction allows me to effectively handle complex roles.",
+      skill: t('softskill2.skill'),
+      description: t('softskill2.description'),
+      example: t('softskill2.example'),
     },
     {
       id: '3',
       index: 2,
-      skill: "TREND MONITORING",
-      description: "Proficient in observing and analyzing cultural, societal and technological trends.",
-      example: "Successfully captured the interests of a young and trendy audience by consistently providing cutting-edge content, grounded in timely trend monitoring.",
+      skill: t('softskill3.skill'),
+      description: t('softskill3.description'),
+      example: t('softskill3.example'),
     },
     {
       id: '4',
       index: 3,
-      skill: "SOCIAL NETWORK & WEB 3",
-      description: "Efficient in leveraging social media platforms and understanding Web 3.0 dynamics.",
-      example: "Optimized online presence by strategically utilizing social networks, while keeping abreast of Web 3.0 developments, to enhance audience engagement and reach.",
+      skill: t('softskill4.skill'),
+      description: t('softskill4.description'),
+      example: t('softskill4.example'),
     },
     {
       id: '5',
       index: 4,
-      skill: "FLEXIBLE & AVAILABLE",
-      description: "High flexibility and availability, adept at remote work and unconventional work hours.",
-      example: "Managed remote projects across various time zones, consistently delivering high-quality results, independent of location or hours.",
+      skill: t('softskill5.skill'),
+      description: t('softskill5.description'),
+      example: t('softskill5.example'),
     },
     {
       id: '6',
       index: 5,
-      skill: "GEEK CULTURE & VIDEO GAMES",
-      description: "An avid video game enthusiast and cyberpunk fan. Deeply immersed in digital cultures from the early stages.",
-      example: "Experience with a wide variety of gaming consoles, open worlds, computers, from Amstrad to Atari ST, and Amiga. This passion fueled my immersion in digital cultures, enabling me to understand and adapt to emerging trends.",
+      skill: t('softskill6.skill'),
+      description: t('softskill6.description'),
+      example: t('softskill6.example'),
     },
     {
       id: '7',
       index: 6,
-      skill: "ANIMALS / MACHINES",
-      description: "A technology enthusiast with a profound love for animals, cherishing both innovation and living beings.",
-      example: "I live with two human companions and a little dog, aspiring to a future filled with advanced technology and diverse pets. As a vegan & antispecist human, I respect all forms of life, whether animal, vegetal or digital.",
+      skill: t('softskill7.skill'),
+      description: t('softskill7.description'),
+      example: t('softskill7.example'),
     },
     {
       id: '8',
       index: 7,
-      skill: "STRENGHTS & WEAKNESSES",
-      description: "Dedicated, meticulous, punctual, curious, receptive, open-minded, and mature. Embracing my human imperfections.",
-      example: "Consistently demonstrated integrity and reliability in professional settings. I acknowledge my shortcomings and constantly strive for personal growth and improvement.",
+      skill: t('softskill8.skill'),
+      description: t('softskill8.description'),
+      example: t('softskill8.example'),
     },
   ];
 
   return (
-    <Box py={1} textAlign="center" letterSpacing="wide" pb="10">
+    <Box py={6} textAlign="center" letterSpacing="wide" pb="10">
     <Heading 
       as="h2" 
       size="3xl" 
