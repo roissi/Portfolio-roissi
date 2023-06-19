@@ -2,7 +2,7 @@ import Header from './Header';
 import { Box, useMediaQuery, useColorMode, useColorModeValue } from "@chakra-ui/react";
 import { useEffect } from 'react';
 
-const Layout = ({ children, showIntro = true }) => {
+const Layout = ({ children, showIntro = true, isFrench, changeLanguage }) => {
   const { colorMode, setColorMode } = useColorMode();
   const [isLargerThan768] = useMediaQuery("(min-width: 768px)");
   const bgColor = useColorModeValue('light.background', 'dark.background');
@@ -22,7 +22,7 @@ const Layout = ({ children, showIntro = true }) => {
       p="0"
       boxSizing="border-box"
     >
-      <Header showIntro={showIntro} />
+      <Header showIntro={showIntro} isFrench={isFrench} changeLanguage={changeLanguage} />
       {children}
     </Box>
   );

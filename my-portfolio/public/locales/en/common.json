@@ -1,0 +1,121 @@
+{
+    "greeting": {
+      "part1": "Hi, I'm ",
+      "name": "Cyril De Graeve",
+      "part2": ", a freelance Fullstack Javascript Developer, and I look forward to working with ",
+      "you": "you",
+      "part3": "."
+    },
+
+    "welcome": {
+      "portfolio": "WELCOME TO MY PORTFOLIO"
+    },
+
+    "menu": {
+      "hardskills": "Hard skills",
+      "works": "Works",
+      "resume": "Resume",
+      "softskills": "Soft skills",
+      "contact": "Contact"
+    },
+
+    "title": {
+      "hardskills": "HARD SKILLS",
+      "works": "WORKS",
+      "softskills": "SOFT SKILLS",
+      "contact": "CONTACT"
+    },
+
+    "cynoche": {
+      "role": "Personnal project",
+      "description": "CyNoche is a web app that lists (almost) every movie I've seen in my life. The app is made with React and Chakra UI, and it uses an API to provide data (movies, ratings, directors, release years, posters, and summaries). Features: Viewing a catalog of movies / Star rating system (out of 5) / Sorting by movie names, director names, release years and ratings / Adding and/or updating and/or deleting a film from the database / Search for films by title and/or director / Selection of a film's file (poster + summary) / Summaries in English or French / Dark or light mode. You can use my data (about 2000 films) or yours if you fill the database with your own movies."
+    },
+
+    "jadopte": {
+      "role": "Product Owner & Dev Back-end",
+      "description": "Responsive design application of a fictional animal shelter that allows future adopters to choose the companion best suited to their desires, values and needs. Through this project, it is a question of dusting off the existing showcase sites, which are rather bland and without major interactions, and to provide shelters with a simplified and secure animal management system. The main idea of J'Adopte un humain is based on a matching system between the profile entered by the user during his connection and the profile of the animals entered by the caregivers (staff)."
+    },
+
+    "donefficace": {
+      "role": "Dev Front-end & Back-end",
+      "description": "I participated in the internationalization (with the 'i18next' framework) of the website of the Giving What We Can association to create the French version of the new site of Don Efficace, a non-profit NGO intended to finance actions for reduce the suffering of all sentient beings (human and non-human) as effectively as possible, directly or indirectly. I also updated the marketing part of the site using Sanity, an open-source headless CMS written in JavaScript and designed for developers."
+    },
+
+    "portfolio": {
+      "role": "Personnal project",
+      "description": "The ever-changing portfolio you're currently browsing can be viewed in dark or light mode, on desktop or smartphone, depending on your preference. You can read it in French or in English. I am delighted to present here some of my achievements. I will add new amazing projects soon."
+    },
+
+    "softskill1": {
+      "skill": "WRITING SKILLS",
+      "description": "Great editorial skills, for editing, writing and rewriting (French and English) / Graduate diploma in journalism.",
+      "example": "For 20 years, I was a journalist (GQ, Paris-Match...). I also founded a cybercultural magazine on the Internet and on newsstands, of which I was the editor for more than 15 years."
+    },
+
+    "softskill2": {
+      "skill": "LEADERSHIP & AUTONOMY",
+      "description": "Experienced leader and independent worker with a history of managing autonomous teams and projects.",
+      "example": "I led a team of 40 journalists, while demonstrating autonomy in the execution of creative and innovative assignments. This combination of leadership and autonomy allows me to effectively manage complex roles."
+    },
+
+    "softskill3": {
+      "skill": "TREND MONITORING",
+      "description": "Ability to observe and analyze the latest cultural, societal and technological trends.",
+      "example": "I strive to capture the interests of a young and connected audience by unearthing cutting-edge content and techniques, the result of constant monitoring of trends to be and act in signs of the times."
+    },
+
+    "softskill4": {
+      "skill": "SOCIAL NETWORKS & WEB 3",
+      "description": "Excellent command of social networks and good understanding of the dynamics of the Web 3.",
+      "example": "I know how to optimize an online presence, with a strategic use of social networks, while keeping myself actively informed of Web 3 developments, in order to improve the engagement and the reach of the public."
+    },
+
+    "softskill5": {
+      "skill": "FLEXIBLE & AVAILABLE",
+      "description": "High flexibility and availability, adept at remote work and unconventional work hours.",
+      "example": "I easily manage projects remotely and in different time zones, constantly providing my partners with a follow-up of my achievements and the convincing results."
+    },
+
+    "softskill6": {
+      "skill": "GEEK CULTURE & VIDEO GAMES",
+      "description": "Cinephile, gamer and cyberpunk fan. Deeply immersed in digital cultures since the early 1990s.",
+      "example": "I knew and used a wide variety of game consoles, open worlds, computers (Apple IIe, Amstrad, Atari ST, Amiga, Mac, PC...). This passion fueled my immersion in digital cultures, allowing me to understand and adapt to emerging trends."
+    },
+
+    "softskill7": {
+      "skill": "ANIMALS / MACHINES",
+      "description": "Passionate about technology with a deep love for animals, cherishing both innovation and living things.",
+      "example": "Living with two human companions and a dog, I long for a future filled with advanced technology and diverse pets. As a vegan and antispeciesist human, I respect all forms of life, whether animal, plant or digital."
+    },
+
+    "softskill8": {
+      "skill": "STRENGHTS & WEAKNESSES",
+      "description": "Dedicated, meticulous, punctual, curious, attentive, open-minded and mature. Humble, I welcome my (human) imperfections with serenity.",
+      "example": "I demonstrate integrity and reliability, consistently demonstrated in professional circles. Not without error and shortcoming, but constantly striving to learn and improve my skills."
+    },
+
+    "contact": {
+      "leavemessage": "Please leave a message so that I can better understand your website and mobile application creation, redesign and optimization needs, both front-end and back-end. I also invite you to visit my spaces on social networks, as well as my profile on market platforms like Malt, where I offer my services.",
+      "formname": "Name",
+      "formorganisation": "Organisation",
+      "formemail": "Email address",
+      "formmessage": "Message",
+      "formsubmit": "Submit"
+    },
+
+    "resume": {
+      "cv": "Download CV"
+    },
+
+    "mobilemenu": {
+      "hardskills": "Hard skills",
+      "works": "Works",
+      "resume": "Resume",
+      "softskills": "Soft skills",
+      "contact": "Contact",
+      "dark": "Select dark mode",
+      "light": "Select light mode",
+      "switchfr": "Select to French",
+      "switchen": "Select to English"
+    }
+}

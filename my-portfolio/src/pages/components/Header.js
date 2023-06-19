@@ -1,20 +1,28 @@
-import React, { useEffect, useState } from 'react';
-import { Heading, Text, Box, IconButton, useColorMode, Flex, VStack, HStack, Button, useBreakpointValue } from "@chakra-ui/react";
+import React, { useContext } from 'react';
+import { Heading, Text, Box, IconButton, useColorMode, useColorModeValue, Flex, VStack, HStack, Button, useBreakpointValue } from "@chakra-ui/react";
 import { MoonIcon, SunIcon } from '@chakra-ui/icons';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 import MobileNavigation from './mobile/MobileNavigation';
+import { useTranslation } from 'next-i18next';
+import { LanguageContext } from '../_app';
+
 
 const Header = ({ showIntro = true }) => {
+  const { t } = useTranslation('common'); 
   const { colorMode, toggleColorMode } = useColorMode();
   const router = useRouter();
+  const { isFrench, changeLanguage } = useContext(LanguageContext);
+
+  const ButtonBackgroundColor = useColorModeValue("#e0daba", "#212e40");
+  const ButtonHoverColor = useColorModeValue("#c2bc9c", "#344966");
 
   const sizeFontIntro = useBreakpointValue({ base: "2xl", md: "2xl" });
   const spaceBeforeWTMP = useBreakpointValue({ base: "8", md: "4" });
 
-  const [currentPath, setCurrentPath] = useState("");
+  const [currentPath, setCurrentPath] = React.useState("");
 
-    useEffect(() => {
+    React.useEffect(() => {
       setCurrentPath(router.pathname);
     }, [router.pathname]);
 
@@ -35,7 +43,15 @@ const Header = ({ showIntro = true }) => {
         {showIntro && (
         <>
           <Text fontSize={sizeFontIntro} textAlign="center" letterSpacing="wide">
-            Hi, I&apos;m <Text as="span" fontSize="2rem" fontWeight="bold" lineHeight="1.2">Cyril De Graeve</Text>, a freelance Fullstack Javascript Developer, and I look forward to working with <Text as="span" fontSize="2rem" fontWeight="bold" lineHeight="1.2">you</Text>.
+            {t('greeting.part1')}
+            <Text as="span" fontSize="2rem" fontWeight="bold" lineHeight="1.2">
+            {t('greeting.name')}
+            </Text>
+            {t('greeting.part2')}
+            <Text as="span" fontSize="2rem" fontWeight="bold" lineHeight="1.2">
+            {t('greeting.you')}
+            </Text>
+            {t('greeting.part3')}
           </Text>
           <Heading 
             textAlign="center"
@@ -43,7 +59,7 @@ const Header = ({ showIntro = true }) => {
             letterSpacing="wide"
             textShadow={colorMode === "light" ? '1px 1px #f9f4da, 2px 2px #0e1a29' : '1px 1px #0e1a29, 2px 2px #f9f4da'}
             m={spaceBeforeWTMP} 
-            mb={-3}>WELCOME TO MY PORTFOLIO
+            mb={-3}>{t('welcome.portfolio')}
           </Heading>
         </>
         )}
@@ -62,7 +78,7 @@ const Header = ({ showIntro = true }) => {
           marginTop={8}
           >
             {isMobile ? (
-              <MobileNavigation />
+              <MobileNavigation isFrench={isFrench} changeLanguage={changeLanguage} />
             ) : (
         <HStack
           spacing={20}
@@ -82,7 +98,7 @@ const Header = ({ showIntro = true }) => {
               color: "#0e1a29"
             }}
           >
-          {"Hard skills"}
+          {t('menu.hardskills')}
           </Button>
         </Link>
         <Link href="/#my-projects" passHref>
@@ -96,7 +112,7 @@ const Header = ({ showIntro = true }) => {
               bg: "#8fdbf2",
               color: "#0e1a29"
             }}>
-              {"Works"}
+              {t('menu.works')}
             </Button>
           </Link>
           <Link href="/components/Resume" passHref>
@@ -125,7 +141,7 @@ const Header = ({ showIntro = true }) => {
     textDecoration="none"
     opacity={currentPath === '/components/Resume' ? '0.6' : '1'}
   >
-    Resume
+    {t('menu.resume')}
   </Button>
 </Link>
           <Link href="/#soft-skills" passHref>
@@ -139,7 +155,7 @@ const Header = ({ showIntro = true }) => {
               bg: "#51d695",
               color: "#0e1a29"
             }}>
-            {"Soft skills"}
+            {t('menu.softskills')}
             </Button>
           </Link>
           <Link href="/#contact" passHref>
@@ -153,10 +169,26 @@ const Header = ({ showIntro = true }) => {
               bg: "#f58445",
               color: "#0e1a29"
             }}>
-                Contacts
+                {t('menu.contact')}
             </Button>
           </Link>
           
+          <Button
+            onClick={changeLanguage}
+            fontSize="xl"
+            fontWeight="bold"
+            position="absolute"
+            top={5}
+            right={20}
+            backgroundColor={ButtonBackgroundColor}
+            _hover={{
+              transform: "scale(1.1)",
+              transition: "transform .2s",
+              backgroundColor: ButtonHoverColor
+            }}
+          >
+            {isFrench ? 'EN' : 'FR'}
+          </Button>
           <IconButton
             variant='unstyled'
             aria-label="Toggle color mode"

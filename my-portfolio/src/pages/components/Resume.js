@@ -1,7 +1,10 @@
 import { Box, Button, Link, Center, useColorMode, Image, useBreakpointValue } from "@chakra-ui/react";
 import Layout from './Layout';
+import { useTranslation } from 'next-i18next';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 const ResumePage = () => {
+  const { t } = useTranslation('common');
 
   const { colorMode } = useColorMode();
   const isMobile = useBreakpointValue({ base: true, sm: false });
@@ -34,7 +37,7 @@ const ResumePage = () => {
                 isExternal
                 download
               >
-                Download CV
+                {t('resume.cv')}
               </Link>
           </Button>
         </Center>
@@ -55,5 +58,13 @@ const ResumePage = () => {
 };
 
 ResumePage.showIntro = false;
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...await serverSideTranslations(locale, ['common']),
+    },
+  };
+}
 
 export default ResumePage;

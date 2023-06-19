@@ -4,8 +4,10 @@ import { useForm } from 'react-hook-form';
 import { Box, Button, FormControl, FormLabel, Wrap, Flex, Image, Link, Grid, Input, Heading, Text, Textarea, useBreakpointValue } from "@chakra-ui/react";
 import { useColorMode } from "@chakra-ui/react";
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { useTranslation } from 'next-i18next';
 
 const ContactForm = () => {
+  const { t } = useTranslation('common'); 
   const { register, handleSubmit, reset, formState: { errors, isSubmitting } } = useForm();
   const { colorMode } = useColorMode();
   const [isHovered, setIsHovered] = useState(false);
@@ -52,7 +54,7 @@ const ContactForm = () => {
   <GridOrBox templateColumns={gridTemplateColumns} gap={2} px={4} mx="auto" m={m} overflow="hidden">
     <Box w="100%" textAlign="center" p={boxContactPadding}>
       <Text fontSize="2xl" letterSpacing="wide" mb={4}>
-      Please, leave a message so I can better understand your needs in creating, redesigning and optimizing websites and mobile applications on both front-end and back-end. You&apos;re also welcome to visit my social media pages and my profile on marketplace platforms like Malt, where I offer my services.
+      {t('contact.leavemessage')}
       </Text>
       <Container justify="center" mt={20} spacing={spacing}>
         <Link href="https://www.malt.fr/profile/yourusername" isExternal mx={spacing}>
@@ -80,25 +82,25 @@ const ContactForm = () => {
     <Box textAlign="left" p={boxContactPadding}>
       <form onSubmit={handleSubmit(onSubmit)}>
         <FormControl id="name" isRequired>
-        <FormLabel>Name</FormLabel>
+        <FormLabel>{t('contact.formname')}</FormLabel>
           <Input {...register('name', { required: 'Please enter your name.' })} w="100%" bg={colorMode === "dark" ? "#f9f4da" : "#e0daba"} color="#0e1a29" _focus={{ borderColor: "#f55e0a", boxShadow: "none" }} />
           {errors.name && <p>{errors.name.message}</p>}
         </FormControl>
 
         <FormControl id="organisation" mt={4}>
-        <FormLabel>Organisation</FormLabel>
+        <FormLabel>{t('contact.formorganisation')}</FormLabel>
           <Input {...register('organisation')} w="100%" bg={colorMode === "dark" ? "#f9f4da" : "#e0daba"} color="#0e1a29" _focus={{ borderColor: "#f55e0a", boxShadow: "none" }} />
           {errors.organisation && <p>{errors.organisation.message}</p>}
         </FormControl>
 
         <FormControl id="email" mt={4} isRequired>
-        <FormLabel>Email address</FormLabel>
+        <FormLabel>{t('contact.formemail')}</FormLabel>
           <Input type="email" {...register('email', { required: 'Please enter your email address.' })} w="100%" bg={colorMode === "dark" ? "#f9f4da" : "#e0daba"} color="#0e1a29" _focus={{ borderColor: "#f55e0a", boxShadow: "none" }} />
           {errors.email && <p>{errors.email.message}</p>}
         </FormControl>
 
         <FormControl id="message" mt={4} isRequired>
-        <FormLabel>Message</FormLabel>
+        <FormLabel>{t('contact.formmessage')}</FormLabel>
           <Textarea
           {...register('message', { required: 'Please enter your message.' })}
             w="100%"
@@ -122,7 +124,7 @@ const ContactForm = () => {
             _active={{ bg: "#f58445" }}
             color="#0e1a29"
           >
-            Submit
+            {t('contact.formsubmit')}
           </Button>
       </form>
     </Box>
