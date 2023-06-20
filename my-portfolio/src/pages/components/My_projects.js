@@ -21,7 +21,7 @@ const MyProjects = () => {
     {
       title: "CyNoche",
       imgSrc: "/projects/CyNoche_1.png",
-      alt: "HomePage J'adopte un humain",
+      alt: "HomePage Cynoche",
       role: t('cynoche.role'),
       description: t('cynoche.description'),
       techStack: ["React", "Chakra UI", "Node.js", "Express", "PosgreSQL"],
@@ -41,7 +41,7 @@ const MyProjects = () => {
     {
       title: "Don Efficace",
       imgSrc: "/projects/DE_1.png",
-      alt: "HomePage J'adopte un humain",
+      alt: "HomePage Don Efficace",
       role: t('donefficace.role'),
       description: t('donefficace.description'),
       techStack: ["React", "Next.js", "TypeScript", "Node.js", "Express", "Jest", "Sanity"],
@@ -49,10 +49,10 @@ const MyProjects = () => {
       liveUrl: "https://givingwhatwecan-git-french-gwwc-centreea.vercel.app/fr",
     },
     {
-      title: "My portfolio",
+      title: t('portfolio.title'),
       imgSrcLight: "/projects/Portfolio_dark.png",
       imgSrcDark: "/projects/Portfolio_light.png",
-      alt: "HomePage J'adopte un humain",
+      alt: "HomePage protfolio",
       role: t('portfolio.role'),
       description: t('portfolio.description'),
       techStack: ["React", "Next.js", "Chakra UI", "Node.js", "Express"],
@@ -95,7 +95,7 @@ const MyProjects = () => {
           <Image 
               borderRadius="md" 
               src={
-                project.title === "My portfolio" 
+                project.title === t('portfolio.title') 
                   ? isLightMode ? project.imgSrcLight : project.imgSrcDark
                   : project.imgSrc
               } 

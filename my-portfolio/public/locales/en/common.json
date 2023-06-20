@@ -42,6 +42,7 @@
     },
 
     "portfolio": {
+      "title": "My portfolio",
       "role": "Personnal project",
       "description": "The ever-changing portfolio you're currently browsing can be viewed in dark or light mode, on desktop or smartphone, depending on your preference. You can read it in French or in English. I am delighted to present here some of my achievements. I will add new amazing projects soon."
     },

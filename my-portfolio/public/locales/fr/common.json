@@ -42,6 +42,7 @@
     },
 
     "portfolio": {
+      "title": "Mon portfolio",
       "role": "Projet personnel",
       "description": "Le portfolio que vous parcourez actuellement, en constante évolution, peut être visualisé en dark ou light mode, sur ordinateur de bureau ou sur smartphone, selon vos préférences. Vous pouvez le lire en français ou en anglais. Je suis ravi de présenter ici quelques-unes de mes réalisations. J'ajouterai bientôt de nouvelles réalisations étonnantes."
     },
