@@ -12,12 +12,12 @@ const ContactForm = () => {
   const { colorMode } = useColorMode();
   const [isHovered, setIsHovered] = useState(false);
 
-  const gridTemplateColumns = useBreakpointValue({ base: null, md: "1.5fr 1fr" });
-  const GridOrBox = gridTemplateColumns ? Grid : Box;
+  const gridTemplateColumns = useBreakpointValue({ base: "1fr", sm: "1fr", md: "1fr", "2xl": "1.5fr 1fr" });
+  const GridOrBox = Grid;
   const m = useBreakpointValue({ base: 1, sm: 12, md: 16 });
-  const Container = useBreakpointValue({ base: Wrap, md: Flex });
-  const spacing = useBreakpointValue({ base: 10, md: 35 });
-  const boxContactPadding = useBreakpointValue({ base: 5, md: 20 }); 
+  const Container = useBreakpointValue({ base: Wrap, sm: Wrap, md: Flex });
+  const spacing = useBreakpointValue({ base: 10, sm: 10, md: 35 });
+  const boxContactPadding = useBreakpointValue({ base: 5, sm: 5, md: 20 }); 
 
   const onSubmit = async (data) => {
     const response = await fetch('https://formspree.io/f/xwkjgkpl', {
@@ -51,7 +51,7 @@ const ContactForm = () => {
     >
       CONTACT
   </Heading>
-  <GridOrBox templateColumns={gridTemplateColumns} gap={2} px={4} mx="auto" m={m} overflow="hidden">
+  <GridOrBox templateColumns={gridTemplateColumns} gap={2} mx="auto" m={m}>
     <Box w="100%" textAlign="center" p={boxContactPadding}>
       <Text fontSize="2xl" letterSpacing="wide" mb={4}>
       {t('contact.leavemessage')}

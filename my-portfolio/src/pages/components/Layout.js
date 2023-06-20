@@ -3,8 +3,8 @@ import { Box, useMediaQuery, useColorMode, useColorModeValue } from "@chakra-ui/
 import { useEffect } from 'react';
 
 const Layout = ({ children, showIntro = true, isFrench, changeLanguage }) => {
-  const { colorMode, setColorMode } = useColorMode();
   const [isLargerThan768] = useMediaQuery("(min-width: 768px)");
+  const { colorMode, setColorMode } = useColorMode();
   const bgColor = useColorModeValue('light.background', 'dark.background');
   const textColor = useColorModeValue('light.primary', 'dark.primary');
 
