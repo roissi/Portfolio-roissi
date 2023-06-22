@@ -37,7 +37,7 @@ const MobileNavigation = ({ isFrench, changeLanguage }) => {
               <VStack spacing={4}>
                 <Button bg="#fcba28" color="#0e1a29" onClick={() => handleClick('/#hard-skills')}>{t('mobilemenu.hardskills')}</Button>
                 <Button bg="#049dc9" color="#0e1a29" onClick={() => handleClick('/#my-projects')}>{t('mobilemenu.works')}</Button>
-                <Button bg="#f73b68" color="#0e1a29" onClick={() => handleClick('/components/Resume')}>{t('mobilemenu.resume')}</Button>
+                <Button bg="#f73b68" color="#0e1a29" onClick={() => handleClick('/#game')}>{t('mobilemenu.game')}</Button>
                 <Button bg="#02ad59" color="#0e1a29" onClick={() => handleClick('/#soft-skills')}>{t('mobilemenu.softskills')}</Button>
                 <Button bg="#f55e0a" color="#0e1a29" onClick={() => handleClick('/#contact')}>{t('mobilemenu.contact')}</Button>
                 </VStack>

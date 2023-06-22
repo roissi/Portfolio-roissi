@@ -14,6 +14,7 @@
     "menu": {
       "hardskills": "Hard skills",
       "works": "Works",
+      "game": "Let's play !",
       "resume": "Resume",
       "softskills": "Soft skills",
       "contact": "Contact"
@@ -22,6 +23,7 @@
     "title": {
       "hardskills": "HARD SKILLS",
       "works": "WORKS",
+      "game": "LET'S PLAY !",
       "softskills": "SOFT SKILLS",
       "contact": "CONTACT"
     },
@@ -46,6 +48,15 @@
       "role": "Personnal project",
       "description": "The ever-changing portfolio you're currently browsing can be viewed in dark or light mode, on desktop or smartphone, depending on your preference. You can read it in French or in English. I am delighted to present here some of my achievements. I will add new amazing projects soon."
     },
+
+    "game": {
+      "message": "I am also interested in AI, machine & deep learning. My skills in this area are still elementary, but my interest and curiosity are strong. Here is a Tic Tac Toe that I coded, for fun, with an existing AI (simple, basic and deterministic)... No one has yet won against the machine. If you succeed, I offer you my first 2 days of service! ;-)",
+      "win": "You win !",
+      "fail": "You lose",
+      "draw": "Draw",
+      "reset": "Reset game"
+    },
+
 
     "softskill1": {
       "skill": "WRITING SKILLS",
@@ -111,6 +122,7 @@
     "mobilemenu": {
       "hardskills": "Hard skills",
       "works": "Works",
+      "game": "Let's play !",
       "resume": "Resume",
       "softskills": "Soft skills",
       "contact": "Contact",
