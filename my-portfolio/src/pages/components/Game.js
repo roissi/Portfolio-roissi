@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import Square from './Square';
 import { Box, Button, Heading, Flex, Text, useBreakpointValue } from '@chakra-ui/react';
 import { useTranslation } from 'next-i18next';
@@ -9,45 +9,28 @@ const Game = () => {
   const [winner, setWinner] = useState(null);
   const [isPlayerTurn, setIsPlayerTurn] = useState(true);
 
-  useEffect(() => {
-    if (!isPlayerTurn && winner === null && grid.includes('')) {
-      setTimeout(() => {
-        let move;
-        let newGrid = [...grid];
-        if (grid.every(value => value === '')) {
-          move = Math.floor(Math.random() * 9);
-        } else {
-          move = minimax(grid, 0, true).move;
-        }
-        newGrid[move] = 'O';
-        setGrid(newGrid);
-        const checkResult = checkWinner(newGrid); // Modification
-        if (checkResult === 'O') {
-          setWinner(t('game.fail'));
-        } else if (checkResult === 'Draw') { // Modification
-          setWinner(t('game.draw'));
-        }
-        setIsPlayerTurn(true);
-      }, 500);
-    }
-  }, [grid, winner, isPlayerTurn]);
-
-  const handleClick = (index) => {
-    if (grid[index] === '' && winner === null) {
-      let newGrid = [...grid];
-      newGrid[index] = 'X';
-      setGrid(newGrid);
-      const checkResult = checkWinner(newGrid); // Modification
-      if (checkResult === 'X') {
-        setWinner(t('game.win'));
-      } else if (checkResult === 'Draw') { // Modification
-        setWinner(t('game.draw'));
+  const checkWinner = (grid) => {
+    const winCombinations = [
+      [0, 1, 2], [3, 4, 5], [6, 7, 8],
+      [0, 3, 6], [1, 4, 7], [2, 5, 8],
+      [0, 4, 8], [2, 4, 6]
+    ];
+  
+    for (let combination of winCombinations) {
+      const [a, b, c] = combination;
+      if (grid[a] !== '' && grid[a] === grid[b] && grid[a] === grid[c]) {
+        return grid[a];
       }
-      setIsPlayerTurn(false);
     }
+  
+    if (!grid.includes('')) {
+      return 'Draw';
+    }
+  
+    return null;
   };
 
-  const minimax = (grid, depth, isMaximizingPlayer) => {
+  const minimax = useCallback((grid, depth, isMaximizingPlayer) => {
     const winner = checkWinner(grid);
     if (winner === 'O') return { score: 10 - depth, move: null };
     if (winner === 'X') return { score: depth - 10, move: null };
@@ -89,28 +72,45 @@ const Game = () => {
 
       return { score: bestScore, move: move };
     }
-};
+  }, [checkWinner]);
 
-const checkWinner = (grid) => {
-  const winCombinations = [
-    [0, 1, 2], [3, 4, 5], [6, 7, 8],
-    [0, 3, 6], [1, 4, 7], [2, 5, 8],
-    [0, 4, 8], [2, 4, 6]
-  ];
-
-  for (let combination of winCombinations) {
-    const [a, b, c] = combination;
-    if (grid[a] !== '' && grid[a] === grid[b] && grid[a] === grid[c]) {
-      return grid[a];
+  useEffect(() => {
+    if (!isPlayerTurn && winner === null && grid.includes('')) {
+      setTimeout(() => {
+        let move;
+        let newGrid = [...grid];
+        if (grid.every(value => value === '')) {
+          move = Math.floor(Math.random() * 9);
+        } else {
+          move = minimax(grid, 0, true).move;
+        }
+        newGrid[move] = 'O';
+        setGrid(newGrid);
+        const checkResult = checkWinner(newGrid);
+        if (checkResult === 'O') {
+          setWinner(t('game.fail'));
+        } else if (checkResult === 'Draw') {
+          setWinner(t('game.draw'));
+        }
+        setIsPlayerTurn(true);
+      }, 500);
     }
-  }
+  }, [grid, winner, isPlayerTurn, minimax, t]);
 
-  if (!grid.includes('')) {
-    return 'Draw';
-  }
-
-  return null;
-};
+  const handleClick = (index) => {
+    if (grid[index] === '' && winner === null) {
+      let newGrid = [...grid];
+      newGrid[index] = 'X';
+      setGrid(newGrid);
+      const checkResult = checkWinner(newGrid); // Modification
+      if (checkResult === 'X') {
+        setWinner(t('game.win'));
+      } else if (checkResult === 'Draw') { // Modification
+        setWinner(t('game.draw'));
+      }
+      setIsPlayerTurn(false);
+    }
+  };
 
   const resetGame = () => {
     setGrid(Array(9).fill(''));
@@ -135,7 +135,7 @@ const checkWinner = (grid) => {
       marginTop="-100px"
       bg="transparent"
     >
-      LET'S PLAY !
+      {"LET'S PLAY !"}
     </Heading>
 
     <Flex direction={direction} justifyContent="space-between" alignItems="center" pt={6} px={paddingX}>
