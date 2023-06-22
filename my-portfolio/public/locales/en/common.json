@@ -2,7 +2,7 @@
     "greeting": {
       "part1": "Hi, I'm ",
       "name": "Cyril De Graeve",
-      "part2": ", a freelance Fullstack Javascript Developer, and I look forward to working with ",
+      "part2": ", a freelance Fullstack Javascript Developer, and I look forward to working for ",
       "you": "you",
       "part3": "."
     },
@@ -46,7 +46,7 @@
     "portfolio": {
       "title": "My portfolio",
       "role": "Personnal project",
-      "description": "The ever-changing portfolio you're currently browsing can be viewed in dark or light mode, on desktop or smartphone, depending on your preference. You can read it in French or in English. I am delighted to present here some of my achievements. I will add new amazing projects soon."
+      "description": "The ever-changing portfolio you are currently browsing can be viewed in dark or light mode, on desktop or smartphone, depending on your preference. You can read it in French or in English. I am delighted to present here some of my achievements, and to make you discover new ones soon..."
     },
 
     "game": {
@@ -107,7 +107,7 @@
     },
 
     "contact": {
-      "leavemessage": "Please leave a message so that I can better understand your website and mobile application creation, redesign and optimization needs, both front-end and back-end. I also invite you to visit my spaces on social networks, as well as my profile on market platforms like Malt, where I offer my services.",
+      "leavemessage": "We work together ? Please leave a message so I can understand your website and mobile application creation, redesign and optimization needs, both front-end and back-end. I also invite you to visit my spaces on social networks, as well as my profile on market platforms like Malt, where I offer my services.",
       "formname": "Name",
       "formorganisation": "Organisation",
       "formemail": "Email address",
