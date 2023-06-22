@@ -115,35 +115,22 @@ const Header = ({ showIntro = true }) => {
               {t('menu.works')}
             </Button>
           </Link>
-          <Link href="/components/Resume" passHref>
-  <Button
-    as="a"
-    letterSpacing="wide"
-    width="150px"
-    bg={
-      currentPath === '/components/Resume' 
-      ? (colorMode === "light" ? '#0e1a29' : '#f9f4da') 
-      : '#f73b68'
-    }
-    color={
-      currentPath === '/components/Resume' 
-      ? (colorMode === "light" ? '#f9f4da' : '#0e1a29') 
-      : '#0e1a29'
-    }
-    _hover={{
-      bg: currentPath === '/components/Resume'
-      ? (colorMode === "light" ? '#0e1a29' : '#f9f4da') 
-      : '#ed809a',
-      color: "#0e1a29",
-      textDecoration: "none"
-    }}
-    pointerEvents={currentPath === '/components/Resume' ? 'none' : 'auto'}
-    textDecoration="none"
-    opacity={currentPath === '/components/Resume' ? '0.6' : '1'}
-  >
-    {t('menu.resume')}
-  </Button>
-</Link>
+
+          <Link href="/#game" passHref>
+            <Button
+            as="a"
+            letterSpacing="wide"
+            width="150px"
+            bg="#f73b68"
+            color="#0e1a29"
+            _hover={{
+              bg: "#ed809a",
+              color: "#0e1a29"
+            }}>
+              {t('menu.game')}
+            </Button>
+          </Link>
+
           <Link href="/#soft-skills" passHref>
             <Button
             as="a"

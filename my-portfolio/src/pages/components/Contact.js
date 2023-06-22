@@ -1,9 +1,9 @@
 import React from 'react';
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useForm } from 'react-hook-form';
-import { Box, Button, FormControl, FormLabel, Wrap, Flex, Image, Link, Grid, Input, Heading, Text, Textarea, useBreakpointValue } from "@chakra-ui/react";
+import { Box, Button, FormControl, FormLabel, Wrap, Flex, Image, Link, Input, Heading, Text, Textarea, useBreakpointValue } from "@chakra-ui/react";
 import { useColorMode } from "@chakra-ui/react";
-import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope } from 'react-icons/fa';
 import { useTranslation } from 'next-i18next';
 
 const ContactForm = () => {
@@ -12,11 +12,10 @@ const ContactForm = () => {
   const { colorMode } = useColorMode();
   const [isHovered, setIsHovered] = useState(false);
 
-  const gridTemplateColumns = useBreakpointValue({ base: "1fr", sm: "1fr", md: "1fr", "2xl": "1.5fr 1fr" });
-  const GridOrBox = Grid;
+  const flexDir = useBreakpointValue({ base: "column", sm: "column", md: "column", "2xl": "row" });
   const m = useBreakpointValue({ base: 1, sm: 12, md: 16 });
   const Container = useBreakpointValue({ base: Wrap, sm: Wrap, md: Flex });
-  const spacing = useBreakpointValue({ base: 10, sm: 10, md: 35 });
+  const spacing = useBreakpointValue({ base: 5, sm: 10, md: 30});
   const boxContactPadding = useBreakpointValue({ base: 5, sm: 5, md: 20 }); 
 
   const onSubmit = async (data) => {
@@ -51,7 +50,7 @@ const ContactForm = () => {
     >
       CONTACT
   </Heading>
-  <GridOrBox templateColumns={gridTemplateColumns} gap={2} mx="auto" m={m}>
+  <Flex direction={flexDir} gap={2} mx="auto" m={m} justify="center">
     <Box w="100%" textAlign="center" p={boxContactPadding}>
       <Text fontSize="2xl" letterSpacing="wide" mb={4}>
       {t('contact.leavemessage')}
@@ -76,10 +75,13 @@ const ContactForm = () => {
         <Link href="https://twitter.com/roissi" isExternal mx={spacing}>
           <Box as={FaTwitter} size="60px" _hover={{ color: "#f55e0a" }} />
         </Link>
+        <Link href="mailto:cyrildegraeve@gmail.com" isExternal mx={spacing}>
+          <Box as={FaEnvelope} size="60px" _hover={{ color: "#f55e0a" }} />
+        </Link>
       </Container>
     </Box>
 
-    <Box textAlign="left" p={boxContactPadding}>
+    <Box textAlign="left" p={boxContactPadding} w={["100%", "100%", "100%", "100%"]}>
       <form onSubmit={handleSubmit(onSubmit)}>
         <FormControl id="name" isRequired>
         <FormLabel>{t('contact.formname')}</FormLabel>
@@ -128,7 +130,7 @@ const ContactForm = () => {
           </Button>
       </form>
     </Box>
-  </GridOrBox>
+    </Flex>
     </Box>
   );
 };

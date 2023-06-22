@@ -14,6 +14,7 @@
     "menu": {
       "hardskills": "Hard skills",
       "works": "Projets",
+      "game": "Let's play !",
       "resume": "Mon CV",
       "softskills": "Soft skills",
       "contact": "Contact"
@@ -22,6 +23,7 @@
     "title": {
       "hardskills": "HARD SKILLS",
       "works": "PROJETS",
+      "game": "LET'S PLAY !",
       "softskills": "SOFT SKILLS",
       "contact": "CONTACT"
     },
@@ -45,6 +47,14 @@
       "title": "Mon portfolio",
       "role": "Projet personnel",
       "description": "Le portfolio que vous parcourez actuellement, en constante évolution, peut être visualisé en dark ou light mode, sur ordinateur de bureau ou sur smartphone, selon vos préférences. Vous pouvez le lire en français ou en anglais. Je suis ravi de présenter ici quelques-unes de mes réalisations. J'ajouterai bientôt de nouvelles réalisations étonnantes."
+    },
+
+    "game": {
+      "message": "Je m'intéresse également à l'IA, au machine & deep learning. Mes compétences en la matière sont encore élémentaires, mais mon intérêt et ma curiosité sont puissants. Voici un Morpion que j'ai codé, pour le fun, avec une IA existante (simple, basique et déterministe)... Personne n'a encore gagné contre la machine. Si vous y arrivez, je vous offre mes 2 premières journées de prestation ! ;-)",
+      "win": "Gagné !",
+      "fail": "Perdu",
+      "draw": "Égalité",
+      "reset": "Recommencez"
     },
 
     "softskill1": {
@@ -111,6 +121,7 @@
     "mobilemenu": {
       "hardskills": "Hard skills",
       "works": "Projets",
+      "game": "Let's play !",
       "resume": "Mon CV",
       "softskills": "Soft skills",
       "contact": "Contact",
