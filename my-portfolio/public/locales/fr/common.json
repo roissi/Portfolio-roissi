@@ -50,7 +50,7 @@
     },
 
     "game": {
-      "message": "Je m'intéresse également à l'IA, au machine & deep learning. Mes compétences en la matière sont encore élémentaires, mais mon intérêt et ma curiosité sont puissants. Voici un Morpion que j'ai codé, pour le fun, avec l'algorithme minimax, une IA basique et déterministe. Si vous y parvenez à battre la machine, je vous offre mes 2 premières journées de prestation ! ;-)",
+      "message": "Je m'intéresse également à l'IA, au machine & deep learning. Mes compétences en la matière sont encore élémentaires, mais mon intérêt et ma curiosité sont puissants. Voici un Morpion que j'ai codé, pour le fun, avec l'algorithme minimax, une IA basique et déterministe. Si vous parvenez à battre la machine, je vous offre mes 2 premières journées de prestation ! ;-)",
       "win": "Gagné !",
       "fail": "Perdu",
       "draw": "Égalité",
