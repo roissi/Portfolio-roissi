@@ -138,7 +138,7 @@ const Game = () => {
       {"LET'S PLAY !"}
     </Heading>
 
-    <Flex direction={direction} justifyContent="space-between" alignItems="center" pt={6} px={paddingX}>
+    <Flex direction={direction} justifyContent="center" alignItems="center" pt={6} px={paddingX}>
 
       <Box p={boxPadding} textAlign="center" m="auto">
         <Text fontSize="2xl" letterSpacing="wide">
@@ -146,10 +146,10 @@ const Game = () => {
         </Text>
       </Box>
 
-      <Box textAlign="center" letterSpacing="wide" m="auto">
+      <Box textAlign="center" letterSpacing="wide">
         <Box>
           {[...Array(3)].map((_, i) => (
-            <Flex key={i} justifyContent="center">
+            <Flex key={i}>
               {[...Array(3)].map((_, j) => {
                 const index = i * 3 + j;
                 return (
