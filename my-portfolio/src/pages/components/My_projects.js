@@ -26,7 +26,7 @@ const MyProjects = () => {
       description: t('cynoche.description'),
       techStack: ["React", "Chakra UI", "Node.js", "Express", "PosgreSQL"],
       githubUrl: "https://github.com/roissi/CyNoche",
-      liveUrl: "https://cynoche.netlify.app/",
+      liveUrl: "https://cynoche.vercel.app/",
     },
     {
       title: "J'adopte un humain",
@@ -45,7 +45,6 @@ const MyProjects = () => {
       role: t('donefficace.role'),
       description: t('donefficace.description'),
       techStack: ["React", "Next.js", "TypeScript", "Node.js", "Express", "Jest", "Sanity"],
-      githubUrl: "https://github.com/centre-for-effective-altruism/lyra/tree/french-gwwc",
       liveUrl: "https://givingwhatwecan-git-french-gwwc-centreea.vercel.app/fr",
     },
     {
