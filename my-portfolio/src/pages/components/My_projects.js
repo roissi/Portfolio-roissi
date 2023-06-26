@@ -113,9 +113,11 @@ const MyProjects = () => {
                 ))}
             </HStack>
             <HStack spacing={4} justify="center" mb={3}>
-            <Link href={project.githubUrl} isExternal>
-              <Box as={SiGithub} size="30" _hover={{ color: "#049dc9" }} />
-            </Link>
+            {project.githubUrl && (
+              <Link href={project.githubUrl} isExternal>
+                <Box as={SiGithub} size="30" _hover={{ color: "#049dc9" }} />
+              </Link>
+            )}
             <Link href={project.liveUrl} isExternal>
               <LinkIcon width="30px" height="30px" _hover={{ color: "#049dc9" }} />
             </Link>
