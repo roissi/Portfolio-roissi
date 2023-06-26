@@ -56,7 +56,7 @@ const MyProjects = () => {
       description: t('portfolio.description'),
       techStack: ["React", "Next.js", "Chakra UI", "Node.js", "Express"],
       githubUrl: "https://github.com/roissi/Portfolio-roissi",
-      liveUrl: "https://porfolio-roissi.vercel.app/",
+      liveUrl: "https://portfolio-roissi.vercel.app/",
     },
   ];
 
