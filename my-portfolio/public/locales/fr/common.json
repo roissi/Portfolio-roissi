@@ -30,7 +30,7 @@
 
   "cynoche": {
     "role": "Projet personnel",
-    "description": "CyNoche est une application web qui répertorie (presque) tous les films que j'ai vus dans ma vie. L'application est réalisée avec React et Chakra UI, et elle utilise une API pour fournir des données (films, notes, réalisateurs, années de sortie, affiches et résumés). Fonctionnalités : Affichage d'un catalogue de films / Système de classement par étoiles (sur 5) / Tri par noms de films, noms de réalisateurs, années de sortie et notes / Ajout et/ou mise à jour et/ou suppression d'un film de la base de données / Recherche des films par titres et/ou réalisateurs / Sélection de la fiche d'un film (affiche + résumé) / Résumés en anglais ou français / Dark ou light mode. Vous pouvez utiliser mes données (environ 2000 films) ou les vôtres si vous remplissez la base de données avec vos propres films."
+    "description": "CyNoche est une application web qui répertorie (presque) tous les films que j'ai vus dans ma vie. L'application est réalisée avec React et Chakra UI, et elle utilise une API pour fournir des données (films, notes, réalisateurs, années de sortie, affiches et résumés). Fonctionnalités : Affichage d'un catalogue de films / Système de classement par étoiles (sur 5) / Tri par noms de films, noms de réalisateurs, années de sortie et notes / Ajout et/ou mise à jour et/ou suppression d'un film de la base de données / Recherche des films par titres et/ou réalisateurs / Sélection de la fiche d'un film (affiche + résumé) / Résumés en anglais ou français / Dark ou light mode / Journalisation (Winston). Vous pouvez utiliser mes données (environ 2000 films) ou les vôtres si vous remplissez la base de données avec vos propres films."
   },
 
   "jadopte": {
