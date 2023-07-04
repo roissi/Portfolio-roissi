@@ -24,7 +24,7 @@ const MyProjects = () => {
       alt: "HomePage Cynoche",
       role: t('cynoche.role'),
       description: t('cynoche.description'),
-      techStack: ["React", "Chakra UI", "Node.js", "Express", "PosgreSQL"],
+      techStack: ["React", "Chakra UI", "Node.js", "Express", "PosgreSQL", "Winston/Papertail"],
       githubUrl: "https://github.com/roissi/CyNoche",
       liveUrl: "https://cynoche.vercel.app/",
     },

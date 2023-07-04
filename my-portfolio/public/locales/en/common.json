@@ -30,7 +30,7 @@
 
     "cynoche": {
       "role": "Personnal project",
-      "description": "CyNoche is a web app that lists (almost) every movie I've seen in my life. The app is made with React and Chakra UI, and it uses an API to provide data (movies, ratings, directors, release years, posters, and summaries). Features: Viewing a catalog of movies / Star rating system (out of 5) / Sorting by movie names, director names, release years and ratings / Adding and/or updating and/or deleting a film from the database / Search for films by title and/or director / Selection of a film's file (poster + summary) / Summaries in English or French / Dark or light mode. You can use my data (about 2000 films) or yours if you fill the database with your own movies."
+      "description": "CyNoche is a web app that lists (almost) every movie I've seen in my life. The app is made with React and Chakra UI, and it uses an API to provide data (movies, ratings, directors, release years, posters, and summaries). Features: Viewing a catalog of movies / Star rating system (out of 5) / Sorting by movie names, director names, release years and ratings / Adding and/or updating and/or deleting a film from the database / Search for films by title and/or director / Selection of a film's file (poster + summary) / Summaries in English or French / Dark or light mode / Logging (Winston). You can use my data (about 2000 films) or yours if you fill the database with your own movies."
     },
 
     "jadopte": {
