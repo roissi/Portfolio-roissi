@@ -8,7 +8,7 @@ export const SoftSkills = () => {
   const { t } = useTranslation('common'); 
   const [flippedCardId, setFlippedCardId] = useState(null);
   const [ref, inView] = useInView({
-    triggerOnce: true, // Change to false if you want the animation to trigger again whenever it comes in view.
+    triggerOnce: true,
   });
 
   const skills = [
@@ -70,16 +70,15 @@ export const SoftSkills = () => {
     },
   ];
 
-    // Flip cards on initial render
     useEffect(() => {
       if (inView) {
         const flipCards = async () => {
           for (const skill of skills) {
-            await new Promise(resolve => setTimeout(resolve, 250)); // Adjust time as needed
+            await new Promise(resolve => setTimeout(resolve, 250));
             setFlippedCardId(skill.id);
           }
-          await new Promise(resolve => setTimeout(resolve, 250)); // Adjust time as needed
-          setFlippedCardId(null); // Flip cards back
+          await new Promise(resolve => setTimeout(resolve, 250));
+          setFlippedCardId(null);
         }
         flipCards();
       }
