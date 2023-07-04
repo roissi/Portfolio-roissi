@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Box, Flex, Heading } from "@chakra-ui/react";
 import SkillCard from './SkillCard';
 import { useTranslation } from 'next-i18next';
@@ -65,6 +65,19 @@ export const SoftSkills = () => {
       example: t('softskill8.example'),
     },
   ];
+
+    // Flip cards on initial render
+    useEffect(() => {
+      const flipCards = async () => {
+        for (const skill of skills) {
+          await new Promise(resolve => setTimeout(resolve, 300)); // Adjust time as needed
+          setFlippedCardId(skill.id);
+        }
+        await new Promise(resolve => setTimeout(resolve, 300)); // Adjust time as needed
+        setFlippedCardId(null); // Flip cards back
+      }
+      flipCards();
+    }, []);
 
   return (
     <Box py={6} textAlign="center" letterSpacing="wide" pb="10">
