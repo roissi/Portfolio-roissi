@@ -2,10 +2,14 @@ import React, { useState, useEffect } from 'react';
 import { Box, Flex, Heading } from "@chakra-ui/react";
 import SkillCard from './SkillCard';
 import { useTranslation } from 'next-i18next';
+import { useInView } from 'react-intersection-observer';
 
 export const SoftSkills = () => {
   const { t } = useTranslation('common'); 
   const [flippedCardId, setFlippedCardId] = useState(null);
+  const [ref, inView] = useInView({
+    triggerOnce: true, // Change to false if you want the animation to trigger again whenever it comes in view.
+  });
 
   const skills = [
     {
@@ -68,16 +72,18 @@ export const SoftSkills = () => {
 
     // Flip cards on initial render
     useEffect(() => {
-      const flipCards = async () => {
-        for (const skill of skills) {
-          await new Promise(resolve => setTimeout(resolve, 300)); // Adjust time as needed
-          setFlippedCardId(skill.id);
+      if (inView) {
+        const flipCards = async () => {
+          for (const skill of skills) {
+            await new Promise(resolve => setTimeout(resolve, 250)); // Adjust time as needed
+            setFlippedCardId(skill.id);
+          }
+          await new Promise(resolve => setTimeout(resolve, 250)); // Adjust time as needed
+          setFlippedCardId(null); // Flip cards back
         }
-        await new Promise(resolve => setTimeout(resolve, 300)); // Adjust time as needed
-        setFlippedCardId(null); // Flip cards back
+        flipCards();
       }
-      flipCards();
-    }, []);
+    }, [inView]);
 
   return (
     <Box py={6} textAlign="center" letterSpacing="wide" pb="10">
@@ -95,7 +101,7 @@ export const SoftSkills = () => {
     >
       SOFT SKILLS
       </Heading>
-      <Flex justifyContent="space-around" wrap="wrap" gap="8">
+      <Flex ref={ref} justifyContent="space-around" wrap="wrap" gap="8">
         {skills.map(skill => (
           <SkillCard 
             key={skill.id}
