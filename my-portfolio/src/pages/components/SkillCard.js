@@ -4,7 +4,7 @@ import ReactCardFlip from 'react-card-flip';
 import { useBreakpointValue } from "@chakra-ui/react";
 
 const SkillCard = ({ id, skill, description, example, isFlipped, flipCard }) => {
-  const cardWidth = useBreakpointValue({ base: "330px", md: "400px" });
+  const cardWidth = useBreakpointValue({ base: "325px", md: "400px" });
   const handleClick = () => {
     if(isFlipped) {
       flipCard(null);
