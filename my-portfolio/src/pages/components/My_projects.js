@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Grid, GridItem, Heading, Image, Text, Badge, VStack, HStack, Link, useColorModeValue, useBreakpointValue } from "@chakra-ui/react";
+import { Box, Grid, Flex, Heading, Image, Text, Badge, VStack, HStack, Link, useColorModeValue, useBreakpointValue } from "@chakra-ui/react";
 import { LinkIcon } from '@chakra-ui/icons';
 import { SiGithub } from "react-icons/si";
 import { useTranslation } from 'next-i18next';
@@ -15,6 +15,7 @@ const MyProjects = () => {
   const maxW = useBreakpointValue({ base: "80%", sm: "70%", md: "60%" });
   const m = useBreakpointValue({ base: 1, sm: 12, md: 16 });
   const boxShadow = useBreakpointValue({ base: "none", md: "0px 10px 15px -3px rgba(4, 157, 201, 0.8), 0px 4px 6px -2px rgba(4, 157, 201, 0.6)"});
+  const gridMinHeight = useBreakpointValue({ base: "auto", md: "800px" });
 
 
   const projects = [
@@ -75,23 +76,26 @@ const MyProjects = () => {
       bg="transparent"
     >
       {t('title.works')}
-      </Heading>
-      <GridOrBox templateColumns={gridTemplateColumns} gap={6} m={m}>
-        {projects.map((project, index) => (
-        <GridItem key={index}>
-      <Box 
-        bg={bg} 
-        p={2.5} 
-        borderRadius="md" 
-        borderWidth="2px" 
-        boxShadow={boxShadow}
-        _hover={{ borderColor: "#049dc9" }}
-      >
-        <VStack align="center" spacing={4}>
-          <Text fontWeight="bold" letterSpacing="wide" fontSize="5xl">
-            {project.title}
-          </Text>
-          <Image 
+    </Heading>
+    <GridOrBox templateColumns={gridTemplateColumns} gap={6} m={m}>
+      {projects.map((project, index) => (
+        <Flex 
+          key={index} 
+          direction="column" 
+          justifyContent="space-between" 
+          bg={bg} 
+          p={2.5} 
+          borderRadius="md" 
+          borderWidth="2px" 
+          boxShadow={boxShadow}
+          _hover={{ borderColor: "#049dc9" }}
+          minHeight={gridMinHeight}
+        >
+          <VStack align="center" spacing={4}>
+            <Text fontWeight="bold" letterSpacing="wide" fontSize="5xl">
+              {project.title}
+            </Text>
+            <Image 
               borderRadius="md" 
               src={
                 project.title === t('portfolio.title') 
@@ -105,14 +109,15 @@ const MyProjects = () => {
                 boxShadow: `5px 5px 0px ${shadowColor}`,
               }}
             />
-          <Text fontSize="2xl">{project.role}</Text>
-          <Text letterSpacing="wide" wordwrap="break-word" p={4}>{project.description}</Text>
+            <Text fontSize="2xl">{project.role}</Text>
+            <Text letterSpacing="wide" wordwrap="break-word" p={4}>{project.description}</Text>
             <HStack spacing={4} wrap="wrap" justifyContent="center">
-            {project.techStack.map((tech, index) => (
+              {project.techStack.map((tech, index) => (
                 <Badge key={index} color="#f9f4da" bg="#049dc9" fontSize="sm" p="1.5" style={{ overflowWrap: "break-word", wordWrap: "break-word", hyphens: "auto", wordBreak: "break-word" }}>{tech}</Badge>
-                ))}
+              ))}
             </HStack>
-            <HStack spacing={4} justify="center" mb={3}>
+          </VStack>
+          <HStack spacing={4} justify="center" mb={3} mt={4}>
             {project.githubUrl && (
               <Link href={project.githubUrl} isExternal>
                 <Box as={SiGithub} size="30" _hover={{ color: "#049dc9" }} />
@@ -121,14 +126,13 @@ const MyProjects = () => {
             <Link href={project.liveUrl} isExternal>
               <LinkIcon width="30px" height="30px" _hover={{ color: "#049dc9" }} />
             </Link>
-            </HStack>
-          </VStack>
-        </Box>
-        </GridItem>
+          </HStack>
+        </Flex>
       ))}
-      </GridOrBox>
-    </Box>
-  );
+    </GridOrBox>
+  </Box>
+);
+
 };
 
 export default MyProjects;
