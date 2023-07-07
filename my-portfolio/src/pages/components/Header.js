@@ -1,19 +1,24 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { Heading, Text, Box, IconButton, useColorMode, useColorModeValue, Flex, VStack, HStack, Button, useBreakpointValue } from "@chakra-ui/react";
 import { MoonIcon, SunIcon } from '@chakra-ui/icons';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 import MobileNavigation from './mobile/MobileNavigation';
 import { useTranslation } from 'next-i18next';
-import { LanguageContext } from '../_app';
-
 
 const Header = ({ showIntro = true }) => {
-  const { t } = useTranslation('common'); 
+  const { t, i18n } = useTranslation('common'); 
   const { colorMode, toggleColorMode } = useColorMode();
   const router = useRouter();
-  const { isFrench, changeLanguage } = useContext(LanguageContext);
 
+  const isFrench = i18n.language === 'fr';
+  const changeLanguage = () => {
+    let newLang = i18n.language === 'en' ? 'fr' : 'en';
+    let { pathname, query } = router;
+    
+    router.push({ pathname, query }, undefined, { locale: newLang });
+  };
+  
   const ButtonBackgroundColor = useColorModeValue("#e0daba", "#212e40");
   const ButtonHoverColor = useColorModeValue("#c2bc9c", "#344966");
 
