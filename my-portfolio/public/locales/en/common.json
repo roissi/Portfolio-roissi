@@ -24,8 +24,14 @@
       "hardskills": "HARD SKILLS",
       "works": "WORKS",
       "game": "LET'S PLAY !",
-      "softskills": "SOFT SKILLS",
+      "softskills": "SOFT SKILLS (& ethics)",
       "contact": "CONTACT"
+    },
+
+    "prez": {
+      "part1": "Once a cybercultural journalist with a lifelong passion for machines and networks, I transitioned into web development after completing an intensive training course in both front and back-end Javascript. This training allowed me to acquire solid technical skills and earn the",
+      "part2": "Professional Title of Web & Mobile Web Developer",
+      "part3": "Now, as a freelance developer, I offer a comprehensive range of web development services that encompass all stages of website or web application creation. My practical experience and deep understanding of the incredible Javascript ecosystem enables me to solve complex problems, creating functional solutions with modern, aesthetically pleasing interfaces that are tailored to your needs."
     },
 
     "cynoche": {
@@ -61,13 +67,13 @@
     "softskill1": {
       "skill": "WRITING SKILLS",
       "description": "Great editorial skills, for editing, writing and rewriting (French and English) / Graduate diploma in journalism.",
-      "example": "For 20 years, I was a journalist (GQ, Paris-Match...). I also founded a cybercultural magazine on the Internet and on newsstands, of which I was the editor for more than 15 years."
+      "example": "For 20 years, I was a journalist (GQ, Paris-Match...). I also founded a cybercultural magazine on the Internet and on newsstands, of which I was the editorial director (40 journalists) and editor-in-chief for more than 15 years."
     },
 
     "softskill2": {
-      "skill": "LEADERSHIP & AUTONOMY",
-      "description": "Experienced leader and independent worker with a history of managing autonomous teams and projects.",
-      "example": "I led a team of 40 journalists, while demonstrating autonomy in the execution of creative and innovative assignments. This combination of leadership and autonomy allows me to effectively manage complex roles."
+      "skill": "INDIVIDUAL INITIATIVE & AUTONOMY",
+      "description": "Independent and autonomous worker, I know how to manage projects that require important creative and functional initiatives.",
+      "example": "To best meet the needs defined upstream with my clients, I demonstrate autonomy in the execution of creative and innovative missions, anticipating both the constraints and possibilities of a project with high added value."
     },
 
     "softskill3": {

@@ -98,7 +98,7 @@ export const SoftSkills = () => {
       marginTop="-100px"
       bg="transparent"
     >
-      SOFT SKILLS
+      {t('title.softskills')}
       </Heading>
       <Flex ref={ref} justifyContent="space-around" wrap="wrap" gap="8">
         {skills.map(skill => (

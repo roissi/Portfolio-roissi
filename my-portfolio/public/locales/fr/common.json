@@ -24,8 +24,14 @@
     "hardskills": "HARD SKILLS",
     "works": "PROJETS",
     "game": "LET'S PLAY !",
-    "softskills": "SOFT SKILLS",
+    "softskills": "SOFT SKILLS  (et valeurs)",
     "contact": "CONTACT"
+  },
+
+  "prez": {
+    "part1": "Journaliste cyberculturelle dans une vie antérieure, passionné par les machines et les réseaux depuis toujours, je me suis reconverti dans le développement web après avoir suivi une formation intensive en Javascript (Front & Back-end), qui m'a permis d'acquérir des compétences techniques solides et d'obtenir le",
+    "part2": "Titre Professionnel de Développeur Web et Web Mobile",
+    "part3": "En tant que développeur freelance, je propose une gamme de services de développement web qui couvrent toutes les étapes du processus de création d'un site ou d'une application web. Grâce à ma pratique et mes connaissances de l'incroyable écosystème Javascript, je suis en mesure de résoudre des problèmes complexes en créant des solutions fonctionnelles et des interfaces esthétiques modernes adaptées à vos besoins."
   },
 
   "cynoche": {
@@ -60,13 +66,13 @@
   "softskill1": {
     "skill": "COMPÉTENCES RÉDACTIONNELLES",
     "description": "Grandes compétences éditoriales, pour de l'édition, de la rédaction et de la réécriture (français et anglais) / Diplôme d'études supérieures en journalisme.",
-    "example": "Pendant 20 ans, j'ai été journaliste (GQ, Paris-Match...). J'ai également fondé un magazine cyberculturel sur Internet et en kiosque, dont j'ai été le rédacteur en chef pendant plus de 15 ans."
+    "example": "Pendant 20 ans, j'ai été journaliste (GQ, Paris-Match...). J'ai également fondé un magazine cyberculturel sur Internet et en kiosque, dont j'ai été le directeur de la rédaction (40 journalistes) et rédacteur en chef pendant plus de 15 ans."
   },
 
   "softskill2": {
-    "skill": "DIRECTION D'ÉQUIPES ET AUTONOMIE",
-    "description": "Manager expérimenté et travailleur indépendant avec un historique de gestion d'équipes et de projets autonomes.",
-    "example": "J'ai dirigé une équipe de 40 journalistes, tout en faisant preuve d'autonomie dans l'exécution de missions créatives et innovantes. Cette combinaison de leadership et d'autonomie me permet de gérer efficacement des rôles complexes."
+    "skill": "ESPRIT D'INITIATIVE ET AUTONOMIE",
+    "description": "Travailleur indépendant, je sais gérer en parfaite autonomie des projets.",
+    "example": "J'ai , tout en faisant preuve d'autonomie dans l'exécution de missions créatives et innovantes. Cette combinaison de leadership et d'autonomie me permet de gérer efficacement des rôles complexes."
   },
 
   "softskill3": {
@@ -102,7 +108,7 @@
   "softskill8": {
     "skill": "FORCES ET FAIBLESSES",
     "description": "Dévoué, minutieux, ponctuel, curieux, à l'écoute, ouvert d'esprit et mature. Humble, j'accueille avec sérénité mes imperfections (d'humain).",
-    "example": "Je fais preuve d'intégrité et de fiabilité, constamment démontrées dans les milieux professionnels. Non sans erreur et lacune, mais en m'efforcant constamment d'apprendre et d'améliorer mes compétences."
+    "example": "Je fais preuve d'intégrité et de fiabilité, constamment démontrées dans les milieux professionnels. Non sans erreur et lacune, mais en m'efforcant constamment d'apprendre et de booster mes compétences."
   },
 
   "contact": {
