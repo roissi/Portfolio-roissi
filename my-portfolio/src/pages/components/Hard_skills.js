@@ -1,30 +1,48 @@
-import { Box, Heading, VStack, Wrap, Link, Text, HStack, useBreakpointValue } from "@chakra-ui/react";
+import { Box, Flex, Heading, VStack, Wrap, Link, Text, HStack, useBreakpointValue } from "@chakra-ui/react";
 import { FaHtml5, FaCss3, FaJs, FaReact } from "react-icons/fa";
 import { IoLogoNodejs } from "react-icons/io";
 import { SiPostgresql, SiExpress, SiNextdotjs, SiChakraui, SiSequelize, SiGithub, SiVercel } from "react-icons/si";
+import { useTranslation } from 'next-i18next';
 
 const HardSkills = () => {
-  const spacing = useBreakpointValue({ base: 10, md: 50 });
+  const { t } = useTranslation('common'); 
+  const spacing = useBreakpointValue({ base: 5, md: 50 });
+  const headingMarginBottom = useBreakpointValue({ base: 5, md: 20 });
+  const textMarginBottom = useBreakpointValue({ base: 12, md: 0 });
   const techBoxSize = useBreakpointValue({ base: 50, md: 80 });
+  const flexDirection = useBreakpointValue({ base: "column", md: "row" });
+  const alignItemsValue = useBreakpointValue({ base: 'flex-start', md: 'center' });
+  const textLineHeight = useBreakpointValue({ base: "1.7", md: "2.1" });
+
 
   return (
-    <Box py={10} textAlign="center" letterSpacing="wide">
-    <Box h="4vh"/>
-    <Heading 
-      as="h2" 
-      size="3xl" 
-      mb={20} 
-      style={{
-        textShadow: `-1px 0 #fcba28, 0 1px #fcba28, 5px 0 #fcba28, 0 -5px #fcba28`
-      }}
-      id="hard-skills"
-      paddingTop="100px"
-      marginTop="-100px"
-      bg="transparent"
-    >
-      HARD SKILLS
-  </Heading>
-  <VStack spacing={spacing} align="center">
+    <Box py={10} textAlign="center" letterSpacing="wide" mx="3%">
+      <Box h="4vh"/>
+      
+      <VStack spacing={spacing} align="center">
+        <Heading 
+          as="h2" 
+          size="3xl" 
+          mb={headingMarginBottom}
+          style={{
+            textShadow: `-1px 0 #fcba28, 0 1px #fcba28, 5px 0 #fcba28, 0 -5px #fcba28`
+          }}
+          id="hard-skills"
+          paddingTop="100px"
+          marginTop="-100px"
+          bg="transparent"
+        >
+          HARD SKILLS
+        </Heading>
+
+        <Flex direction={flexDirection} justifyContent="space-around" width="100%" alignItems={alignItemsValue}>
+        <Box width={{ base: "100%", md: "45%" }} mb={textMarginBottom}>
+          <Text fontSize="xl" lineHeight={textLineHeight}>
+          {t('prez.part1')}<br /><Text as="span" fontSize="1.5rem" fontWeight="bold" lineHeight="1.2"><Link href="https://www.francecompetences.fr/recherche/rncp/31114/" target="_blank" rel="noreferrer" _hover={{ textDecoration: "none", color: "#fcba28" }}>{t('prez.part2')}</Link></Text>.<br />{t('prez.part3')}
+          </Text>
+          </Box>
+          <Box width={{ base: "100%", md: "45%" }}>
+            <VStack spacing={spacing} align="center">
     {/* Première ligne */}
     <Wrap justify="center" spacing={spacing}>
       <Box>
@@ -136,8 +154,11 @@ const HardSkills = () => {
         </HStack>
       </Box>
     </Wrap>
-  </VStack>
-</Box>
+    </VStack>
+          </Box>
+        </Flex>
+      </VStack>
+    </Box>
   );
 };
 
