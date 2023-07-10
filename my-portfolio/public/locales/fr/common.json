@@ -29,9 +29,9 @@
   },
 
   "prez": {
-    "part1": "Journaliste cyberculturelle dans une vie antérieure, passionné par les machines et les réseaux depuis toujours, je me suis reconverti dans le développement web après avoir suivi une formation intensive en Javascript (Front & Back-end), qui m'a permis d'acquérir des compétences techniques solides et d'obtenir le",
+    "part1": "Journaliste cyberculturel dans une vie antérieure, passionné par les machines et les réseaux depuis toujours, je me suis reconverti dans le développement web après avoir suivi une formation intensive en Javascript (Front & Back-end), qui m'a permis d'acquérir des compétences techniques solides et d'obtenir le",
     "part2": "Titre Professionnel de Développeur Web et Web Mobile",
-    "part3": "En tant que développeur freelance, je propose une gamme de services de développement web qui couvrent toutes les étapes du processus de création d'un site ou d'une application web. Grâce à ma pratique et mes connaissances de l'incroyable écosystème Javascript, je suis en mesure de résoudre des problèmes complexes en créant des solutions fonctionnelles et des interfaces esthétiques modernes adaptées à vos besoins."
+    "part3": "En tant que développeur freelance, je propose une gamme de services de développement web qui couvrent toutes les étapes du processus de création d'un site et/ou d'une application web. Grâce à ma pratique et mes connaissances de l'incroyable écosystème Javascript, je suis en mesure de résoudre des problèmes complexes en créant des solutions fonctionnelles et des interfaces esthétiques modernes adaptées à vos besoins."
   },
 
   "cynoche": {
@@ -71,8 +71,8 @@
 
   "softskill2": {
     "skill": "ESPRIT D'INITIATIVE ET AUTONOMIE",
-    "description": "Travailleur indépendant, je sais gérer en parfaite autonomie des projets.",
-    "example": "J'ai , tout en faisant preuve d'autonomie dans l'exécution de missions créatives et innovantes. Cette combinaison de leadership et d'autonomie me permet de gérer efficacement des rôles complexes."
+    "description": "Travailleur indépendant et autonome, je sais gérer des projets qui nécessitent des prises d'initiative créatives et fontionnelles importantes.",
+    "example": "Pour répondre au mieux à des besoins définis en amont avec mes clients, je fais preuve d'autonomie dans l'exécution de missions créatives et innovantes, en anticipant à la fois les contraintes et possibilités d'un projet à forte valeur ajoutée."
   },
 
   "softskill3": {
