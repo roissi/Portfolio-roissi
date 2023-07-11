@@ -24,9 +24,8 @@ const Header = ({ showIntro = true }) => {
 
   const sizeFontIntro = useBreakpointValue({ base: "2xl", md: "2xl" });
   const spaceBeforeWTMP = useBreakpointValue({ base: "8", md: "4" });
-  const buttonMarginRight = useBreakpointValue({ lg: "0", xl: "20" });
-
-
+  const buttonSpacing = useBreakpointValue({ base: '2%', '865px': '5%', lg: '5%', xl: '5%' });
+  const buttonMaxW = useBreakpointValue({ base: "100px", md: "120px", lg: "150px" });
 
   const [currentPath, setCurrentPath] = React.useState("");
 
@@ -89,7 +88,7 @@ const Header = ({ showIntro = true }) => {
               <MobileNavigation isFrench={isFrench} changeLanguage={changeLanguage} />
             ) : (
         <HStack
-          spacing={20}
+          spacing={buttonSpacing}
           justify="center"
           width="100%"
           mb={7}
@@ -99,10 +98,9 @@ const Header = ({ showIntro = true }) => {
             as="a"
             letterSpacing="wide"
             width={"100%"}
-            maxW={"150px"}
+            maxW={buttonMaxW}
             bg="#fcba28"
             color="#0e1a29"
-            marginRight={buttonMarginRight} 
             _hover={{
               bg: "#f0f25a",
               color: "#0e1a29"
@@ -116,10 +114,9 @@ const Header = ({ showIntro = true }) => {
             as="a"
             letterSpacing="wide"
             width={"100%"}
-            maxW={"150px"}
+            maxW={buttonMaxW}
             bg="#049dc9"
             color="#0e1a29"
-            marginRight={buttonMarginRight} 
             _hover={{
               bg: "#8fdbf2",
               color: "#0e1a29"
@@ -133,10 +130,9 @@ const Header = ({ showIntro = true }) => {
             as="a"
             letterSpacing="wide"
             width={"100%"}
-            maxW={"150px"}
+            maxW={buttonMaxW}
             bg="#f73b68"
             color="#0e1a29"
-            marginRight={buttonMarginRight} 
             _hover={{
               bg: "#ed809a",
               color: "#0e1a29"
@@ -150,10 +146,9 @@ const Header = ({ showIntro = true }) => {
             as="a"
             letterSpacing="wide"
             width={"100%"}
-            maxW={"150px"}
+            maxW={buttonMaxW}
             bg="#02ad59"
             color="#0e1a29"
-            marginRight={buttonMarginRight} 
             _hover={{
               bg: "#51d695",
               color: "#0e1a29"
@@ -166,7 +161,7 @@ const Header = ({ showIntro = true }) => {
             as="a"
             letterSpacing="wide"
             width={"100%"}
-            maxW={"150px"}
+            maxW={buttonMaxW}
             bg="#f55e0a"
             color="#0e1a29"
             _hover={{
