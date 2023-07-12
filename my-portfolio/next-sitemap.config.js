@@ -2,5 +2,14 @@
 module.exports = {
   siteUrl: 'https://portfolio-roissi.vercel.app',
   generateRobotsTxt: true,
-  include: ["/"], // inclure seulement la page d'accueil
+  include: [
+    "/",
+    "/fr",
+    "/en"],
+  exclude: [
+    '/components/*',
+    '/en/components/*',
+    '/components/mobile/*',
+  ],
+  sitemapSize: 5000,
 };

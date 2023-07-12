@@ -1,17 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-<url><loc>https://portfolio-roissi.vercel.app</loc><lastmod>2023-07-12T21:53:10.461Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://portfolio-roissi.vercel.app/components/Contact</loc><lastmod>2023-07-12T21:53:10.461Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://portfolio-roissi.vercel.app/components/Game</loc><lastmod>2023-07-12T21:53:10.461Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://portfolio-roissi.vercel.app/components/Hard_skills</loc><lastmod>2023-07-12T21:53:10.461Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://portfolio-roissi.vercel.app/components/Header</loc><lastmod>2023-07-12T21:53:10.461Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://portfolio-roissi.vercel.app/components/Layout</loc><lastmod>2023-07-12T21:53:10.461Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://portfolio-roissi.vercel.app/components/My_projects</loc><lastmod>2023-07-12T21:53:10.461Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://portfolio-roissi.vercel.app/components/Resume</loc><lastmod>2023-07-12T21:53:10.461Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://portfolio-roissi.vercel.app/components/SkillCard</loc><lastmod>2023-07-12T21:53:10.461Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://portfolio-roissi.vercel.app/components/Soft_skills</loc><lastmod>2023-07-12T21:53:10.461Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://portfolio-roissi.vercel.app/components/Square</loc><lastmod>2023-07-12T21:53:10.461Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://portfolio-roissi.vercel.app/components/mobile/MobileNavigation</loc><lastmod>2023-07-12T21:53:10.461Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://portfolio-roissi.vercel.app/en/components/Resume</loc><lastmod>2023-07-12T21:53:10.461Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://portfolio-roissi.vercel.app/en</loc><lastmod>2023-07-12T21:53:10.461Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://portfolio-roissi.vercel.app</loc><lastmod>2023-07-12T22:03:37.799Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://portfolio-roissi.vercel.app/en</loc><lastmod>2023-07-12T22:03:37.799Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
 </urlset>
