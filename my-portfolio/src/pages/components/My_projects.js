@@ -1,12 +1,13 @@
 import React from 'react';
-import { Box, Grid, Flex, Heading, Image, Text, Badge, VStack, HStack, Link, useColorModeValue, useBreakpointValue } from "@chakra-ui/react";
-import { LinkIcon } from '@chakra-ui/icons';
-import { SiGithub } from "react-icons/si";
+import { Box, Grid, Heading, useColorModeValue, useBreakpointValue } from "@chakra-ui/react";
 import { useTranslation } from 'next-i18next';
+import ProjectCard from './ProjectCard';
+import SpecialProjectCard from './SpecialProjectCard';
 
 const MyProjects = () => {
   const { t } = useTranslation('common');
   const bg = useColorModeValue("#e0daba", "#212e40");
+  const bgSpecial = useColorModeValue("#f9f4da", "#0e1a29");
   const shadowColor = useColorModeValue('#0e1a29B3', '#f9f4daB3'); 
   const isLightMode = useColorModeValue(true, false);
 
@@ -20,6 +21,18 @@ const MyProjects = () => {
 
   const projects = [
     {
+      id: "telegraphe",
+      title: "Télégraphe",
+      imgSrc: "/projects/telegraphe2.png",
+      alt: "HomePage Télégraphe",
+      role: t('telegraphe.role'),
+      description: t('telegraphe.description'),
+      techStack: ["Framer", "React", "Next.js", "Bootstrap", "Node.js", "Supabase", "Lucide"],
+      githubUrl: "https://github.com/roissi/Neo-Telegraphe",
+      liveUrl: "https://neo-telegraphe.vercel.app/",
+    },
+    {
+      id: "cynoche",
       title: "CyNoche",
       imgSrc: "/projects/CyNoche_1.png",
       alt: "HomePage Cynoche",
@@ -30,6 +43,7 @@ const MyProjects = () => {
       liveUrl: "https://cynoche.vercel.app/",
     },
     {
+      id: "jadopte",
       title: "J'adopte un humain",
       imgSrc: "/projects/Adopte_1.png",
       alt: "HomePage J'adopte un humain",
@@ -40,6 +54,7 @@ const MyProjects = () => {
       liveUrl: "https://j-adopte-un-humain.netlify.app/",
     },
     {
+      id: "donefficace",
       title: "Don Efficace",
       imgSrc: "/projects/DE_1.png",
       alt: "HomePage Don Efficace",
@@ -48,16 +63,29 @@ const MyProjects = () => {
       techStack: ["React", "Next.js", "TypeScript", "Node.js", "Express", "Jest", "Sanity"],
       liveUrl: "https://givingwhatwecan-git-french-gwwc-centreea.vercel.app/fr",
     },
+
     {
+      id: "portfolio",
       title: t('portfolio.title'),
       imgSrcLight: "/projects/Portfolio_dark.png",
       imgSrcDark: "/projects/Portfolio_light.png",
       alt: "HomePage protfolio",
       role: t('portfolio.role'),
       description: t('portfolio.description'),
-      techStack: ["React", "Next.js", "Chakra UI", "Node.js", "Express"],
+      techStack: ["React", "Next.js", "Chakra UI", "Framer", "Node.js", "Express"],
       githubUrl: "https://github.com/roissi/Portfolio-roissi",
       liveUrl: "https://portfolio-roissi.vercel.app/",
+    },
+    {
+      id: "yourproject",
+      title: t('yourproject.title'),
+      imgSrcLight: "/projects/yourproject_dark.png",
+      imgSrcDark: "/projects/yourproject_light.png",
+      alt: "HomePage VotreProjet",
+      role: t('yourproject.role'),
+      description: t('yourproject.description'),
+      techStack: [""],
+      githubUrl: "https://xxx",
     },
   ];
 
@@ -78,57 +106,33 @@ const MyProjects = () => {
       {t('title.works')}
     </Heading>
     <GridOrBox templateColumns={gridTemplateColumns} gap={6} m={m}>
-      {projects.map((project, index) => (
-        <Flex 
-          key={index} 
-          direction="column" 
-          justifyContent="space-between" 
-          bg={bg} 
-          p={2.5} 
-          borderRadius="md" 
-          borderWidth="2px" 
-          boxShadow={boxShadow}
-          _hover={{ borderColor: "#049dc9" }}
-          minHeight={gridMinHeight}
-        >
-          <VStack align="center" spacing={4}>
-            <Text fontWeight="bold" letterSpacing="wide" fontSize="5xl">
-              {project.title}
-            </Text>
-            <Image 
-              borderRadius="md" 
-              src={
-                project.title === t('portfolio.title') 
-                  ? isLightMode ? project.imgSrcLight : project.imgSrcDark
-                  : project.imgSrc
-              } 
-              alt={project.title} 
-              maxH="60%"
-              maxW={maxW}
-              style={{
-                boxShadow: `5px 5px 0px ${shadowColor}`,
-              }}
-            />
-            <Text fontSize="2xl">{project.role}</Text>
-            <Text letterSpacing="wide" wordwrap="break-word" p={4}>{project.description}</Text>
-            <HStack spacing={4} wrap="wrap" justifyContent="center">
-              {project.techStack.map((tech, index) => (
-                <Badge key={index} color="#f9f4da" bg="#049dc9" fontSize="sm" p="1.5" style={{ overflowWrap: "break-word", wordWrap: "break-word", hyphens: "auto", wordBreak: "break-word" }}>{tech}</Badge>
-              ))}
-            </HStack>
-          </VStack>
-          <HStack spacing={4} justify="center" mb={3} mt={4}>
-            {project.githubUrl && (
-              <Link href={project.githubUrl} isExternal>
-                <Box as={SiGithub} size="30" _hover={{ color: "#049dc9" }} />
-              </Link>
-            )}
-            <Link href={project.liveUrl} isExternal>
-              <LinkIcon width="30px" height="30px" _hover={{ color: "#049dc9" }} />
-            </Link>
-          </HStack>
-        </Flex>
-      ))}
+      {projects.map((project, index) => 
+        project.title === t('yourproject.title') ? (
+          <SpecialProjectCard 
+            key={index} 
+            project={project} 
+            isLightMode={isLightMode} 
+            shadowColor={shadowColor}
+            maxW={maxW} 
+            bgSpecial={bgSpecial}
+            boxShadow={boxShadow}
+            minHeight={gridMinHeight}
+            t={t}
+          />
+        ) : (
+          <ProjectCard 
+            key={index} 
+            project={project} 
+            isLightMode={isLightMode} 
+            shadowColor={shadowColor}
+            maxW={maxW} 
+            bg={bg}
+            boxShadow={boxShadow}
+            minHeight={gridMinHeight}
+            t={t}
+          />
+        )
+      )}
     </GridOrBox>
   </Box>
 );

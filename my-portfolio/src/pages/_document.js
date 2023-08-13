@@ -22,6 +22,8 @@ class MyDocument extends Document {
             }
           }>
           </script>
+          {/* Balise meta pour l'image Open Graph */}
+          <meta property="og:image" content="https://portfolio-roissi.vercel.app/portfolio_roissi.png" />
         </Head>
         <body>
           <Main />

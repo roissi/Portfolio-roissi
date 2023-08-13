@@ -34,6 +34,16 @@
       "part3": "Now, as a freelance developer, I offer a comprehensive range of web development services that encompass all stages of website and/or web application creation. My practical experience and deep understanding of the incredible Javascript ecosystem enables me to solve complex problems, creating functional solutions with modern, aesthetically pleasing interfaces that are tailored to your needs."
     },
 
+    "hardskills": {
+      "scrum": "Agile / Scrum",
+      "method": "(methods)"
+    },
+
+    "telegraphe": {
+      "role": "Freelance fullstack developer",
+      "description": "Télégraphe is a platform dedicated to discovering the boutiques of the Télégraphe district, located in the 20th arrondissement of Paris. It was designed to help residents and visitors easily find local shops and learn more about what they offer. By registering, members can give their opinion on a store and view its exact location on an interactive map. The application is responsive and adapts to all types of devices (desktops, tablets or smartphones). This project is currently in development. Updates and additional features will be added soon."
+    },
+
     "cynoche": {
       "role": "Personnal project",
       "description": "CyNoche is a web app that lists (almost) every movie I've seen in my life. The app is made with React and Chakra UI, and it uses an API to provide data (movies, ratings, directors, release years, posters, and summaries). Features: Viewing a catalog of movies / Star rating system (out of 5) / Sorting by movie names, director names, release years and ratings / Adding and/or updating and/or deleting a film from the database / Search for films by title and/or director / Selection of a film's file (poster + summary) / Summaries in English or French / Dark or light mode / Logging (Winston). You can use my data (about 2000 films) or yours if you fill the database with your own movies."
@@ -53,6 +63,12 @@
       "title": "My portfolio",
       "role": "Personnal project",
       "description": "The ever-changing portfolio you are currently browsing can be viewed in dark or light mode, on desktop or smartphone, depending on your preference. You can read it in French or in English. I am delighted to present here some of my achievements, and to make you discover new ones soon..."
+    },
+
+    "yourproject": {
+      "title": "Your project ?",
+      "role": "At your service",
+      "description": "This project is still in the realm of imagination, and it might just be the most exceptional one yet. Your vision combined with my expertise could create something truly unique. I'm attuned to your needs and stand ready to collaborate, turning your ideas into reality. Let's discuss and find the best solutions together to fulfill your aspirations."
     },
 
     "game": {

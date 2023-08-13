@@ -3,7 +3,7 @@ import { useState } from "react";
 import { useForm } from 'react-hook-form';
 import { Box, Button, FormControl, FormLabel, Wrap, Flex, Image, Link, Input, Heading, Text, Textarea, useBreakpointValue } from "@chakra-ui/react";
 import { useColorMode } from "@chakra-ui/react";
-import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import { useTranslation } from 'next-i18next';
 
 const ContactForm = () => {
@@ -11,6 +11,7 @@ const ContactForm = () => {
   const { register, handleSubmit, reset, formState: { errors, isSubmitting } } = useForm();
   const { colorMode } = useColorMode();
   const [isHovered, setIsHovered] = useState(false);
+  const [isHovered2, setIsHovered2] = useState(false);
 
   const flexDir = useBreakpointValue({ base: "column", sm: "column", md: "column", "2xl": "row" });
   const m = useBreakpointValue({ base: 1, sm: 12, md: 16 });
@@ -73,7 +74,14 @@ const ContactForm = () => {
           <Box as={FaLinkedin} size="60px" _hover={{ color: "#f55e0a" }} />
         </Link>
         <Link href="https://twitter.com/roissi" isExternal mx={spacing}>
-          <Box as={FaTwitter} size="60px" _hover={{ color: "#f55e0a" }} />
+        <Image
+          src={isHovered2 ? "/X_logo_hover.png" : (colorMode === 'dark' ? "/X_logo_darkmode.png" : "/X_logo_lightmode.png")}
+          alt="X logo"
+          maxWidth={["60px", "65px"]}
+          height="auto"
+          onMouseEnter={() => setIsHovered2(true)}
+          onMouseLeave={() => setIsHovered2(false)}
+        />
         </Link>
         <Link href="mailto:cyrildegraeve@gmail.com" isExternal mx={spacing}>
           <Box as={FaEnvelope} size="60px" _hover={{ color: "#f55e0a" }} />
