@@ -3,18 +3,21 @@ import { VStack, HStack, Text, Image, Flex, Box, Link } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 import { FaEnvelope } from 'react-icons/fa';
 
-// Convertir certains composants Chakra en composants animés
 const MotionFlex = motion(Flex);
 const MotionImage = motion(Image);
-const MotionBox = motion(Box);  // Convertir Box en composant animé
+const MotionBox = motion(Box);
 
-const SpecialProjectCard = ({ project, isLightMode, shadowColor, maxW, bgSpecial, boxShadow, gridMinHeight, t }) => {
+const SpecialProjectCard = ({ project = {}, isLightMode, maxW, bgSpecial, boxShadow, gridMinHeight, t }) => {
   
-  // Exemple de variant pour les animations
   const cardVariants = {
     hidden: { opacity: 0, scale: 0.9 },
     visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
   };
+
+  const title = project.title || "Projet sans titre";
+  const role = project.role || "Rôle non défini";
+  const description = project.description || "Description non disponible";
+  const imgSrc = project.imgSrc || "path/to/default/image.png";
 
   return (
     <MotionFlex 
@@ -33,29 +36,29 @@ const SpecialProjectCard = ({ project, isLightMode, shadowColor, maxW, bgSpecial
     >
       <VStack align="center" spacing={4}>
         <Text fontWeight="bold" letterSpacing="wide" fontSize="5xl">
-          {project.title}
+          {title}
         </Text>
         <MotionImage 
           borderRadius="md" 
           src={
-            project.title === t('yourproject.title') 
+            title === t('yourproject.title') 
               ? isLightMode ? project.imgSrcDark : project.imgSrcLight
-              : project.imgSrc
+              : imgSrc
           } 
-          alt={project.title} 
+          alt={title} 
           maxH="60%"
           maxW={maxW}
           whileHover={{ scale: 1.3 }}
           transition={{ duration: 0.5 }}
         />
-        <Text fontSize="2xl">{project.role}</Text>
-        <Text letterSpacing="wide" wordwrap="break-word" p={4}>{project.description}</Text>
+        <Text fontSize="2xl">{role}</Text>
+        <Text letterSpacing="wide" wordwrap="break-word" p={4}>{description}</Text>
       </VStack>
       <HStack spacing={4} justify="center" mb={3} mt={4}>
     <Link href="/#contact" passHref>
         <MotionBox 
             _hover={{ color: "#049dc9" }}
-            whileHover={{ scale: 1.4 }}  // Effet de zoom
+            whileHover={{ scale: 1.4 }}
             transition={{ duration: 0.5 }}
         >
             <FaEnvelope size="60" color="gray.400" />
