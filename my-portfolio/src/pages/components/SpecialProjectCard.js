@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { VStack, HStack, Text, Image, Flex, Box, Link } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 import { FaEnvelope } from 'react-icons/fa';
@@ -17,7 +18,8 @@ const SpecialProjectCard = ({ project = {}, isLightMode, maxW, bgSpecial, boxSha
   const title = project.title || "Projet sans titre";
   const role = project.role || "Rôle non défini";
   const description = project.description || "Description non disponible";
-  const imgSrc = project.imgSrc || "path/to/default/image.png";
+  const defaultImgDark = '/projects/yourproject_dark.png';
+  const defaultImgLight = '/projects/yourproject_light.png';
 
   return (
     <MotionFlex 
@@ -42,9 +44,11 @@ const SpecialProjectCard = ({ project = {}, isLightMode, maxW, bgSpecial, boxSha
           borderRadius="md" 
           src={
             title === t('yourproject.title') 
-              ? isLightMode ? project.imgSrcDark : project.imgSrcLight
+              ? (isLightMode 
+                  ? (project.imgSrcDark || defaultImgDark)
+                  : (project.imgSrcLight || defaultImgLight))
               : imgSrc
-          } 
+          }
           alt={title} 
           maxH="60%"
           maxW={maxW}

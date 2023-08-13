@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { VStack, HStack, Text, Image, Badge, Flex, Link, Box } from '@chakra-ui/react';
 import { LinkIcon } from '@chakra-ui/icons';
 import { SiGithub } from "react-icons/si";
