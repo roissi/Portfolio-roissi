@@ -18,7 +18,7 @@ class MyDocument extends Document {
 
           {/* Google Analytics en utilisant le composant next/script */}
           <Script src="https://www.googletagmanager.com/gtag/js?id=G-M3MQPNFCHZ" strategy="afterInteractive" />
-          <Script strategy="afterInteractive">
+          <Script strategy="afterInteractive" id="google-analytics">
             {`
                 window.dataLayer = window.dataLayer || [];
                 function gtag(){dataLayer.push(arguments);}
@@ -32,4 +32,4 @@ class MyDocument extends Document {
   }
 }
 
-export default MyDocument
+export default MyDocument;

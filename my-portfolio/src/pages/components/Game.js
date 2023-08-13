@@ -9,7 +9,7 @@ const Game = () => {
   const [winner, setWinner] = useState(null);
   const [isPlayerTurn, setIsPlayerTurn] = useState(true);
 
-  const checkWinner = (grid) => {
+  const checkWinner = useCallback((grid) => {
     const winCombinations = [
       [0, 1, 2], [3, 4, 5], [6, 7, 8],
       [0, 3, 6], [1, 4, 7], [2, 5, 8],
@@ -28,7 +28,7 @@ const Game = () => {
     }
   
     return null;
-  };
+  }, []);
 
   const minimax = useCallback((grid, depth, isMaximizingPlayer) => {
     const winner = checkWinner(grid);
