@@ -4,7 +4,8 @@ import { VStack, HStack, Text, Image, Badge, Flex, Link, Box } from '@chakra-ui/
 import { LinkIcon } from '@chakra-ui/icons';
 import { SiGithub } from "react-icons/si";
 
-const ProjectCard = ({ project = {}, isLightMode, shadowColor, maxW, bg, boxShadow, gridMinHeight, t }) => {
+const ProjectCard = ({ project = {}, isLightMode, shadowColor, maxW, bg, boxShadow, gridMinHeight}) => {
+  const { t } = useTranslation('common');
 
   const title = project.title || 'Projet sans titre';
   const role = project.role || 'Rôle non défini';

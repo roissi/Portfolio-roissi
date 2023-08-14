@@ -8,7 +8,8 @@ const MotionFlex = motion(Flex);
 const MotionImage = motion(Image);
 const MotionBox = motion(Box);
 
-const SpecialProjectCard = ({ project = {}, isLightMode, maxW, bgSpecial, boxShadow, gridMinHeight, t }) => {
+const SpecialProjectCard = ({ project = {}, isLightMode, maxW, bgSpecial, boxShadow, gridMinHeight }) => {
+  const { t } = useTranslation('common');
   
   const cardVariants = {
     hidden: { opacity: 0, scale: 0.9 },
