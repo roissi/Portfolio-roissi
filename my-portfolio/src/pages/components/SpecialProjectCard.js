@@ -19,8 +19,8 @@ const SpecialProjectCard = ({ project = {}, isLightMode, maxW, bgSpecial, boxSha
   const title = project.title || "Projet sans titre";
   const role = project.role || "Rôle non défini";
   const description = project.description || "Description non disponible";
-  const defaultImgDark = '/projects/yourproject_dark.png';
-  const defaultImgLight = '/projects/yourproject_light.png';
+  const defaultImgDark = '/projects/yourproject_light.png';
+  const defaultImgLight = '/projects/yourproject_dark.png';
 
   return (
     <MotionFlex 
@@ -45,10 +45,10 @@ const SpecialProjectCard = ({ project = {}, isLightMode, maxW, bgSpecial, boxSha
           borderRadius="md" 
           src={
             title === t('yourproject.title') 
-              ? (isLightMode 
-                  ? (project.imgSrcDark || defaultImgDark)
-                  : (project.imgSrcLight || defaultImgLight))
-              : imgSrc
+            ? (isLightMode 
+                ? (project.imgSrcDark || defaultImgLight)
+                : (project.imgSrcLight || defaultImgDark))
+            : (project.imgSrc || defaultImgLight)
           }
           alt={title} 
           maxH="60%"
