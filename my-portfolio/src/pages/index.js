@@ -12,9 +12,11 @@ const HomePage = () => (
     <Head>
       <title>Mon Portfolio</title>
       <meta name="description" content="Hi, I'm Cyril De Graeve, a freelance Fullstack Javascript Developer, and I look forward to working for you." />
-        <meta name="keywords" content="Developer, Javascript, Fullstack" />
+        <meta name="keywords" content="Cyril de Graeve, roissi, Portfolio, Developer, Javascript, Fullstack" />
         <meta name="author" content="Cyril De Graeve" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charSet="UTF-8" />
+        <meta httpEquiv="Content-Language" content="fr" />
       </Head>
   <VStack spacing={6} align="stretch">
     <HardSkills />
