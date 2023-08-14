@@ -1,7 +1,8 @@
 import { Box, Flex, Heading, VStack, Wrap, Link, Text, HStack, useBreakpointValue } from "@chakra-ui/react";
 import { FaHtml5, FaCss3, FaJs, FaReact } from "react-icons/fa";
+import { DiScrum } from "react-icons/di";
 import { IoLogoNodejs } from "react-icons/io";
-import { SiPostgresql, SiExpress, SiNextdotjs, SiChakraui, SiSequelize, SiGithub, SiVercel } from "react-icons/si";
+import { SiPostgresql, SiExpress, SiNextdotjs, SiChakraui, SiSequelize, SiGithub, SiVercel, SiFramer, SiBootstrap, SiSupabase } from "react-icons/si";
 import { useTranslation } from 'next-i18next';
 
 const HardSkills = () => {
@@ -46,112 +47,128 @@ const HardSkills = () => {
     {/* Première ligne */}
     <Wrap justify="center" spacing={spacing}>
       <Box>
-        <HStack>
-          <Link href="https://html.spec.whatwg.org/" target="_blank" rel="noreferrer">
-            <Box as={FaHtml5} size={techBoxSize} _hover={{ color: "#fcba28" }} />
-          </Link>
-            <Text>HTML 5</Text>
-          </HStack>
-      </Box>
-      <Box>
-        <HStack>
-          <Link href="https://www.css3.com/" target="_blank" rel="noreferrer">
-          <Box as={FaCss3} size={techBoxSize} _hover={{ color: "#fcba28" }} />
-          </Link>
-          <Text>CSS 3</Text>
-        </HStack>
-      </Box>
-      <Box>
-        <HStack>
+        <VStack spacing={2}>
           <Link href="https://www.javascript.com/" target="_blank" rel="noreferrer">
-          <Box as={FaJs} size={techBoxSize} _hover={{ color: "#fcba28" }} />
+            <Box as={FaJs} size={techBoxSize} _hover={{ color: "#fcba28" }} />
           </Link>
           <Text>JavaScript</Text>
-        </HStack>
+        </VStack>
+      </Box>
+      <Box>
+        <VStack spacing={2}>
+          <Link href="https://legacy.reactjs.org/" target="_blank" rel="noreferrer">
+          <Box as={FaReact} size={techBoxSize} _hover={{ color: "#fcba28" }} />
+          </Link>
+          <Text>React</Text>
+        </VStack>
+      </Box>
+      <Box>
+        <VStack spacing={2}>
+          <Link href="https://nodejs.org/" target="_blank" rel="noreferrer">
+          <Box as={IoLogoNodejs} size={techBoxSize} _hover={{ color: "#fcba28" }} />
+          </Link>
+          <Text>Node.js</Text>
+        </VStack>
+      </Box>
+      <Box>
+        <VStack spacing={2}>
+          <Link href="https://nextjs.org/" target="_blank" rel="noreferrer">
+          <Box as={SiNextdotjs} size={techBoxSize} _hover={{ color: "#fcba28" }} />
+          </Link>
+          <Text>Next.js</Text>
+        </VStack>
       </Box>
     </Wrap>
 
     {/* Deuxième ligne */}
     <Wrap justify="center" spacing={spacing}>
       <Box>
-        <HStack>
-          <Link href="https://nodejs.org/" target="_blank" rel="noreferrer">
-          <Box as={IoLogoNodejs} size={techBoxSize} _hover={{ color: "#fcba28" }} />
-          </Link>
-          <Text>Node.js</Text>
-        </HStack>
-      </Box>
-      <Box>
-        <HStack>
+        <VStack spacing={2}>
           <Link href="https://expressjs.com/" target="_blank" rel="noreferrer">
           <Box as={SiExpress} size={techBoxSize} _hover={{ color: "#fcba28" }} />
           </Link>
           <Text>Express.js</Text>
-        </HStack>
+        </VStack>
       </Box>
       <Box>
-        <HStack>
+        <VStack spacing={2}>
+          <Link href="https://supabase.com/" target="_blank" rel="noreferrer">
+          <Box as={SiSupabase} size={techBoxSize} _hover={{ color: "#fcba28" }} />
+          </Link>
+          <Text>Supabase</Text>
+        </VStack>
+      </Box>
+      <Box>
+       <VStack spacing={2}>
           <Link href="https://www.postgresql.org/" target="_blank" rel="noreferrer">
           <Box as={SiPostgresql} size={techBoxSize} _hover={{ color: "#fcba28" }} />
           </Link>
           <Text>PostgreSQL</Text>
-        </HStack>
-      </Box>
-      <Box>
-        <HStack>
-          <Link href="https://sequelize.org/" target="_blank" rel="noreferrer">
-          <Box as={SiSequelize} size={techBoxSize} _hover={{ color: "#fcba28" }} />
-          </Link>
-          <Text>Sequelize</Text>
-        </HStack>
+        </VStack>
       </Box>
     </Wrap>
 
     {/* Troisième ligne */}
     <Wrap justify="center" spacing={spacing}>
       <Box>
-        <HStack>
-          <Link href="https://legacy.reactjs.org/" target="_blank" rel="noreferrer">
-          <Box as={FaReact} size={techBoxSize} _hover={{ color: "#fcba28" }} />
+        <VStack spacing={2}>
+          <Link href="https://sequelize.org/" target="_blank" rel="noreferrer">
+          <Box as={SiSequelize} size={techBoxSize} _hover={{ color: "#fcba28" }} />
           </Link>
-          <Text>React</Text>
-        </HStack>
+          <Text>Sequelize</Text>
+        </VStack>
       </Box>
       <Box>
-        <HStack>
-          <Link href="https://nextjs.org/" target="_blank" rel="noreferrer">
-          <Box as={SiNextdotjs} size={techBoxSize} _hover={{ color: "#fcba28" }} />
+        <VStack spacing={2}>
+          <Link href="https://www.framer.com/" target="_blank" rel="noreferrer">
+          <Box as={SiFramer} size={techBoxSize} _hover={{ color: "#fcba28" }} />
           </Link>
-          <Text>Next.js</Text>
-        </HStack>
+          <Text>Framer</Text>
+        </VStack>
       </Box>
       <Box>
-        <HStack>
+        <VStack spacing={2}>
           <Link href="https://chakra-ui.com/" target="_blank" rel="noreferrer">
           <Box as={SiChakraui} size={techBoxSize} _hover={{ color: "#fcba28" }} />
           </Link>
           <Text>Chakra UI</Text>
-        </HStack>
+        </VStack>
+      </Box>
+      <Box>
+        <VStack spacing={2}>
+          <Link href="https://getbootstrap.com/" target="_blank" rel="noreferrer">
+          <Box as={SiBootstrap} size={techBoxSize} _hover={{ color: "#fcba28" }} />
+          </Link>
+          <Text>Bootstrap</Text>
+        </VStack>
       </Box>
     </Wrap>
 
     {/* Quatrième ligne */}
     <Wrap justify="center" spacing={spacing}>
       <Box>
-        <HStack>
+        <VStack spacing={2}>
+          <Link href="https://scrumguides.org/" target="_blank" rel="noreferrer">
+          <Box as={DiScrum} size={techBoxSize} _hover={{ color: "#fcba28" }} />
+          </Link>
+          <Text>{t('hardskills.scrum')}<br />{t('hardskills.method')}</Text>
+        </VStack>
+      </Box>
+      <Box>
+        <VStack spacing={2}>
           <Link href="https://github.com/" target="_blank" rel="noreferrer">
           <Box as={SiGithub} size={techBoxSize} _hover={{ color: "#fcba28" }} />
           </Link>
           <Text>GitHub</Text>
-        </HStack>
+        </VStack>
       </Box>
       <Box>
-        <HStack>
+        <VStack spacing={2}>
           <Link href="https://vercel.com/" target="_blank" rel="noreferrer">
           <Box as={SiVercel} size={techBoxSize} _hover={{ color: "#fcba28" }} />
           </Link>
           <Text>Vercel</Text>
-        </HStack>
+        </VStack>
       </Box>
     </Wrap>
     </VStack>

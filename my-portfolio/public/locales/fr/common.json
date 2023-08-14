@@ -34,6 +34,16 @@
     "part3": "En tant que développeur freelance, je propose une gamme de services de développement web qui couvrent toutes les étapes du processus de création d'un site et/ou d'une application web. Grâce à ma pratique et mes connaissances de l'incroyable écosystème Javascript, je suis en mesure de résoudre des problèmes complexes en créant des solutions fonctionnelles et des interfaces esthétiques modernes adaptées à vos besoins."
   },
 
+  "hardskills": {
+    "scrum": "Agile / Scrum",
+    "method": "(méthodes)"
+  },
+
+  "telegraphe": {
+    "role": "Fullstack freelance",
+    "description": "Télégraphe est une plateforme dédiée à la découverte des boutiques du quartier Télégraphe, situé dans le 20ème arrondissement de Paris. Elle a été conçue pour aider les résidents et les visiteurs à trouver facilement des boutiques locales et à en savoir plus sur ce qu'elles offrent. En s'inscrivant, les membres peuvent donner leur avis sur une boutique et visualiser son emplacement exact sur une carte interactive. L'application est responsive et s'adapte à tous les types d'appareils (desktops, tablettes ou smartphones). Ce projet est actuellement en développement. Des mises à jour et des fonctionnalités supplémentaires seront ajoutées prochainement."
+  },
+
   "cynoche": {
     "role": "Projet personnel",
     "description": "CyNoche est une application web qui répertorie (presque) tous les films que j'ai vus dans ma vie. L'application est réalisée avec React et Chakra UI, et elle utilise une API pour fournir des données (films, notes, réalisateurs, années de sortie, affiches et résumés). Fonctionnalités : Affichage d'un catalogue de films / Système de classement par étoiles (sur 5) / Tri par noms de films, noms de réalisateurs, années de sortie et notes / Ajout et/ou mise à jour et/ou suppression d'un film de la base de données / Recherche des films par titres et/ou réalisateurs / Sélection de la fiche d'un film (affiche + résumé) / Résumés en anglais ou français / Dark ou light mode / Journalisation (Winston). Vous pouvez utiliser mes données (environ 2000 films) ou les vôtres si vous remplissez la base de données avec vos propres films."
@@ -53,6 +63,12 @@
     "title": "Mon portfolio",
     "role": "Projet personnel",
     "description": "Le portfolio que vous parcourez actuellement, en constante évolution, peut être visualisé en dark ou light mode, sur ordinateur de bureau ou sur smartphone, selon vos préférences. Vous pouvez le lire en français ou en anglais. Je suis ravi de présenter ici quelques-unes de mes réalisations, et de vous en faire découvrir des nouvelles prochainement..."
+  },
+
+  "yourproject": {
+    "title": "Votre projet ?",
+    "role": "Problem solver / À votre service",
+    "description": "Ce projet est encore à imaginer, et il pourrait bien être le plus exceptionnel de tous. Votre vision alliée à mon expertise pourrait donner naissance à quelque chose d'unique. Je suis à l'écoute de vos besoins et prêt à collaborer afin de transformer vos idées en réalité. Discutons-en et trouvons ensemble la meilleure solution pour vos aspirations."
   },
 
   "game": {
