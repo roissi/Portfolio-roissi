@@ -18,7 +18,7 @@ const ContactForm = () => {
   const m = useBreakpointValue({ base: 1, sm: 12, md: 16 });
   const Container = useBreakpointValue({ base: Wrap, sm: Wrap, md: Flex });
   const spacing = useBreakpointValue({ base: 5, sm: 10, md: 30});
-  const boxContactPadding = useBreakpointValue({ base: 5, sm: 5, md: 20 }); 
+  const boxContactPadding = useBreakpointValue({ base: 5, sm: 5, md: 10 }); 
 
   const onSubmit = async (data) => {
     const response = await fetch('https://formspree.io/f/xwkjgkpl', {
