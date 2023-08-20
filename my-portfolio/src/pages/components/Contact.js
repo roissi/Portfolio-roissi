@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from "react";
 import { useForm } from 'react-hook-form';
-import { Box, Button, FormControl, FormLabel, Wrap, Flex, Image, Link, Input, Heading, Text, Textarea, useBreakpointValue } from "@chakra-ui/react";
+import { Box, Button, FormControl, FormLabel, Wrap, Flex, VStack, Image, Link, Input, Heading, Text, Textarea, useBreakpointValue } from "@chakra-ui/react";
 import { useColorMode } from "@chakra-ui/react";
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import { useTranslation } from 'next-i18next';
@@ -12,6 +12,7 @@ const ContactForm = () => {
   const { colorMode } = useColorMode();
   const [isHovered, setIsHovered] = useState(false);
   const [isHovered2, setIsHovered2] = useState(false);
+  const [isHovered3, setIsHovered3] = useState(false);
 
   const flexDir = useBreakpointValue({ base: "column", sm: "column", md: "column", "2xl": "row" });
   const m = useBreakpointValue({ base: 1, sm: 12, md: 16 });
@@ -57,35 +58,52 @@ const ContactForm = () => {
       {t('contact.leavemessage')}
       </Text>
       <Container justify="center" mt={20} spacing={spacing}>
-        <Link href="https://www.malt.fr/profile/yourusername" isExternal mx={spacing}>
-        <Image
-          src={isHovered ? "/Malt_logo_hover.png" : (colorMode === 'dark' ? "/Malt_logo_darkmode.png" : "/Malt_logo_lightmode.png")}
-          alt="Malt logo"
-          maxWidth={["150px", "170px"]}
-          height="auto"
-          onMouseEnter={() => setIsHovered(true)}
-          onMouseLeave={() => setIsHovered(false)}
-        />
-        </Link>
-        <Link href="https://github.com/roissi" isExternal mx={spacing}>
-          <Box as={FaGithub} size="60px" _hover={{ color: "#f55e0a" }} />
-        </Link>
-        <Link href="https://www.linkedin.com/in/cyril-de-graeve/" isExternal mx={spacing}>
-          <Box as={FaLinkedin} size="60px" _hover={{ color: "#f55e0a" }} />
-        </Link>
-        <Link href="https://twitter.com/roissi" isExternal mx={spacing}>
-        <Image
-          src={isHovered2 ? "/X_logo_hover.png" : (colorMode === 'dark' ? "/X_logo_darkmode.png" : "/X_logo_lightmode.png")}
-          alt="X logo"
-          maxWidth={["60px", "65px"]}
-          height="auto"
-          onMouseEnter={() => setIsHovered2(true)}
-          onMouseLeave={() => setIsHovered2(false)}
-        />
-        </Link>
-        <Link href="mailto:cyrildegraeve@gmail.com" isExternal mx={spacing}>
-          <Box as={FaEnvelope} size="60px" _hover={{ color: "#f55e0a" }} />
-        </Link>
+      <VStack spacing={spacing} alignItems="center" width="100%">
+        <Flex justify="center" width="100%"> {/* 1ère ligne */}
+          <Link href="https://github.com/roissi" isExternal mx={spacing}>
+            <Box as={FaGithub} size="60px" _hover={{ color: "#f55e0a" }} />
+          </Link>
+          <Link href="https://www.linkedin.com/in/cyril-de-graeve/" isExternal mx={spacing}>
+            <Box as={FaLinkedin} size="60px" _hover={{ color: "#f55e0a" }} />
+          </Link>
+          <Link href="https://twitter.com/roissi" isExternal mx={spacing}>
+            <Image
+                src={isHovered2 ? "/X_logo_hover.png" : (colorMode === 'dark' ? "/X_logo_darkmode.png" : "/X_logo_lightmode.png")}
+                alt="X logo"
+                maxWidth={["60px", "65px"]}
+                height="auto"
+                onMouseEnter={() => setIsHovered2(true)}
+                onMouseLeave={() => setIsHovered2(false)}
+            />
+          </Link>
+          <Link href="mailto:cyrildegraeve@gmail.com" isExternal mx={spacing}>
+            <Box as={FaEnvelope} size="60px" _hover={{ color: "#f55e0a" }} />
+          </Link>
+        </Flex>
+
+        <Flex justify="center" width="100%" mt={6}> {/* 2ème ligne */}
+          <Link href="https://www.malt.fr/profile/cyrildegraeve" isExternal mx={spacing}>
+            <Image
+                src={isHovered ? "/Malt_logo_hover.png" : (colorMode === 'dark' ? "/Malt_logo_darkmode.png" : "/Malt_logo_lightmode.png")}
+                alt="Malt logo"
+                maxWidth={["150px", "170px"]}
+                height="auto"
+                onMouseEnter={() => setIsHovered(true)}
+                onMouseLeave={() => setIsHovered(false)}
+            />
+          </Link>
+          <Link href="https://www.codeur.com/-cyrilde26l" isExternal mx={spacing} mt={-1}>
+            <Image
+                src={isHovered3 ? "/Codeur_logo_hover.png" : (colorMode === 'dark' ? "/Codeur_logo_darkmode.png" : "/Codeur_logo_lightmode.png")}
+                alt="Codeur logo"
+                maxWidth={["60px", "60px"]}
+                height="auto"
+                onMouseEnter={() => setIsHovered3(true)}
+                onMouseLeave={() => setIsHovered3(false)}
+            />
+          </Link>
+        </Flex>
+      </VStack>
       </Container>
     </Box>
 
