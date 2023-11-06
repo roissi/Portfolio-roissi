@@ -17,8 +17,8 @@ const ChakraCarousel = ({ projects, isLightMode, shadowColor, maxW }) => {
         {projects.map((_, i) => (
           <Button
             key={i}
-            size={["xs", "xs", "sm", "sm"]}
-            marginX={[0.5, 0.5, 1, 1]}
+            size={["xs", "sm", "sm", "sm"]}
+            marginX={1}
             onClick={() => setActiveIndex(i)}
             backgroundColor={
               activeIndex === i
@@ -28,7 +28,6 @@ const ChakraCarousel = ({ projects, isLightMode, shadowColor, maxW }) => {
                 : "#F9F4DA"
             }
             _hover={{ backgroundColor: "#049dc9" }}
-            marginX={1}
           />
         ))}
       </Box>
