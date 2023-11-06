@@ -1,12 +1,13 @@
 /* src/pages/styles/global.css */
-body, html {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    overflow-x: hidden;
-  }
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
 
-  * {
-    box-sizing: border-box;
-  }
+* {
+  box-sizing: border-box;
+}

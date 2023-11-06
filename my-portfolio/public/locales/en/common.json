@@ -1,156 +1,160 @@
 {
-    "greeting": {
-      "part1": "Hi, I'm ",
-      "name": "Cyril De Graeve",
-      "part2": ", a freelance Fullstack Javascript Developer, and I look forward to working for ",
-      "you": "you",
-      "part3": "."
-    },
+  "greeting": {
+    "part1": "Hi, I'm ",
+    "name": "Cyril De Graeve",
+    "part2": ", a Fullstack Javascript Developer, Problem solver, Freelance & Solopreneur. I look forward to working for ",
+    "you": "you",
+    "part3": "."
+  },
 
-    "welcome": {
-      "portfolio": "WELCOME TO MY PORTFOLIO"
-    },
+  "welcome": {
+    "portfolio": "WELCOME TO MY PORTFOLIO"
+  },
 
-    "menu": {
-      "hardskills": "Hard skills",
-      "works": "Works",
-      "game": "Let's play !",
-      "resume": "Resume",
-      "softskills": "Soft skills",
-      "contact": "Contact"
-    },
+  "menu": {
+    "hardskills": "Hard skills",
+    "works": "Works",
+    "game": "Let's play !",
+    "resume": "Resume",
+    "softskills": "Soft skills",
+    "contact": "Contact"
+  },
 
-    "title": {
-      "hardskills": "HARD SKILLS",
-      "works": "WORKS",
-      "game": "LET'S PLAY !",
-      "softskills": "SOFT SKILLS (& ethics)",
-      "contact": "CONTACT"
-    },
+  "title": {
+    "hardskills": "HARD SKILLS",
+    "works": "WORKS",
+    "game": "LET'S PLAY !",
+    "softskills": "SOFT SKILLS (& ethics)",
+    "contact": "CONTACT"
+  },
 
-    "prez": {
-      "part1": "Once a cybercultural journalist with a lifelong passion for machines and networks, I transitioned into web development after completing an intensive training course in both front and back-end Javascript. This training allowed me to acquire solid technical skills and earn the",
-      "part2": "Professional Title of Web & Mobile Web Developer",
-      "part3": "Now, as a freelance developer, I offer a comprehensive range of web development services that encompass all stages of website and/or web application creation. My practical experience and deep understanding of the incredible Javascript ecosystem enables me to solve complex problems, creating functional solutions with modern, aesthetically pleasing interfaces that are tailored to your needs."
-    },
+  "prez": {
+    "part1": "Once a cybercultural journalist with a lifelong passion for machines and networks, I transitioned into web development after completing an intensive training course in both front and back-end Javascript. This training allowed me to acquire solid technical skills and earn the",
+    "part2": "Professional Title of Web & Mobile Web Developer",
+    "part3": "Now, as a freelance developer, I offer a comprehensive range of web development services that encompass all stages of website and/or web application creation. My practical experience and deep understanding of the incredible Javascript ecosystem enables me to solve complex problems, creating functional solutions with modern, aesthetically pleasing interfaces that are tailored to your needs."
+  },
 
-    "hardskills": {
-      "scrum": "Agile / Scrum",
-      "method": "(methods)"
-    },
+  "hardskills": {
+    "scrum": "Agile / Scrum",
+    "method": "(methods)"
+  },
 
-    "telegraphe": {
-      "role": "Freelance fullstack developer",
-      "description": "Télégraphe is a platform dedicated to discovering the boutiques of the Télégraphe district, located in the 20th arrondissement of Paris. It was designed to help residents and visitors easily find local shops and learn more about what they offer. By registering, members can give their opinion on a store and view its exact location on an interactive map. The application is responsive and adapts to all types of devices (desktops, tablets or smartphones). This project is currently in development. Updates and additional features will be added soon."
-    },
+  "artificiallifecoach": {
+    "role": "Fullstack freelance",
+    "description": "Artificial Life Coach is a desktop and smartphone application that aims to offer its users an artificial life coach to manage their weekly (or daily on smartphone) interactive mobile agenda, based on their current interests and needs. By signing up or logging in, you can enter your interests (1 or more) and your current needs for a duration (of days) that you determine. All this is then transmitted directly to the coach! Then the coach is available to add glitter to your life. What are you going to do this afternoon? Tomorrow morning, you need something but it's not clear... Ask coach ! At the end, you add the coach's suggestion to your diary if it suits you, on the day and at the time that suits you. Of course, you can also use the calendar by entering your own programs and activities. The Front server corresponds with a RESTful API, a PosgreSQL database and OpenAI API (text-davinci-003)."
+  },
 
-    "cynoche": {
-      "role": "Personnal project",
-      "description": "CyNoche is a web app that lists (almost) every movie I've seen in my life. The app is made with React and Chakra UI, and it uses an API to provide data (movies, ratings, directors, release years, posters, and summaries). Features: Viewing a catalog of movies / Star rating system (out of 5) / Sorting by movie names, director names, release years and ratings / Adding and/or updating and/or deleting a film from the database / Search for films by title and/or director / Selection of a film's file (poster + summary) / Summaries in English or French / Dark or light mode / Logging (Winston). You can use my data (about 2000 films) or yours if you fill the database with your own movies."
-    },
+  "telegraphe": {
+    "role": "Freelance fullstack developer",
+    "description": "Télégraphe is a platform dedicated to discovering the shops of the Télégraphe district, located in the 20th arrondissement of Paris. Each store is associated with a category to facilitate the search for specific establishments according to the user's needs. This app was designed to help residents and visitors easily find local shops and learn more about what they offer. By registering, members can give their opinion on a store and view its exact location on an interactive map. The application is responsive and adapts to all types of devices (desktops, tablets or smartphones). This project is currently in development. Additional updates and features will be added soon. The application is developed using the Next.js framework, with Supabase integration for database and user management. Maps are provided by the Google Maps API."
+  },
 
-    "jadopte": {
-      "role": "Product Owner & Dev Back-end",
-      "description": "Responsive design application of a fictional animal shelter that allows future adopters to choose the companion best suited to their desires, values and needs. Through this project, it is a question of dusting off the existing showcase sites, which are rather bland and without major interactions, and to provide shelters with a simplified and secure animal management system. The main idea of J'Adopte un humain is based on a matching system between the profile entered by the user during his connection and the profile of the animals entered by the caregivers (staff)."
-    },
+  "cynoche": {
+    "role": "Personnal project",
+    "description": "CyNoche is a web application that lists (almost) all the movies I've seen in my life. The app is made with React and Chakra UI, and it uses an API to provide data (movies, ratings, directors, release years, posters and summaries). All data is stored in a PostgreSQL database hosted by ElephantSQL (Vercel for the Front and Heroku for the Back). Features: Display of a catalog of films / Star rating system (out of 5) / Sorting by film names, director names, years of release and ratings / Adding and/or updating and/or deleting a film from the database / Search for films by titles and/or directors / Selection of a film profile (poster + summary) / Summaries in English or French / Dark or light mode / Journaling (Winston). You can use my data (over 2000 films) or your own if you fill the database with your own films."
+  },
 
-    "donefficace": {
-      "role": "Dev Front-end & Back-end",
-      "description": "I participated in the internationalization (with the 'i18next' framework) of the website of the Giving What We Can association to create the French version of the new site of Don Efficace, a non-profit NGO intended to finance actions for reduce the suffering of all sentient beings (human and non-human) as effectively as possible, directly or indirectly. I also updated the marketing part of the site using Sanity, an open-source headless CMS written in JavaScript and designed for developers."
-    },
+  "jadopte": {
+    "role": "Product Owner & Dev Back-end",
+    "description": "Responsive design application of a fictitious animal shelter which allows future adopters to choose the companion best suited to their desires, values ​​and needs. Through this project, the aim is to dust off existing showcase sites, which are rather bland and without much interaction, and to provide shelters with a simplified and secure animal management system. The main idea of ​​I adopt a human is based on a matching system between the profile provided by the user during their connection and the profile of the animals provided by the caregivers (staff). The site has 3 levels of rights (roles and permissions): User profile / Staff profile / Admin profile, authenticated (JSON Web Token) and secure (BCrypt). The shelter does not only offer dogs and cats for adoption, NAC (New Pets, such as rabbits, dwarf pigs, iguanas, parrots, ferrets, etc.) are also available. also included in the 'catalogue'.."
+  },
 
-    "portfolio": {
-      "title": "My portfolio",
-      "role": "Personnal project",
-      "description": "The ever-changing portfolio you are currently browsing can be viewed in dark or light mode, on desktop or smartphone, depending on your preference. You can read it in French or in English. I am delighted to present here some of my achievements, and to make you discover new ones soon..."
-    },
+  "donefficace": {
+    "role": "Dev Front-end & Back-end",
+    "description": "I participated in the internationalization (with the 'i18next' framework) of the site of the Giving What We Can association to create the French version of the new site of Don Efficace, a non-profit NGO intended to finance actions for reduce the suffering of all sentient beings (human and non-human) as effectively as possible, directly or indirectly. I also updated the marketing portion of the site using Sanity, an open-source headless CMS written in JavaScript and designed for developers. Finally, I took care of the necessary adaptations so that the site was fully GDPR compliant. A 2-month project carried out as a team and in close collaboration with Swiss-German and English developers."
+  },
 
-    "yourproject": {
-      "title": "Your project ?",
-      "role": "Problem solver / At your service",
-      "description": "This project is still in the realm of imagination, and it might just be the most exceptional one yet. Your vision combined with my expertise could create something truly unique. I'm attuned to your needs and stand ready to collaborate, turning your ideas into reality. Let's discuss and find the best solutions together to fulfill your aspirations."
-    },
+  "portfolio": {
+    "title": "My portfolio",
+    "role": "Problem solver / At your service",
+    "description": "The portfolio that you are currently browsing, in constant evolution, can be viewed in dark or light mode, on desktop or on smartphone, depending on your preferences. You can read it in French or English. I am delighted to present here some of my creations, and to introduce you to new ones soon... I will be delighted to be able to add your project which could well be the most exceptional of all. Your vision combined with my expertise could give birth to something unique. I am attentive to your needs and ready to collaborate to transform your ideas into reality. Let's discuss it and find together the best solution for your aspirations."
+  },
 
-    "game": {
-      "message": "I am also interested in AI, machine & deep learning. My skills in this area are still elementary, but my interest and curiosity are strong. Here is a Morpion that I coded, for fun, with the minimax algorithm, a basic and deterministic AI. If you manage to beat the machine, I offer you my first 2 days of service! ;-)",
-      "win": "You win !",
-      "fail": "You lose",
-      "draw": "Draw",
-      "reset": "Reset game"
-    },
+  "yourproject": {
+    "title": "Your project ?",
+    "role": "Problem solver / At your service",
+    "description": "This project is still in the realm of imagination, and it might just be the most exceptional one yet. Your vision combined with my expertise could create something truly unique. I'm attuned to your needs and stand ready to collaborate, turning your ideas into reality. Let's discuss and find the best solutions together to fulfill your aspirations."
+  },
 
+  "game": {
+    "message": "I am also interested in AI, machine & deep learning. My skills in this area are still elementary, but my interest and curiosity are strong. Here is a Morpion that I coded, for fun, with the minimax algorithm, a basic and deterministic AI. If you manage to beat the machine, I'm offering the first 2 days of service! ;-)",
+    "win": "You win !",
+    "fail": "You lose",
+    "draw": "Draw",
+    "reset": "Reset game"
+  },
 
-    "softskill1": {
-      "skill": "WRITING SKILLS",
-      "description": "Great editorial skills, for editing, writing and rewriting (French and English) / Graduate diploma in journalism.",
-      "example": "For 20 years, I was a journalist (GQ, Paris-Match...). I also founded a cybercultural magazine on the Internet and on newsstands, of which I was the editorial director (40 journalists) and editor-in-chief for more than 15 years."
-    },
+  "softskill1": {
+    "skill": "WRITING SKILLS",
+    "description": "Great editorial skills, for editing, writing and rewriting (French and English) / Graduate diploma in journalism.",
+    "example": "For 20 years, I was a journalist (GQ, Paris-Match...). I also founded a cybercultural magazine on the Internet and on newsstands, of which I was the editorial director (40 journalists) and editor-in-chief for more than 15 years."
+  },
 
-    "softskill2": {
-      "skill": "INDIVIDUAL INITIATIVE & AUTONOMY",
-      "description": "Independent and autonomous worker, I know how to manage projects that require important creative and functional initiatives.",
-      "example": "To best meet the needs defined upstream with my clients, I demonstrate autonomy in the execution of creative and innovative missions, anticipating both the constraints and possibilities of a project with high added value."
-    },
+  "softskill2": {
+    "skill": "INDIVIDUAL INITIATIVE & AUTONOMY",
+    "description": "Independent and autonomous worker, I know how to manage projects that require important creative and functional initiatives.",
+    "example": "To best meet the needs defined upstream with my clients, I demonstrate autonomy in the execution of creative and innovative missions, anticipating both the constraints and possibilities of a project with high added value."
+  },
 
-    "softskill3": {
-      "skill": "TREND MONITORING",
-      "description": "Ability to observe and analyze the latest cultural, societal and technological trends.",
-      "example": "I strive to capture the interests of a young and connected audience by unearthing cutting-edge content and techniques, the result of constant monitoring of trends to be and act in signs of the times."
-    },
+  "softskill3": {
+    "skill": "TREND MONITORING",
+    "description": "Ability to observe and analyze the latest cultural, societal and technological trends.",
+    "example": "I strive to capture the interests of a young and connected audience by unearthing cutting-edge content and techniques, the result of constant monitoring of trends to be and act in signs of the times."
+  },
 
-    "softskill4": {
-      "skill": "SOCIAL NETWORKS & WEB 3",
-      "description": "Excellent command of social networks and good understanding of the dynamics of the Web 3.",
-      "example": "I know how to optimize an online presence, with a strategic use of social networks, while keeping myself actively informed of Web 3 developments, in order to improve the engagement and the reach of the public."
-    },
+  "softskill4": {
+    "skill": "SOCIAL NETWORKS & WEB 3",
+    "description": "Excellent command of social networks and good understanding of the dynamics of the Web 3.",
+    "example": "I know how to optimize an online presence, with a strategic use of social networks, while keeping myself actively informed of Web 3 developments, in order to improve the engagement and the reach of the public."
+  },
 
-    "softskill5": {
-      "skill": "FLEXIBLE & AVAILABLE",
-      "description": "High flexibility and availability, adept at remote work and unconventional work hours.",
-      "example": "I easily manage projects remotely and in different time zones, constantly providing my partners with a follow-up of my achievements and the convincing results."
-    },
+  "softskill5": {
+    "skill": "FLEXIBLE & AVAILABLE",
+    "description": "High flexibility and availability, adept at remote work and unconventional work hours.",
+    "example": "I easily manage projects remotely and in different time zones, constantly providing my partners with a follow-up of my achievements and the convincing results."
+  },
 
-    "softskill6": {
-      "skill": "GEEK CULTURE & VIDEO GAMES",
-      "description": "Cinephile, gamer and cyberpunk fan. Deeply immersed in digital cultures since the early 1990s.",
-      "example": "I knew and used a wide variety of game consoles, open worlds, computers (Apple IIe, Amstrad, Atari ST, Amiga, Mac, PC...). This passion fueled my immersion in digital cultures, allowing me to understand and adapt to emerging trends."
-    },
+  "softskill6": {
+    "skill": "GEEK CULTURE & VIDEO GAMES",
+    "description": "Cinephile, gamer and cyberpunk fan. Deeply immersed in digital cultures since the early 1990s.",
+    "example": "I knew and used a wide variety of game consoles, open worlds, computers (Apple IIe, Amstrad, Atari ST, Amiga, Mac, PC...). This passion fueled my immersion in digital cultures, allowing me to understand and adapt to emerging trends."
+  },
 
-    "softskill7": {
-      "skill": "ANIMALS / MACHINES",
-      "description": "Passionate about technology with a deep love for animals, cherishing both innovation and living things.",
-      "example": "Living with two human companions and a dog, I long for a future filled with advanced technology and diverse pets. As a vegan and antispeciesist human, I respect all forms of life, whether animal, plant or digital."
-    },
+  "softskill7": {
+    "skill": "ANIMALS / MACHINES",
+    "description": "Passionate about technology with a deep love for animals, cherishing both innovation and living things.",
+    "example": "Living with two human companions and a dog, I long for a future filled with advanced technology and diverse pets. As a vegan and antispeciesist human, I respect all forms of life, whether animal, plant or digital."
+  },
 
-    "softskill8": {
-      "skill": "STRENGHTS & WEAKNESSES",
-      "description": "Dedicated, meticulous, punctual, curious, attentive, open-minded and mature. Humble, I welcome my (human) imperfections with serenity.",
-      "example": "I demonstrate integrity and reliability, consistently demonstrated in professional circles. Not without gap, but constantly striving to learn and improve my skills."
-    },
+  "softskill8": {
+    "skill": "STRENGHTS & WEAKNESSES",
+    "description": "Dedicated, meticulous, punctual, curious, attentive, open-minded and mature. Humble, I welcome my (human) imperfections with serenity.",
+    "example": "I demonstrate integrity and reliability, consistently demonstrated in professional circles. Not without gap, but constantly striving to learn and improve my skills."
+  },
 
-    "contact": {
-      "leavemessage": "Ready to build something amazing together? Please leave a message so I can understand your website and mobile application creation, redesign and optimization needs, both front-end and back-end. I also invite you to visit my spaces on social networks, as well as my profile on market platforms like Malt or Codeur, where I offer my services.",
-      "formname": "Name",
-      "formorganisation": "Organisation",
-      "formemail": "Email address",
-      "formmessage": "Message",
-      "formsubmit": "Submit"
-    },
+  "contact": {
+    "leavemessage": "Ready to build something amazing together? Please leave a message so I can understand your website and mobile application creation, redesign and optimization needs, both front-end and back-end. I also invite you to visit my spaces on social networks, as well as my profile on market platforms like Malt or Codeur, where I offer my services.",
+    "formname": "Name",
+    "formorganisation": "Organisation",
+    "formemail": "Email address",
+    "formmessage": "Message",
+    "formsubmit": "Submit"
+  },
 
-    "resume": {
-      "cv": "Download CV"
-    },
+  "resume": {
+    "cv": "Download CV"
+  },
 
-    "mobilemenu": {
-      "hardskills": "Hard skills",
-      "works": "Works",
-      "game": "Let's play !",
-      "resume": "Resume",
-      "softskills": "Soft skills",
-      "contact": "Contact",
-      "dark": "Select dark mode",
-      "light": "Select light mode",
-      "switchfr": "Select to French",
-      "switchen": "Select to English"
-    }
+  "mobilemenu": {
+    "hardskills": "Hard skills",
+    "works": "Works",
+    "game": "Let's play !",
+    "resume": "Resume",
+    "softskills": "Soft skills",
+    "contact": "Contact",
+    "dark": "Select dark mode",
+    "light": "Select light mode",
+    "switchfr": "Select to French",
+    "switchen": "Select to English"
+  }
 }

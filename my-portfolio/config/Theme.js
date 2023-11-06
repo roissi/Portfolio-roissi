@@ -1,33 +1,34 @@
-import { extendTheme } from "@chakra-ui/react"
+import { extendTheme } from "@chakra-ui/react";
 
 const config = {
   initialColorMode: "dark",
   useSystemColorMode: false,
-}
+};
 
 const theme = extendTheme({
   config,
   breakpoints: {
+    base: "0em", // <480px
     sm: "30em", // 480px
     md: "48em", // 768px
     lg: "62em", // 992px
     xl: "80em", // 1280px
     "2xl": "88em", // 1400px
   },
-  
+
   colors: {
     light: {
       primary: "#0e1a29",
-      background: "#f9f4da"
+      background: "#f9f4da",
     },
     dark: {
       primary: "#F9F4DA",
-      background: "#0e1a29"
-    }
+      background: "#0e1a29",
+    },
   },
   fonts: {
     heading: "Paytone One, sans-serif",
-    body: "Outfit, sans-serif"
+    body: "Outfit, sans-serif",
   },
   components: {
     Input: {
@@ -35,13 +36,13 @@ const theme = extendTheme({
         focusBorder: {
           field: {
             _focus: {
-              borderColor: '#f55e0a',
+              borderColor: "#f55e0a",
             },
           },
         },
       },
     },
   },
-})
+});
 
 export default theme;
