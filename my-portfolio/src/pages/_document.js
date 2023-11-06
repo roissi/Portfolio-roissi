@@ -17,7 +17,7 @@ class MyDocument extends Document {
             property="og:image"
             content="https://portfolio-roissi.vercel.app/portfolio_roissi.png"
           />
-          <meta property="og:title" content="Mon Portfolio - Cyril De Graeve" />
+          <meta property="og:title" content="My Portfolio - Cyril De Graeve" />
           <meta
             property="og:description"
             content="Hi, I'm Cyril De Graeve, a freelance Fullstack Javascript Developer, and I look forward to working for you."
@@ -25,18 +25,18 @@ class MyDocument extends Document {
           <meta property="og:type" content="website" />
           <meta
             property="og:url"
-            content="https://portfolio-roissi.vercel.app/"
+            content="https://portfolio-roissi.vercel.app"
           />
 
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:site" content="@roissi" />
           <meta
             name="twitter:title"
-            content="Mon Portfolio - Cyril De Graeve"
+            content="My Portfolio - Cyril De Graeve"
           />
           <meta
             name="twitter:description"
-            content="Hi, I'm Cyril De Graeve, a freelance Fullstack Javascript Developer, and I look forward to working for you."
+            content="Hi, I'm Cyril De Graeve, a Fullstack Javascript Developer, Problem solver, Freelance & Solopreneur. I look forward to working for you."
           />
           <meta
             name="twitter:image"
