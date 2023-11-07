@@ -6,10 +6,9 @@ import {
   Wrap,
   Link,
   Text,
-  HStack,
   useBreakpointValue,
 } from "@chakra-ui/react";
-import { FaHtml5, FaCss3, FaJs, FaReact } from "react-icons/fa";
+import { FaJs, FaReact } from "react-icons/fa";
 import { DiScrum } from "react-icons/di";
 import { IoLogoNodejs } from "react-icons/io";
 import {

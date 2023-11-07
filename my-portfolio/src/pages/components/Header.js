@@ -15,7 +15,7 @@ import {
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
 import { useRouter } from "next/router";
 import Link from "next/link";
-import MobileNavigation from "./mobile/MobileNavigation";
+import MobileNavigation from "./mobile/MobileNavigation.js";
 import { useTranslation } from "next-i18next";
 
 const Header = ({ showIntro = true }) => {

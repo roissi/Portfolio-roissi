@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback } from "react";
-import Square from "./Square";
+import Square from "./Square.js";
 import {
   Box,
   Button,

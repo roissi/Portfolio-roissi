@@ -1,11 +1,11 @@
 import { VStack } from "@chakra-ui/react";
 import Head from "next/head";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import HardSkills from "./components/Hard_skills";
-import MyProjects from "./components/My_projects";
-import Game from "./components/Game";
-import SoftSkills from "./components/Soft_skills";
-import Contact from "./components/Contact";
+import HardSkills from "./components/Hard_skills.js";
+import MyProjects from "./components/My_projects.js";
+import Game from "./components/Game.js";
+import SoftSkills from "./components/Soft_skills.js";
+import Contact from "./components/Contact.js";
 
 const HomePage = () => (
   <>
@@ -34,7 +34,7 @@ const HomePage = () => (
   </>
 );
 
-export async function getStaticProps({ locale }) {
+export async function getServerSideProps({ locale }) {
   return {
     props: {
       ...(await serverSideTranslations(locale, ["common"])),

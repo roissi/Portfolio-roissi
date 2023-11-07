@@ -1,10 +1,9 @@
 import React from "react";
 import { Box, Button } from "@chakra-ui/react";
 import Carousel from "framer-motion-carousel";
-import ProjectCard from "./ProjectCard";
+import ProjectCard from "./ProjectCard.js";
 
 const ChakraCarousel = ({ projects, isLightMode, shadowColor, maxW }) => {
-  console.log("isLightMode:", isLightMode);
 
   const customDots = ({ activeIndex, setActiveIndex }) => {
     return (
@@ -14,7 +13,7 @@ const ChakraCarousel = ({ projects, isLightMode, shadowColor, maxW }) => {
         left="50%"
         transform="translateX(-50%)"
       >
-        {projects.map((_, i) => (
+        {projects && projects.map((_, i) => (
           <Button
             key={i}
             size={["xs", "sm", "sm", "sm"]}
@@ -47,7 +46,7 @@ const ChakraCarousel = ({ projects, isLightMode, shadowColor, maxW }) => {
         renderArrowLeft={() => null}
         renderArrowRight={() => null}
       >
-        {projects.map((project, i) => (
+        {projects && projects.map((project, i) => (
           <Box key={i}>
             <ProjectCard
               project={project}

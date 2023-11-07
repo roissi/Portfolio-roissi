@@ -1,6 +1,6 @@
 import { ChakraProvider, extendTheme, Box } from "@chakra-ui/react";
-import theme from "../../config/Theme";
-import Layout from "./components/Layout";
+import theme from "../../config/Theme.js";
+import Layout from "./components/Layout.js";
 import "./styles/global.css";
 import { useEffect } from "react";
 import Router from "next/router";

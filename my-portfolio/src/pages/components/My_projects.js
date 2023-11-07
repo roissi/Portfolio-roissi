@@ -6,8 +6,8 @@ import {
   useColorMode,
 } from "@chakra-ui/react";
 import { useTranslation } from "next-i18next";
-import ProjectCard from "./ProjectCard";
-import ChakraCarousel from "./ChakraCarousel";
+import ProjectCard from "./ProjectCard.js";
+import ChakraCarousel from "./ChakraCarousel.js";
 
 const MyProjects = () => {
   const { t } = useTranslation("common");
@@ -191,9 +191,9 @@ const MyProjects = () => {
           index={activeProject}
           onChangeIndex={(index) => setActiveProject(index)}
         >
-          {projects.map((project) => (
-            <ProjectCard key={project.id} {...project} />
-          ))}
+            {projects.map((project) => project && (
+              <ProjectCard key={project.id} {...project} />
+            ))}
         </ChakraCarousel>
       </Box>
     </Box>

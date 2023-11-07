@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Box, Flex, Heading } from "@chakra-ui/react";
-import SkillCard from "./SkillCard";
+import SkillCard from "./SkillCard.js";
 import { useTranslation } from "next-i18next";
 import { useInView } from "react-intersection-observer";
 

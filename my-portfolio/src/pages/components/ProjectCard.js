@@ -87,6 +87,11 @@ const ProjectCard = ({ project }) => {
     "2xl": "auto 0.5fr auto",
   });
 
+  if (!project || !project.title) {
+    // Gérer l'absence de données ou retourner null ou un indicateur de chargement
+    return null;
+  }
+  
   const title = project.title || "Projet sans titre";
   const role = project.role || "Rôle non défini";
   const description = project.description || "Description non disponible";
