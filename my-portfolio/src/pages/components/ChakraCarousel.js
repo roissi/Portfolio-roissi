@@ -17,7 +17,7 @@ const ChakraCarousel = ({ projects, isLightMode, shadowColor, maxW }) => {
           <Button
             key={i}
             size={["xs", "sm", "sm", "sm"]}
-            marginX={1}
+            marginX={{ base: "0.5", sm: "1", md: "1", lg: "1" }}
             onClick={() => setActiveIndex(i)}
             backgroundColor={
               activeIndex === i
