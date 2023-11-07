@@ -1,20 +1,20 @@
 import { ChakraProvider, extendTheme, Box } from "@chakra-ui/react";
-import theme from '../../config/Theme';
-import Layout from './components/Layout';
-import './styles/global.css';
+import theme from "../../config/Theme.js";
+import Layout from "./components/Layout.js";
+import "./styles/global.css";
 import { useEffect } from "react";
 import Router from "next/router";
-import { appWithTranslation, useTranslation } from 'next-i18next';
+import { appWithTranslation, useTranslation } from "next-i18next";
 
 function MyApp({ Component, pageProps }) {
   const config = {
     useSystemColorMode: false,
-  }
+  };
 
   const customTheme = extendTheme({ config, ...theme });
 
   useEffect(() => {
-    const handleRouteChange = url => {
+    const handleRouteChange = (url) => {
       window.scrollTo(0, 0);
     };
 
@@ -28,16 +28,24 @@ function MyApp({ Component, pageProps }) {
   const { i18n } = useTranslation();
 
   const changeLanguage = () => {
-    i18n.changeLanguage(i18n.language === 'en' ? 'fr' : 'en');
+    i18n.changeLanguage(i18n.language === "en" ? "fr" : "en");
   };
 
-  const isFrench = i18n.language === 'fr';
+  const isFrench = i18n.language === "fr";
 
   return (
     <ChakraProvider theme={customTheme}>
       <Box minH="100vh">
-        <Layout showIntro={Component.showIntro} isFrench={isFrench} changeLanguage={changeLanguage}>
-          <Component {...pageProps} isFrench={isFrench} changeLanguage={changeLanguage} />
+        <Layout
+          showIntro={Component.showIntro}
+          isFrench={isFrench}
+          changeLanguage={changeLanguage}
+        >
+          <Component
+            {...pageProps}
+            isFrench={isFrench}
+            changeLanguage={changeLanguage}
+          />
         </Layout>
       </Box>
     </ChakraProvider>
