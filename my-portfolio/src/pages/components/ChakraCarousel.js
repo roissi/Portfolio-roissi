@@ -6,7 +6,7 @@ import ProjectCard from "./ProjectCard.js";
 const ChakraCarousel = ({ projects, isLightMode, shadowColor, maxW }) => {
 
   const customDots = useMemo(() => {
-    return ({ activeIndex, setActiveIndex }) => (
+    const Dots = ({ activeIndex, setActiveIndex }) => (
       <Box
         position="absolute"
         top="20px"
@@ -31,6 +31,8 @@ const ChakraCarousel = ({ projects, isLightMode, shadowColor, maxW }) => {
         ))}
       </Box>
     );
+    Dots.displayName = 'CustomDots';
+    return Dots;
   }, [projects, isLightMode]);
 
   return (
@@ -60,7 +62,5 @@ const ChakraCarousel = ({ projects, isLightMode, shadowColor, maxW }) => {
     </Box>
   );
 };
-
-ChakraCarousel.displayName = 'ChakraCarousel';
 
 export default ChakraCarousel;
