@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useMemo } from "react";
 import {
   Box,
   Heading,
@@ -21,7 +21,7 @@ const MyProjects = () => {
   const { colorMode } = useColorMode();
   const isLightMode = colorMode === "light";
 
-  const projects = [
+  const projects = useMemo(() => [
     {
       id: "artificiallifecoach",
       title: "Artificial Life Coach",
@@ -165,7 +165,7 @@ const MyProjects = () => {
     //   techStack: [""],
     //   githubUrl: "https://xxx",
     // },
-  ];
+  ], [t]);
 
   return (
     <Box py={4} textAlign="center" letterSpacing="wide" pb="14">
