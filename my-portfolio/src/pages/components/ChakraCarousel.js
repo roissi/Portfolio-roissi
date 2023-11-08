@@ -61,4 +61,6 @@ const ChakraCarousel = ({ projects, isLightMode, shadowColor, maxW }) => {
   );
 };
 
+ChakraCarousel.displayName = 'ChakraCarousel';
+
 export default ChakraCarousel;
