@@ -1,12 +1,12 @@
-import React from "react";
+import React, { useMemo } from "react";
 import { Box, Button } from "@chakra-ui/react";
 import Carousel from "framer-motion-carousel";
 import ProjectCard from "./ProjectCard.js";
 
 const ChakraCarousel = ({ projects, isLightMode, shadowColor, maxW }) => {
 
-  const customDots = ({ activeIndex, setActiveIndex }) => {
-    return (
+  const customDots = useMemo(() => {
+    return ({ activeIndex, setActiveIndex }) => (
       <Box
         position="absolute"
         top="20px"
@@ -17,7 +17,7 @@ const ChakraCarousel = ({ projects, isLightMode, shadowColor, maxW }) => {
           <Button
             key={i}
             size={["xs", "sm", "sm", "sm"]}
-            marginX={{ base: "0.5", sm: "1", md: "1", lg: "1" }}
+            mx={{ base: "0.5", sm: "1", md: "1", lg: "1" }}
             onClick={() => setActiveIndex(i)}
             backgroundColor={
               activeIndex === i
@@ -31,7 +31,7 @@ const ChakraCarousel = ({ projects, isLightMode, shadowColor, maxW }) => {
         ))}
       </Box>
     );
-  };
+  }, [projects, isLightMode]);
 
   return (
     <Box
