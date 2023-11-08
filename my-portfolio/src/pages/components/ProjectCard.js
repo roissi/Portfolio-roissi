@@ -16,6 +16,18 @@ import {
 import { LinkIcon } from "@chakra-ui/icons";
 import { SiGithub } from "react-icons/si";
 
+const ErrorMessage = ({ message }) => (
+  <Box
+    p={10}
+    borderWidth="1px"
+    borderRadius="lg"
+    boxShadow="lg"
+    textAlign="center"
+  >
+    <Text fontSize="xl">{message}</Text>
+  </Box>
+);
+
 const ProjectCard = ({ project }) => {
   const { t } = useTranslation("common");
   const breakpoint = useBreakpointValue({ base: "base", xl: "xl" });
@@ -89,7 +101,9 @@ const ProjectCard = ({ project }) => {
 
   if (!project || !project.title) {
     // Gérer l'absence de données ou retourner null ou un indicateur de chargement
-    return null;
+    return (
+      <ErrorMessage message="Project information unavailable." />
+    );
   }
   
   const title = project.title || "Projet sans titre";
@@ -280,4 +294,4 @@ const ProjectCard = ({ project }) => {
   );
 };
 
-export default ProjectCard;
+export default React.memo(ProjectCard);
