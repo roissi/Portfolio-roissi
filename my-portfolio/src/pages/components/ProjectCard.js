@@ -13,6 +13,7 @@ import {
   useColorModeValue,
   useBreakpointValue,
 } from "@chakra-ui/react";
+import { motion } from "framer-motion";
 import { LinkIcon } from "@chakra-ui/icons";
 import { SiGithub } from "react-icons/si";
 
@@ -27,6 +28,8 @@ const ErrorMessage = ({ message }) => (
     <Text fontSize="xl">{message}</Text>
   </Box>
 );
+
+const MotionImage = motion(Image);
 
 const ProjectCard = ({ project }) => {
   const { t } = useTranslation("common");
@@ -101,11 +104,9 @@ const ProjectCard = ({ project }) => {
 
   if (!project || !project.title) {
     // Gérer l'absence de données ou retourner null ou un indicateur de chargement
-    return (
-      <ErrorMessage message="Project information unavailable." />
-    );
+    return <ErrorMessage message="Project information unavailable." />;
   }
-  
+
   const title = project.title || "Projet sans titre";
   const role = project.role || "Rôle non défini";
   const description = project.description || "Description non disponible";
@@ -130,6 +131,18 @@ const ProjectCard = ({ project }) => {
       : project.imgSrc3;
   const githubUrl = project.githubUrl;
   const liveUrl = project.liveUrl || "#";
+
+  const imageVariants = {
+    hover: {
+      scale: 1.25,
+    },
+    tap: {
+      rotate: 3,
+      transition: {
+        duration: 0.1,
+      },
+    },
+  };
 
   return (
     <Grid
@@ -160,7 +173,11 @@ const ProjectCard = ({ project }) => {
         {/* Colonne gauche: Images */}
         <VStack align="center" spacing={8} w={descriptionWidth}>
           {imgSrc && (
-            <Image
+            <MotionImage
+              initial="rest"
+              whileHover="hover"
+              whileTap="tap"
+              variants={imageVariants}
               borderRadius="md"
               src={imgSrc}
               alt={title}
@@ -168,11 +185,16 @@ const ProjectCard = ({ project }) => {
               maxW={maxW}
               style={{
                 boxShadow: `5px 5px 0px ${shadowColor}`,
+                transition: "all 0.3s ease-in-out",
               }}
             />
           )}
           {imgSrc2 && (
-            <Image
+            <MotionImage
+              initial="rest"
+              whileHover="hover"
+              whileTap="tap"
+              variants={imageVariants}
               borderRadius="md"
               src={imgSrc2}
               alt={title}
@@ -180,11 +202,16 @@ const ProjectCard = ({ project }) => {
               maxW={maxW}
               style={{
                 boxShadow: `5px 5px 0px ${shadowColor}`,
+                transition: "all 0.3s ease-in-out",
               }}
             />
           )}
           {imgSrc3 && (
-            <Image
+            <MotionImage
+              initial="rest"
+              whileHover="hover"
+              whileTap="tap"
+              variants={imageVariants}
               borderRadius="md"
               src={imgSrc3}
               alt={title}
@@ -193,6 +220,7 @@ const ProjectCard = ({ project }) => {
               display={imgSrc3Display}
               style={{
                 boxShadow: `5px 5px 0px ${shadowColor}`,
+                transition: "all 0.3s ease-in-out",
               }}
               mb={mbImage}
             />
