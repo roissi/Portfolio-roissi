@@ -15,17 +15,17 @@ class MyDocument extends Document {
           {/* Balise meta pour l'image Open Graph */}
           <meta
             property="og:image"
-            content="https://portfolio-roissi.vercel.app/portfolio_roissi.png"
+            content="https://www.cyrildegraeve.dev/portfolio_roissi.png"
           />
           <meta property="og:title" content="Mon Portfolio - Cyril De Graeve" />
           <meta
             property="og:description"
-            content="Hi, I'm Cyril De Graeve, a freelance Fullstack Javascript Developer, and I look forward to working for you."
+            content="Hi, I'm Cyril De Graeve, a Fullstack Javascript Developer, Problem solver, Freelance & Solopreneur. I look forward to working for you."
           />
           <meta property="og:type" content="website" />
           <meta
             property="og:url"
-            content="https://portfolio-roissi.vercel.app/"
+            content="https://www.cyrildegraeve.dev/"
           />
 
           <meta name="twitter:card" content="summary_large_image" />
@@ -36,11 +36,11 @@ class MyDocument extends Document {
           />
           <meta
             name="twitter:description"
-            content="Hi, I'm Cyril De Graeve, a freelance Fullstack Javascript Developer, and I look forward to working for you."
+            content="Hi, I'm Cyril De Graeve, a Fullstack Javascript Developer, Problem solver, Freelance & Solopreneur. I look forward to working for you."
           />
           <meta
             name="twitter:image"
-            content="https://portfolio-roissi.vercel.app/portfolio_roissi.png"
+            content="https://www.cyrildegraeve.dev/portfolio_roissi.png"
           />
         </Head>
         <body>

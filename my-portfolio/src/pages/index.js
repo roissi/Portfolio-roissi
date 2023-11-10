@@ -13,11 +13,11 @@ const HomePage = () => (
       <title>Mon Portfolio</title>
       <meta
         name="description"
-        content="Hi, I'm Cyril De Graeve, a freelance Fullstack Javascript Developer, and I look forward to working for you."
+        content="Hi, I'm Cyril De Graeve, a Fullstack Javascript Developer, Problem solver, Freelance & Solopreneur. I look forward to working for you."
       />
       <meta
         name="keywords"
-        content="Cyril de Graeve, roissi, Portfolio, Developer, Javascript, Fullstack"
+        content="Cyril De Graeve, roissi, Portfolio, Freelance, Developer, Javascript, Fullstack, React, Node.js"
       />
       <meta name="author" content="Cyril De Graeve" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
