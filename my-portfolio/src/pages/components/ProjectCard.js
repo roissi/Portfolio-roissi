@@ -101,6 +101,7 @@ const ProjectCard = ({ project }) => {
     xl: "auto 0.5fr auto",
     "2xl": "auto 0.5fr auto",
   });
+  const bgColor = useColorModeValue('#e9e7cc', '#182739');
 
   if (!project || !project.title) {
     // Gérer l'absence de données ou retourner null ou un indicateur de chargement
@@ -146,10 +147,12 @@ const ProjectCard = ({ project }) => {
 
   return (
     <Grid
+      backgroundColor={bgColor}
       minH={minH}
       templateRows={gridTemplateRows}
       gap={1}
       p={2.5}
+      borderColor={bgColor}
       borderRadius="md"
       borderWidth="4px"
       _hover={{ borderColor: "#049dc9" }}
