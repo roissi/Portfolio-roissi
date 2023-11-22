@@ -71,9 +71,9 @@ const SkillCard = ({
         height="350px"
         bg={bgColor}
       >
-        <Box p="3">
+        <Box p="2">
           <Box
-            mt="6"
+            mt="5"
             fontSize="lg"
             fontWeight="semibold"
             as="h4"
@@ -84,7 +84,7 @@ const SkillCard = ({
             {description}
           </Box>
 
-          <Box mt="2" letterSpacing="wide" color={textColor}>
+          <Box mt="1" letterSpacing="wide" color={textColor}>
             {example}
           </Box>
         </Box>
