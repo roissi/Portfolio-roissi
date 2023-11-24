@@ -65,10 +65,14 @@ const HardSkills = () => {
           alignItems={alignItemsValue}
         >
           <Box width={{ base: "100%", md: "45%" }} mb={textMarginBottom}>
+            <Text fontSize="4xl" fontWeight="bold" lineHeight={textLineHeight}>
+              {t("prez.part1Q")}
+              <br />
+              </Text>
             <Text fontSize="xl" lineHeight={textLineHeight}>
               {t("prez.part1")}
-              <br />
-              <Text
+              {' '}
+            <Text
                 as="span"
                 fontSize="1.5rem"
                 fontWeight="bold"
@@ -83,7 +87,16 @@ const HardSkills = () => {
                   {t("prez.part2")}
                 </Link>
               </Text>
-              .<br />
+              {','}
+              <Text fontSize="xl" lineHeight={textLineHeight}>
+              {t("prez.part2S")}
+              </Text>
+              </Text>
+              <Text fontSize="4xl" fontWeight="bold" lineHeight={textLineHeight}>
+              {t("prez.part3Q")}
+              <br />
+              </Text>
+              <Text fontSize="xl" lineHeight={textLineHeight}>
               {t("prez.part3")}
             </Text>
           </Box>

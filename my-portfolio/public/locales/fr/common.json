@@ -29,8 +29,11 @@
   },
 
   "prez": {
-    "part1": "Journaliste cyberculturel dans une vie antérieure, passionné par les machines et les réseaux depuis toujours, je me suis reconverti dans le développement web après avoir suivi une formation intensive en Javascript (Front & Back-end), qui m'a permis d'acquérir des compétences techniques solides et d'obtenir le",
+    "part1Q": "> Qui je suis ?",
+    "part1": "Journaliste cyberculturel dans une vie antérieure, je me suis reconverti dans le développement web après avoir suivi une formation intensive en Javascript (Front & Back-end), qui m'a permis d'acquérir des compétences techniques solides, d'obtenir le",
     "part2": "Titre Professionnel de Développeur Web et Web Mobile",
+    "part2S": "et d'exercer une activité de Développeur freelance riche de projets et de nouveaux contacts.",
+    "part3Q": "> Pourquoi moi ?",
     "part3": "En tant que développeur freelance, je propose une gamme de services de développement web qui couvrent toutes les étapes du processus de création d'un site et/ou d'une application web. Grâce à ma pratique et mes connaissances de l'incroyable écosystème Javascript, je suis en mesure de résoudre des problèmes complexes en créant des solutions fonctionnelles et des interfaces esthétiques modernes adaptées à vos besoins."
   },
 
