@@ -237,14 +237,16 @@ const ProjectCard = ({ project }) => {
           w={descriptionWidth}
           flex={descriptionFlex}
         >
-          <Text
-            letterSpacing="wide"
-            wordwrap="break-word"
-            paddingLeft={descriPaddingLeft}
-            paddingRight={descriPaddingRight}
-          >
-            {description}
-          </Text>
+           <Box
+    dangerouslySetInnerHTML={{ __html: description }}
+    style={{
+      letterSpacing: "wide",
+      wordWrap: "break-word"
+    }}
+    paddingLeft={descriPaddingLeft}
+    paddingRight={descriPaddingRight}
+    textAlign="left" // ou tout autre style Chakra UI que vous souhaitez appliquer
+  />
           {breakpoint === "xl" && (
             <>
               {/* Rôle, TechStack, et Liens */}
