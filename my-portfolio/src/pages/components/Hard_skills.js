@@ -68,35 +68,15 @@ const HardSkills = () => {
             <Text fontSize="4xl" fontWeight="bold" lineHeight={textLineHeight}>
               {t("prez.part1Q")}
               <br />
-              </Text>
+            </Text>
             <Text fontSize="xl" lineHeight={textLineHeight}>
-              {t("prez.part1")}
-              {' '}
-            <Text
-                as="span"
-                fontSize="1.5rem"
-                fontWeight="bold"
-                lineHeight="1.2"
-              >
-                <Link
-                  href="https://www.francecompetences.fr/recherche/rncp/31114/"
-                  target="_blank"
-                  rel="noreferrer"
-                  _hover={{ textDecoration: "none", color: "#fcba28" }}
-                >
-                  {t("prez.part2")}
-                </Link>
-              </Text>
-              {','}
-              <Text fontSize="xl" lineHeight={textLineHeight}>
-              {t("prez.part2S")}
-              </Text>
-              </Text>
-              <Text fontSize="4xl" fontWeight="bold" lineHeight={textLineHeight}>
+              {t("prez.part1")}{" "}
+            </Text>
+            <Text fontSize="4xl" fontWeight="bold" lineHeight={textLineHeight}>
               {t("prez.part3Q")}
               <br />
-              </Text>
-              <Text fontSize="xl" lineHeight={textLineHeight}>
+            </Text>
+            <Text fontSize="xl" lineHeight={textLineHeight}>
               {t("prez.part3")}
             </Text>
           </Box>

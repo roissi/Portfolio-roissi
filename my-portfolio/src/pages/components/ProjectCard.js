@@ -101,7 +101,7 @@ const ProjectCard = ({ project }) => {
     xl: "auto 0.5fr auto",
     "2xl": "auto 0.5fr auto",
   });
-  const bgColor = useColorModeValue('#e9e7cc', '#182739');
+  const bgColor = useColorModeValue("#e9e7cc", "#182739");
 
   if (!project || !project.title) {
     // Gérer l'absence de données ou retourner null ou un indicateur de chargement
@@ -237,16 +237,16 @@ const ProjectCard = ({ project }) => {
           w={descriptionWidth}
           flex={descriptionFlex}
         >
-           <Box
-    dangerouslySetInnerHTML={{ __html: description }}
-    style={{
-      letterSpacing: "wide",
-      wordWrap: "break-word"
-    }}
-    paddingLeft={descriPaddingLeft}
-    paddingRight={descriPaddingRight}
-    textAlign="left" // ou tout autre style Chakra UI que vous souhaitez appliquer
-  />
+          <Box
+            dangerouslySetInnerHTML={{ __html: description }}
+            style={{
+              letterSpacing: "wide",
+              wordWrap: "break-word",
+            }}
+            paddingLeft={descriPaddingLeft}
+            paddingRight={descriPaddingRight}
+            textAlign="left" // ou tout autre style Chakra UI que vous souhaitez appliquer
+          />
           {breakpoint === "xl" && (
             <>
               {/* Rôle, TechStack, et Liens */}

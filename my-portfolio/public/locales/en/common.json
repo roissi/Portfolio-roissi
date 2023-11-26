@@ -25,16 +25,16 @@
     "works": "WORKS",
     "game": "LET'S PLAY !",
     "softskills": "SOFT SKILLS (& ethics)",
-    "contact": "CONTACT"
+    "contact": "CONTACT",
+    "testimonials": "Testimonials",
+    "introduction": "Some feedback from customers and reviewers satisfied with my services."
   },
 
   "prez": {
-    "part1Q": "> Who I am?",
-    "part1": "Once a cybercultural journalist with a lifelong passion for machines and networks, I transitioned into web development after completing an intensive training course in both front and back-end Javascript. This training allowed me to acquire solid technical skills, earn the",
-    "part2": "Professional Title of Web & Mobile Web Developer",
-    "part2S": "and to exercise an activity as a freelance Developer rich in projects and new contacts.",
-    "part3Q": "> Why me?",
-    "part3": "Now, as a freelance developer, I offer a comprehensive range of web development services that encompass all stages of website and/or web application creation. My practical experience and deep understanding of the Javascript ecosystem (ES6+) enables me to solve complex problems, creating functional solutions with modern, aesthetically pleasing interfaces that are tailored to your needs."
+    "part1Q": "Who I am?",
+    "part1": "Cybercultural journalist in a previous life, always passionate about machines and networks, I now work as a freelance developer full of projects and new contacts.",
+    "part3Q": "Why me?",
+    "part3": "You have a problem? I have the solution! As a freelance developer, I offer a comprehensive range of web development services that encompass all stages of website and/or web application creation. My practical experience and deep understanding of the Javascript ecosystem (ES6+) enables me to solve complex problems, creating functional solutions with modern, aesthetically pleasing interfaces that are tailored to your needs."
   },
 
   "hardskills": {
@@ -64,19 +64,37 @@
 
   "donefficace": {
     "role": "Dev Front-end & Back-end",
-    "description": "I participated in the internationalization (with the 'i18next' framework) of the site of the Giving What We Can association to create the French version of the new site of Don Efficace, a non-profit NGO intended to finance actions for reduce the suffering of all sentient beings (human and non-human) as effectively as possible, directly or indirectly. I also updated the marketing portion of the site using Sanity, an open-source headless CMS written in JavaScript and designed for developers. Finally, I took care of the necessary adaptations so that the site was fully GDPR compliant. A 2-month project carried out as a team and in close collaboration with Swiss-German and English developers."
+    "description": "I participated in the internationalization (with the 'i18next' framework) of the site of the Giving What We Can association to create the French version of the new site of Don Efficace, a non-profit NGO intended to finance actions for reduce the suffering of all sentient beings (human and non-human) as effectively as possible, directly or indirectly.<br><br>I also updated the marketing portion of the site using Sanity, an open-source headless CMS written in JavaScript and designed for developers<br><br>Finally, I took care of the necessary adaptations so that the site was fully GDPR compliant. A 2-month project carried out as a team and in close collaboration with Swiss-German and English developers."
   },
 
   "portfolio": {
     "title": "My portfolio",
     "role": "Problem solver / At your service",
-    "description": "The portfolio that you are currently browsing, in constant evolution, can be viewed in dark or light mode, on desktop or on smartphone, depending on your preferences. You can read it in French or English. I am delighted to present here some of my creations, and to introduce you to new ones soon... I will be very happy to be able to add your project which could well be the most exceptional of all. Your vision combined with my expertise could give birth to something unique. I am attentive to your needs and ready to collaborate to transform your ideas into reality. Let's discuss it and find together the best solution for your aspirations."
+    "description": "The portfolio that you are currently browsing, in constant evolution, can be viewed in dark or light mode, on desktop or on smartphone, depending on your preferences. You can read it in French or English.<br><br>I am delighted to present here some of my creations, and to introduce you to new ones soon... I will be very happy to be able to add your project which could well be the most exceptional of all. Your vision combined with my expertise could give birth to something unique. I am attentive to your needs and ready to collaborate to transform your ideas into reality.<br><br>Let's discuss it and find together the best solution for your aspirations."
   },
 
   "yourproject": {
     "title": "Your project ?",
     "role": "Problem solver / At your service",
     "description": "This project is still in the realm of imagination, and it might just be the most exceptional one yet. Your vision combined with my expertise could create something truly unique. I'm attuned to your needs and stand ready to collaborate, turning your ideas into reality. Let's discuss and find the best solutions together to fulfill your aspirations."
+  },
+
+  "testimonial1": {
+    "name": "Alejandrina Cristia",
+    "role": "President of the Don Efficace endowment fund",
+    "message": "Cyril, who was very open to feedback, well organized and autonomous, is a pleasant person to work with. We highly recommend him and will work with him again in the future."
+  },
+
+  "testimonial2": {
+    "name": "Karine",
+    "role": "Head of La Meute heureuse association",
+    "message": "What impressed me the most was Cyril's ability to understand my needs: his attention to detail, his responsiveness and his expertise make him a talented and available professional."
+  },
+
+  "testimonial3": {
+    "name": "The jury",
+    "role": "Professional title Web & Mobile Web Developer",
+    "message": "Congrats Cyril on obtaining your professional title! You have shown good maturity as a developer and you have the soft skills necessary to succeed as a freelancer."
   },
 
   "game": {
