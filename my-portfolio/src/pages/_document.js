@@ -23,10 +23,7 @@ class MyDocument extends Document {
             content="Hi, I'm Cyril De Graeve, a Fullstack Javascript Developer, Problem solver, Freelance & Solopreneur. I look forward to working for you."
           />
           <meta property="og:type" content="website" />
-          <meta
-            property="og:url"
-            content="https://www.cyrildegraeve.dev/"
-          />
+          <meta property="og:url" content="https://www.cyrildegraeve.dev/" />
 
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:site" content="@roissi" />

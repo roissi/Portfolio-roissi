@@ -2,11 +2,13 @@ import React, { useState, useMemo } from "react";
 import {
   Box,
   Heading,
+  Text,
   useBreakpointValue,
   useColorMode,
 } from "@chakra-ui/react";
 import { useTranslation } from "next-i18next";
 import ProjectCard from "./ProjectCard.js";
+import Testimonials from "./Testimonials.js";
 import ChakraCarousel from "./ChakraCarousel.js";
 
 const MyProjects = () => {
@@ -200,6 +202,14 @@ const MyProjects = () => {
               project && <ProjectCard key={project.id} {...project} />,
           )}
         </ChakraCarousel>
+
+        <Box id="testimonials" maxW={maxW} mx="auto" pt={6}>
+          <Heading size="xl" my={5}>
+            {t("title.testimonials")}
+          </Heading>
+          <Text fontSize={"xl"}>{t("title.introduction")}</Text>
+          <Testimonials />
+        </Box>
       </Box>
     </Box>
   );

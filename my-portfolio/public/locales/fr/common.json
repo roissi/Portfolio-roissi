@@ -25,16 +25,16 @@
     "works": "PROJETS",
     "game": "LET'S PLAY !",
     "softskills": "SOFT SKILLS  (et valeurs)",
-    "contact": "CONTACT"
+    "contact": "CONTACT",
+    "testimonials": "Témoignages",
+    "introduction": "Quelques retours de clients et examinateurs satisfaites par mes services."
   },
 
   "prez": {
-    "part1Q": "> Qui je suis ?",
-    "part1": "Journaliste cyberculturel dans une vie antérieure, je me suis reconverti dans le développement web après avoir suivi une formation intensive en Javascript (Front & Back-end), qui m'a permis d'acquérir des compétences techniques solides, d'obtenir le",
-    "part2": "Titre Professionnel de Développeur Web et Web Mobile",
-    "part2S": "et d'exercer une activité de Développeur freelance riche de projets et de nouveaux contacts.",
-    "part3Q": "> Pourquoi moi ?",
-    "part3": "En tant que développeur freelance, je propose une gamme de services de développement web qui couvrent toutes les étapes du processus de création d'un site et/ou d'une application web. Grâce à ma pratique et mes connaissances de l'écosystème Javascript (ES6+), je suis en mesure de résoudre des problèmes complexes en créant des solutions fonctionnelles et des interfaces esthétiques modernes adaptées à vos besoins."
+    "part1Q": "Qui je suis ?",
+    "part1": "Journaliste cyberculturel dans une vie antérieure, passionné par les machines et les réseaux depuis toujours, j'exerce aujourd'hui une activité de développeur freelance riche de projets et de nouveaux contacts.",
+    "part3Q": "Pourquoi moi ?",
+    "part3": "Vous avez un problème ? J'ai la solution ! En tant que développeur freelance, je propose une gamme de services de développement web qui couvrent toutes les étapes du processus de création d'un site et/ou d'une application web. Grâce à ma pratique et mes connaissances de l'écosystème Javascript (ES6+), je suis en mesure de résoudre des problèmes complexes en créant des solutions fonctionnelles et des interfaces esthétiques modernes adaptées à vos besoins."
   },
 
   "hardskills": {
@@ -64,19 +64,37 @@
 
   "donefficace": {
     "role": "Dev Front-end & Back-end",
-    "description": "J'ai participé à l'internationalisation (avec le framework 'i18next') du site de l'association Giving What We Can pour créer la version française du nouveau site de Don Efficace, une ONG à but non lucratif destinée à financer des actions pour réduire la souffrance de tous les êtres sensibles (humains et non-humain) aussi efficacement que possible, directement ou indirectement. J'ai également mis à jour la partie marketing du site en utilisant Sanity, un CMS open-source headless écrit en JavaScript et conçu pour les développeurs. Enfin, je me suis chargé des adaptations nécessaires pour que le site soit totalement en conformité RGPD. Un travail de 2 mois réalisé en équipe et étroite collaboration avec des développeurs Suisse-allemands et anglais."
+    "description": "J'ai participé à l'internationalisation (avec le framework 'i18next') du site de l'association Giving What We Can pour créer la version française du nouveau site de Don Efficace, une ONG à but non lucratif destinée à financer des actions pour réduire la souffrance de tous les êtres sensibles (humains et non-humain) aussi efficacement que possible, directement ou indirectement.<br><br>J'ai également mis à jour la partie marketing du site en utilisant Sanity, un CMS open-source headless écrit en JavaScript et conçu pour les développeurs.<br><br>Enfin, je me suis chargé des adaptations nécessaires pour que le site soit totalement en conformité RGPD. Un travail de 2 mois réalisé en équipe et étroite collaboration avec des développeurs Suisse-allemands et anglais."
   },
 
   "portfolio": {
     "title": "Mon portfolio",
     "role": "Problem solver / À votre service",
-    "description": "Le portfolio que vous parcourez actuellement, en constante évolution, peut être visualisé en dark ou light mode, sur ordinateur de bureau ou sur smartphone, selon vos préférences. Vous pouvez le lire en français ou en anglais. Je suis ravi de présenter ici quelques-unes de mes réalisations, et de vous en faire découvrir des nouvelles prochainement... Je serai très heureux de pouvoir y ajouter votre projet qui pourrait bien être le plus exceptionnel de tous. Votre vision alliée à mon expertise pourrait donner naissance à quelque chose d'unique. Je suis à l'écoute de vos besoins et prêt à collaborer afin de transformer vos idées en réalité. Discutons-en et trouvons ensemble la meilleure solution pour vos aspirations."
+    "description": "Le portfolio que vous parcourez actuellement, en constante évolution, peut être visualisé en dark ou light mode, sur ordinateur de bureau ou sur smartphone, selon vos préférences. Vous pouvez le lire en français ou en anglais.<br><br>Je suis ravi de présenter ici quelques-unes de mes réalisations, et de vous en faire découvrir des nouvelles prochainement... Je serai très heureux de pouvoir y ajouter votre projet qui pourrait bien être le plus exceptionnel de tous. Votre vision alliée à mon expertise pourrait donner naissance à quelque chose d'unique. Je suis à l'écoute de vos besoins et prêt à collaborer afin de transformer vos idées en réalité.<br><br>Discutons-en et trouvons ensemble la meilleure solution pour vos aspirations."
   },
 
   "yourproject": {
     "title": "Votre projet ?",
     "role": "Problem solver / À votre service",
     "description": "Ce projet est encore à imaginer, et il pourrait bien être le plus exceptionnel de tous. Votre vision alliée à mon expertise pourrait donner naissance à quelque chose d'unique. Je suis à l'écoute de vos besoins et prêt à collaborer afin de transformer vos idées en réalité. Discutons-en et trouvons ensemble la meilleure solution pour vos aspirations."
+  },
+
+  "testimonial1": {
+    "name": "Alejandrina Cristia",
+    "role": "Présidente du fonds de dotation Don Efficace",
+    "message": "Cyril, qui s'est montré très ouvert au feedback, bien organisé et autonome, est une personne avec laquelle il est agréable de travailler. Nous le recommandons vivement et nous travaillerons de nouveau avec lui à l'avenir."
+  },
+
+  "testimonial2": {
+    "name": "Karine",
+    "role": "Responsable de l'association La Meute heureuse",
+    "message": "Ce qui m'a le plus impressionnée, c'est la capacité de Cyril à comprendre mes besoins : son souci du détail, sa réactivité et son expertise font de lui un pro talentueux et disponible."
+  },
+
+  "testimonial3": {
+    "name": "Le jury",
+    "role": "Titre professionnel Développeur Web & Web Mobile",
+    "message": "Félicitations Cyril, pour l’obtention de ton Titre professionnel ! Tu as montré une bonne maturité en tant que développeur et tu as les soft skills nécessaires pour réussir en tant que freelance."
   },
 
   "game": {
