@@ -34,7 +34,7 @@
     "part1Q": "Qui je suis ?",
     "part1": "Journaliste cyberculturel dans une vie antérieure, passionné par les machines et les réseaux depuis toujours, j'exerce aujourd'hui une activité de développeur freelance riche de projets et de nouveaux contacts.",
     "part3Q": "Pourquoi moi ?",
-    "part3": "Vous avez un problème ? J'ai la solution ! En tant que développeur freelance, je propose une gamme de services de développement web qui couvrent toutes les étapes du processus de création d'un site et/ou d'une application web. Grâce à ma pratique et mes connaissances de l'écosystème Javascript (ES6+), je suis en mesure de résoudre des problèmes complexes en créant des solutions fonctionnelles et des interfaces esthétiques modernes adaptées à vos besoins."
+    "part3": "Vous avez un problème ? J'ai la solution ! En tant que développeur freelance, je propose une gamme de services de développement web qui couvrent toutes les étapes du processus de création d'un site, d'un SaaS ou d'une application. Grâce à ma pratique et mes connaissances de l'écosystème Javascript (ES6+), je suis en mesure de résoudre des problèmes complexes en créant des solutions fonctionnelles et des interfaces esthétiques modernes adaptées à vos besoins."
   },
 
   "hardskills": {
@@ -154,7 +154,7 @@
   },
 
   "contact": {
-    "leavemessage": "On travaille ensemble ? Veuillez laisser un message afin que je puisse comprendre vos besoins en matière de création, de refonte et d'optimisation de sites Web et d'applications mobiles, tant en front-end qu'en back-end. Je vous invite également à visiter mes espaces sur les réseaux sociaux, ainsi que mon profil sur des plateformes de marché comme Malt ou Codeur, où je propose mes services.",
+    "leavemessage": "On travaille ensemble ? Veuillez laisser un message afin que je puisse comprendre vos besoins en matière de création, de refonte et d'optimisation de sites, de SaaS et d'applications (web et mobile), tant en front-end qu'en back-end. Je vous invite également à visiter mes espaces sur les réseaux sociaux, ainsi que mon profil sur des plateformes de marché comme Malt ou Codeur, où je propose mes services.",
     "formname": "Votre nom",
     "formorganisation": "Organisation",
     "formemail": "Votre adresse email",

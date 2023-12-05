@@ -4,7 +4,6 @@ import {
   Heading,
   VStack,
   Wrap,
-  Link,
   Text,
   useBreakpointValue,
 } from "@chakra-ui/react";
