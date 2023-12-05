@@ -34,7 +34,7 @@
     "part1Q": "Who I am?",
     "part1": "Cybercultural journalist in a previous life, always passionate about machines and networks, I now work as a freelance developer full of projects and new contacts.",
     "part3Q": "Why me?",
-    "part3": "You have a problem? I have the solution! As a freelance developer, I offer a comprehensive range of web development services that encompass all stages of website and/or web application creation. My practical experience and deep understanding of the Javascript ecosystem (ES6+) enables me to solve complex problems, creating functional solutions with modern, aesthetically pleasing interfaces that are tailored to your needs."
+    "part3": "You have a problem? I have the solution! As a freelance developer, I offer a comprehensive range of web development services that encompass all stages of website, SaaS or application creation. My practical experience and deep understanding of the Javascript ecosystem (ES6+) enables me to solve complex problems, creating functional solutions with modern, aesthetically pleasing interfaces that are tailored to your needs."
   },
 
   "hardskills": {
@@ -154,7 +154,7 @@
   },
 
   "contact": {
-    "leavemessage": "Ready to build something amazing together? Please leave a message so I can understand your website and mobile application creation, redesign and optimization needs, both front-end and back-end. I also invite you to visit my spaces on social networks, as well as my profile on market platforms like Malt or Codeur, where I offer my services.",
+    "leavemessage": "Ready to build something amazing together? Please leave a message so I can understand your website, SaaS and application (web & mobile) creation, redesign and optimization needs, both front-end and back-end. I also invite you to visit my spaces on social networks, as well as my profile on market platforms like Malt or Codeur, where I offer my services.",
     "formname": "Name",
     "formorganisation": "Organisation",
     "formemail": "Email address",
