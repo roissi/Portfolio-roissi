@@ -245,7 +245,7 @@ const ProjectCard = ({ project }) => {
             }}
             paddingLeft={descriPaddingLeft}
             paddingRight={descriPaddingRight}
-            textAlign="left" // ou tout autre style Chakra UI que vous souhaitez appliquer
+            textAlign="left"
           />
           {breakpoint === "xl" && (
             <>
