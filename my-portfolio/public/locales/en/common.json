@@ -42,6 +42,11 @@
     "method": "(methods)"
   },
 
+  "sajinstudio": {
+    "role": "Fullstack freelance (+ DevOps)",
+    "description": "For a photographer, I designed this application (web & mobile) for managing and sharing event photos to allow him to offer the sharing of his shootings directly to his audience and clients. Here is what I achieved:<br><br>> Event management: Creation and management of personalized events, allowing easy storage and access to specific photos from each event,<br>> Upload and secure storage: An intuitive interface for uploading and storing photos, ensuring every captured moment is kept secure and accessible, <br>> Intuitive Viewing: A clean gallery allowing users to view, select and share the moments they they love,<br>> Personalized photo sending: Integration of a fluid email sending system, allowing users to easily share their memories with those around them,<br>> Simplified administration: A simple interface Robust administration for effortless management of content and configurations.<br><br>For this client, I was also responsible for installing the application (Front and Back) on a virgin VPS that I fully configured, from scratch (Nginx, SSL certificate, Node.js, PM2...)."
+  },
+
   "artificiallifecoach": {
     "role": "Fullstack freelance",
     "description": "I designed from scratch (Back and Front) Artificial Life Coach, an application which aims to offer the user an artificial life coach to manage their weekly (or daily on smartphone) interactive mobile agenda, based on their current interests and needs. After registration or connection, the user can:<br><br>> Enter their interests (1 or more) and current needs for a duration (in days) that they determine,<br>> Send their selection directly to the coach, now able to add glitter to his life.<br>> Ask the coach: what to do this afternoon? Or tomorrow morning?,<br>> Add the coach's suggestion to his calendar, on the day and time that suits.<br>> Use the calendar by entering elsewhere its own programs and activities (Google Calendar style).<br><br>The Front server corresponds with a RESTful API, a PosgreSQL database and an OpenAI API (gpt-3.5-turbo-1106, precisely)."

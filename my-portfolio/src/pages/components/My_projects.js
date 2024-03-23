@@ -26,6 +26,27 @@ const MyProjects = () => {
   const projects = useMemo(
     () => [
       {
+        id: "sajinphoto",
+        title: "Sajin Studio",
+        imgSrc: "/projects/sajin1.png",
+        imgSrc2: "/projects/sajin2.png",
+        alt: "HomePage Sajin Studio",
+        role: t("sajinstudio.role"),
+        description: t("sajinstudio.description"),
+        techStack: [
+          "React",
+          "Next.js",
+          "Typescript",
+          "Node.js",
+          "Express",
+          "Chakra UI",
+          "Bcrypt",
+          "Framer",
+        ],
+        githubUrl: "https://github.com/roissi",
+        liveUrl: "https://studiosajin.eu/",
+      },
+      {
         id: "artificiallifecoach",
         title: "Artificial Life Coach",
         imgSrc: "/projects/ALC1.png",
