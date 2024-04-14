@@ -39,6 +39,12 @@ class MyDocument extends Document {
             name="twitter:image"
             content="https://www.cyrildegraeve.dev/portfolio_roissi.png"
           />
+
+          {/* Balise meta pour la validation de Google Search Console */}
+          <meta
+            name="google-site-verification"
+            content="EzabAfYTp3zwATo6rCNb1_dDY_Qmd-A478XlzHqLy1E"
+          />
         </Head>
         <body>
           <Main />
