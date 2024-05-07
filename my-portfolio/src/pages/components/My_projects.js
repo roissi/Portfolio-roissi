@@ -26,6 +26,26 @@ const MyProjects = () => {
   const projects = useMemo(
     () => [
       {
+        id: "clairios",
+        title: "Clairios",
+        imgSrc: "/projects/clairios1.png",
+        imgSrc2: "/projects/clairios3.png",
+        imgSrc3: "/projects/clairios2.png",
+        alt: "HomePage Clairios",
+        role: t("clairios.role"),
+        description: t("clairios.description"),
+        techStack: [
+          "React",
+          "Next.js",
+          "Typescript",
+          "Node.js",
+          "Tailwind",
+          "Framer-motion",
+        ],
+        githubUrl: "https://github.com/roissi",
+        liveUrl: "https://clairios.com/",
+      },
+      {
         id: "sajinphoto",
         title: "Sajin Studio",
         imgSrc: "/projects/sajin1.png",
@@ -87,7 +107,6 @@ const MyProjects = () => {
           "Node.js",
           "Tailwind",
           "Framer-motion",
-          "Lucide",
         ],
         githubUrl: "https://github.com/roissi",
         liveUrl: "https://www.christelmilhavet.fr/",
@@ -108,7 +127,6 @@ const MyProjects = () => {
           "Bootstrap",
           "Node.js",
           "Supabase",
-          "Lucide",
         ],
         githubUrl: "https://github.com/roissi/Neo-Telegraphe",
         liveUrl: "https://neo-telegraphe.vercel.app/",

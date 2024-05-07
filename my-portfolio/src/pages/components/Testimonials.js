@@ -7,6 +7,8 @@ import {
   Avatar,
   Stack,
   Container,
+  Grid,
+  GridItem,
   useColorModeValue,
 } from "@chakra-ui/react";
 
@@ -116,29 +118,44 @@ const Testimonials = () => {
       avatar: "/path/to/avatar.jpg",
       message: t("testimonial3.message"),
     },
+    {
+      name: t("testimonial4.name"),
+      role: t("testimonial4.role"),
+      avatar: "/path/to/avatar.jpg",
+      message: t("testimonial4.message"),
+    },
+    {
+      name: t("testimonial5.name"),
+      role: t("testimonial5.role"),
+      avatar: "/path/to/avatar.jpg",
+      message: t("testimonial5.message"),
+    },
+    {
+      name: t("testimonial6.name"),
+      role: t("testimonial6.role"),
+      avatar: "/path/to/avatar.jpg",
+      message: t("testimonial6.message"),
+    },
   ];
 
   return (
     <Box borderRadius={"md"}>
-      <Container maxW={"6xl"} as={Stack} spacing={12}>
-        <Stack
-          direction={{ base: "column", md: "row" }}
-          spacing={{ base: 0, md: 6, lg: 10 }}
+      <Container maxW={"6xl"}>
+        <Grid
+          templateColumns={{ base: "1fr", md: "repeat(3, 1fr)" }}
+          gap={{ base: 6, md: 10 }}
         >
           {testimonials.map((testimonial, index) => (
-            <Box key={index}>
-              <TestimonialContent
-                heading={testimonial.role}
-                text={testimonial.message}
-              />
+            <GridItem key={index}>
+              <TestimonialContent text={testimonial.message} />
               <TestimonialAvatar
                 src={testimonial.avatar}
                 name={testimonial.name}
                 title={testimonial.role}
               />
-            </Box>
+            </GridItem>
           ))}
-        </Stack>
+        </Grid>
       </Container>
     </Box>
   );
