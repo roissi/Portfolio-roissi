@@ -42,38 +42,43 @@
     "method": "(méthodes)"
   },
 
+  "clairios": {
+    "role": "Développeur Front freelance  (+ DevOps)",
+    "description": "Pour une entreprise de services informatiques axée sur l’infogérance et le conseil, j'ai conçu et développé un site web dynamique et moderne, en mettant l'accent sur l'accessibilité, l'efficacité et l'expérience utilisateur optimale :<br><br>> Présentation professionnelle des services : Conception d'une interface utilisateur claire et intuitive, mettant en valeur les services proposés, tels que l'infogérance, la sécurité, le support, et les solutions cloud, pour répondre aux besoins des PME et TPE.<br>> Fonctionnalité de contact optimisée : Création d'un formulaire de contact convivial et fonctionnel, permettant aux clients de facilement entrer en contact pour des demandes d'information ou des propositions commerciales.<br>> Optimisation pour le référencement : Incorporation de balises méta et de données structurées pour améliorer la visibilité du site sur les moteurs de recherche et attirer un public plus large.<br><br>Pour ce client, je me suis également chargé de l'installation et de la configuration complète de l'application sur un serveur VPS. J'ai géré l'ensemble du déploiement, y compris la configuration du serveur (Apache, certificat SSL, Node.js, PM2...) pour assurer une performance et une sécurité optimales."
+  },
+
   "sajinstudio": {
-    "role": "Fullstack freelance (+ DevOps)",
+    "role": "Développeur Fullstack freelance (+ DevOps)",
     "description": "Pour un photographe, j'ai conçu cette application (web & mobile) de gestion et de partage de photos événementielle afin de lui permettre de proposer en direct à son public et ses clients le partage des ses shootings. Voici ce que j'ai réalisé :<br><br>> Gestion des événements : Création et gestion d'événements personnalisés, permettant un stockage et un accès facile aux photos spécifiques de chaque événement,<br>> Upload et stockage sécurisé : Une interface intuitive pour l'upload et le stockage des photos, garantissant que chaque moment capturé est conservé en toute sécurité et accessible, <br>> Visualisation intuitive : Une galerie épurée permettant aux utilisateurs de visualiser, de sélectionner et de partager les moments qu'ils affectionnent,<br>> Envoi de photos personnalisé : Intégration d'un système d'envoi d'e-mails fluide, permettant aux utilisateurs de partager aisément leurs souvenirs avec leur entourage,<br>> Administration simplifiée : Une interface d'administration robuste pour une gestion sans effort des contenus et configurations.<br><br>Pour ce client, je me suis par ailleurs chargé de l'installation de l'application (Front et Back) sur un VPS vierge que j'ai entièrement configuré, from scratch (Nginx, certificat SSL, Node.js, PM2...)."
   },
 
   "artificiallifecoach": {
-    "role": "Fullstack freelance",
+    "role": "Développeur Fullstack freelance",
     "description": "J'ai conçu de A à Z (Back et Front) Artificial Life Coach, une application qui vise à offrir à l'utilisateur un coach de vie artificiel pour gérer son agenda mobile interactif hebdomadaire (ou quotidien sur smartphone), en fonction de ses intérêts et besoins actuels. Après inscription ou connection, le user peut :<br><br>> Saisir ses centres d'intérêt (1 ou plus) et se besoins actuels pour une durée (en jours) qu'il vous détermine,<br>> Transmettre sa sélection directement au coach, en capacité dorénavant d'ajouter des paillettes dans sa vie.<br>> Questionner le coach : quoi faire cet après-midi ? Ou demain matin ?,<br>> Ajouter la suggestion du coach à son agenda, au jour et à l'heure qui lui conviennent.<br>> Utiliser le calendrier en saisissant par ailleurs ses propres programmes et activités (façon Google Agenda).<br><br>Le serveur Front correspond avec une API RESTful, une base de données PosgreSQL et une API OpenAI (gpt-3.5-turbo-1106, précisément)."
   },
 
   "christelmilhavet": {
-    "role": "Développeur Front-end freelance",
+    "role": "Développeur Front freelance",
     "description": "Pour ma cliente, coach spécialisée en carrière et psychothérapeute, j'ai conçu et développé un site élégant et fonctionnel qui reflète son approche personnalisée du coaching et de la psychothérapie.<br><br>Présentation et navigation claire : Conception d'une interface utilisateur intuitive et accessible, facilitant la navigation entre les différentes sections du site,<br>> Optimisation SEO : Intégration de pratiques d'optimisation pour les moteurs de recherche,<br>> Formulaires de contact : Développement d'un formulaire interactif, améliorant l'engagement des visiteurs et la collecte de données,<br>> Responsive design : Conception responsive assurant une expérience utilisateur homogène sur tous les appareils,<br>> Installation et configuration sécurisée (hébergement optimisé, certificat SSL et déploiement des meilleures pratiques pour la performance et la sécurité).<br><br>Ce projet a nécessité une attention particulière à l'expérience utilisateur, garantissant que le site ne soit pas seulement un point de contact mais aussi une ressource précieuse pour les visiteurs."
   },
 
   "telegraphe": {
-    "role": "Fullstack freelance",
+    "role": "Développeur Fullstack freelance",
     "description": "J'ai créé Télégraphe, une plateforme dédiée à la découverte des boutiques du quartier Télégraphe, situé dans le 20ème arrondissement de Paris. Objectif : aider les résidents et les visiteurs à trouver facilement des boutiques locales et à en savoir plus sur ce qu'elles offrent.<br><br>Les membres de la communauté peuvent :<br><br>> S'authentifier,<br>> Découvrir la note et les avis laissés par les autres,<br>> Rédiger et enregistrer leur propre avis sur une boutique,<br>> Visualiser son emplacement exact sur une carte interactive (Google Map API).<br><br>L'application est totalement responsive et s'adapte à tous les types d'appareils (desktops, tablettes ou smartphones).<br>Ce projet est actuellement en phase de développement. Des mises à jour et des fonctionnalités supplémentaires seront ajoutées prochainement."
   },
 
   "cynoche": {
-    "role": "Projet personnel",
+    "role": "Projet personnel (Front + Back)",
     "description": "CyNoche est une application web qui répertorie (presque) tous les films que j'ai vus dans ma vie. J'ai réalisé cette application avec React et Chakra UI, et j'utilise une API pour fournir des données.<br><br>Fonctionnalités :<br><br>> Affichage d'un catalogue de films,<br>> Système de classement par étoiles (sur 5), <br>> Tri par noms de films, noms de réalisateurs, années de sortie et notes,<br>> Ajout et/ou mise à jour et/ou suppression d'un film de la base de données,<br>> Recherche des films par titres et/ou réalisateurs,<br>> Sélection de la fiche d'un film (affiche + pitch),<br>> Résumés en anglais ou français,<br>> Dark ou light mode,<br>> Journalisation des ajouts, modifications et suppression (Winston).<br><br>Vous pouvez utiliser mes données (plus de 2200 films) ou les vôtres si vous remplissez la base de données avec vos propres films."
   },
 
   "jadopte": {
-    "role": "Product Owner & Dev Back-end",
+    "role": "Product Owner & Développeur Back",
     "description": "Á la fin de ma formation, j'ai participé en tant que Product Owner et Développeur Back-end à la conception de J'adopte un humain, application responsive design d'un refuge fictif pour animaux qui permet aux futurs adoptants de choisir le compagnon le mieux adapté à leurs envies, valeurs et besoins. À travers ce projet, il s'agit de dépoussiérer les sites vitrines existants, plutôt fades et sans grandes interactions, et de fournir aux refuges un système de gestion des animaux simplifié et sécurisé.<br><br>> L'idée maîtresse repose sur un un système de matching entre le profil renseigné par l'utilisateur durant sa connexion et le profil des animaux renseignés par les soignants (staff).<br><br>> Le site comporte 3 niveaux de droits (des rôles et des permissions) : profil User / profil Staff / profil Admin, authentifié (JSON Web Token) et sécurisé (BCrypt)."
   },
 
   "donefficace": {
-    "role": "Dev Front-end & Back-end",
+    "role": "Développeur Front & Back",
     "description": "J'ai participé à l'internationalisation (avec le framework 'i18next') du site de l'association Giving What We Can pour créer la version française du nouveau site de Don Efficace, une ONG à but non lucratif destinée à financer des actions pour réduire la souffrance de tous les êtres sensibles (humains et non-humain) aussi efficacement que possible, directement ou indirectement.<br><br>J'ai également mis à jour la partie marketing du site en utilisant Sanity, un CMS open-source headless écrit en JavaScript et conçu pour les développeurs.<br><br>Enfin, je me suis chargé des adaptations nécessaires pour que le site soit totalement en conformité RGPD. Un travail de 2 mois réalisé en équipe et étroite collaboration avec des développeurs Suisse-allemands et anglais."
   },
 
@@ -90,18 +95,36 @@
   },
 
   "testimonial1": {
-    "name": "Alejandrina Cristia",
+    "name": "Emmanuel P.",
+    "role": "Photographe événementiel",
+    "message": "Très bon projet mené efficacement et rapidement par Cyril pour faire face à une demande métier spécifique et urgente. Le résultat a dépassé les attentes initiales ! Je recommande vivement ce développeur."
+  },
+
+  "testimonial2": {
+    "name": "Christel M.",
+    "role": "Coach de carrière et psychotérapeute",
+    "message": "Cyril a réussi à insuffler des idées créatives pour me démarquer des autres sites déjà existants. Il respecte les délais, il est impliqué et j’étais au courant de toutes les étapes."
+  },
+
+  "testimonial3": {
+    "name": "Josselin G.",
+    "role": "Fondateur de la société Clairios",
+    "message": "Très bon contact avec Cyril, très professionnel. Bon accompagnement dans la détermination des choix visuels de mon site internet. Très satisfait du travail réalisé."
+  },
+
+  "testimonial4": {
+    "name": "Alejandrina C.",
     "role": "Présidente du fonds de dotation Don Efficace",
     "message": "Cyril, qui s'est montré très ouvert au feedback, bien organisé et autonome, est une personne avec laquelle il est agréable de travailler. Nous le recommandons vivement et nous travaillerons de nouveau avec lui à l'avenir."
   },
 
-  "testimonial2": {
-    "name": "Karine",
+  "testimonial5": {
+    "name": "Karine Y.",
     "role": "Responsable de l'association La Meute heureuse",
     "message": "Ce qui m'a le plus impressionnée, c'est la capacité de Cyril à comprendre mes besoins : son souci du détail, sa réactivité et son expertise font de lui un pro talentueux et disponible."
   },
 
-  "testimonial3": {
+  "testimonial6": {
     "name": "Le jury",
     "role": "Titre professionnel Développeur Web & Web Mobile",
     "message": "Félicitations Cyril, pour l’obtention de ton Titre professionnel ! Tu as montré une bonne maturité en tant que développeur et tu as les soft skills nécessaires pour réussir en tant que freelance."

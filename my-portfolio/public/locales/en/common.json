@@ -42,13 +42,18 @@
     "method": "(methods)"
   },
 
+  "clairios": {
+    "role": "Freelance Front-end Developer",
+    "description": "For an IT services company focused on outsourcing and consulting, I designed and developed a dynamic and modern website, focusing on accessibility, efficiency and optimal user experience:<br ><br>> Professional presentation of services: Design of a clear and intuitive user interface, highlighting the services offered, such as outsourcing, security, support, and cloud solutions, to meet the needs of SMEs and TPE.<br>> Optimized contact functionality: Creation of a user-friendly and functional contact form, allowing customers to easily get in touch for requests for information or commercial proposals.<br>> Optimization for SEO : Incorporation of meta tags and structured data to improve the visibility of the site on search engines and attract a wider audience.<br><br>For this client, I also took care of the installation and configuration complete application on a VPS server. I managed the entire deployment, including server configuration (Apache, SSL certificate, Node.js, PM2...) to ensure optimal performance and security."
+  },
+
   "sajinstudio": {
-    "role": "Fullstack freelance (+ DevOps)",
+    "role": "Freelance fullstack developer (+ DevOps)",
     "description": "For a photographer, I designed this application (web & mobile) for managing and sharing event photos to allow him to offer the sharing of his shootings directly to his audience and clients. Here is what I achieved:<br><br>> Event management: Creation and management of personalized events, allowing easy storage and access to specific photos from each event,<br>> Upload and secure storage: An intuitive interface for uploading and storing photos, ensuring every captured moment is kept secure and accessible, <br>> Intuitive Viewing: A clean gallery allowing users to view, select and share the moments they they love,<br>> Personalized photo sending: Integration of a fluid email sending system, allowing users to easily share their memories with those around them,<br>> Simplified administration: A simple interface Robust administration for effortless management of content and configurations.<br><br>For this client, I was also responsible for installing the application (Front and Back) on a virgin VPS that I fully configured, from scratch (Nginx, SSL certificate, Node.js, PM2...)."
   },
 
   "artificiallifecoach": {
-    "role": "Fullstack freelance",
+    "role": "Freelance fullstack developer",
     "description": "I designed from scratch (Back and Front) Artificial Life Coach, an application which aims to offer the user an artificial life coach to manage their weekly (or daily on smartphone) interactive mobile agenda, based on their current interests and needs. After registration or connection, the user can:<br><br>> Enter their interests (1 or more) and current needs for a duration (in days) that they determine,<br>> Send their selection directly to the coach, now able to add glitter to his life.<br>> Ask the coach: what to do this afternoon? Or tomorrow morning?,<br>> Add the coach's suggestion to his calendar, on the day and time that suits.<br>> Use the calendar by entering elsewhere its own programs and activities (Google Calendar style).<br><br>The Front server corresponds with a RESTful API, a PosgreSQL database and an OpenAI API (gpt-3.5-turbo-1106, precisely)."
   },
 
@@ -63,17 +68,17 @@
   },
 
   "cynoche": {
-    "role": "Personnal project",
+    "role": "Personnal project (Front + Back)",
     "description": "CyNoche is a web application that lists (almost) all the movies I've seen in my life. I made this application with React and Chakra UI, and I use an API to provide data.<br><br>Features:<br><br>> Display of a catalog of films,<br>> Star rating system (out of 5), <br>> Sorting by film names, director names, release years and ratings ,<br>> Adding and/or updating and/or deleting a film from the database,<br>> Searching for films by titles and/or directors,<br>> Selection of the film profile (poster + summary),<br>> Summaries in English or French,<br>> Dark or light mode,<br>> Logging of additions, modifications and deletions (Winston).<br><br>You can use my data (over 2200 films) or yours if you fill the database with your own films."
   },
 
   "jadopte": {
-    "role": "Product Owner & Dev Back-end",
+    "role": "Product Owner & Back-end developer",
     "description": "At the end of my training, I participated as Product Owner and Back-end Developer in the design of J'adopte un humain, a responsive design application of a fictitious animal shelter which allows future adopters to choose the companion best suited to their desires, values ​​and needs. Through this project, the aim is to dust off existing showcase sites, which are rather faded and without major interactions, and to provide shelters with a simplified and secure animal management system.<br><br>> The main idea is a matching system between the profile provided by the user when connecting and the profile of the animals provided by the caregivers (staff).<br><br>> The site has 3 levels of rights (roles and permissions): User profile / Staff profile / Admin profile, authenticated (JSON Web Token) and secure (BCrypt)."
   },
 
   "donefficace": {
-    "role": "Dev Front-end & Back-end",
+    "role": "Front-end & Back-end developer",
     "description": "I participated in the internationalization (with the 'i18next' framework) of the site of the Giving What We Can association to create the French version of the new site of Don Efficace, a non-profit NGO intended to finance actions for reduce the suffering of all sentient beings (human and non-human) as effectively as possible, directly or indirectly.<br><br>I also updated the marketing portion of the site using Sanity, an open-source headless CMS written in JavaScript and designed for developers<br><br>Finally, I took care of the necessary adaptations so that the site was fully GDPR compliant. A 2-month project carried out as a team and in close collaboration with Swiss-German and English developers."
   },
 
@@ -90,18 +95,36 @@
   },
 
   "testimonial1": {
-    "name": "Alejandrina Cristia",
+    "name": "Emmanuel P.",
+    "role": "Event photographer",
+    "message": "Very good project carried out efficiently and quickly by Cyril to meet a specific and urgent business request. The result exceeded initial expectations! I highly recommend this developer."
+  },
+
+  "testimonial2": {
+    "name": "Christel M.",
+    "role": "Career coach and psychotherapist",
+    "message": "Cyril managed to instill creative ideas to set me apart from other existing sites. He meets deadlines, he is involved and I was aware of all the steps."
+  },
+
+  "testimonial3": {
+    "name": "Josselin G.",
+    "role": "Founder of the Clairios company",
+    "message": "Very good contact with Cyril, very professional. Good support in determining the visual choices for my website. Very satisfied with the work done."
+  },
+
+  "testimonial4": {
+    "name": "Alejandrina C.",
     "role": "President of the Don Efficace endowment fund",
     "message": "Cyril, who was very open to feedback, well organized and autonomous, is a pleasant person to work with. We highly recommend him and will work with him again in the future."
   },
 
-  "testimonial2": {
-    "name": "Karine",
+  "testimonial5": {
+    "name": "Karine Y.",
     "role": "Head of La Meute heureuse association",
     "message": "What impressed me the most was Cyril's ability to understand my needs: his attention to detail, his responsiveness and his expertise make him a talented and available professional."
   },
 
-  "testimonial3": {
+  "testimonial6": {
     "name": "The jury",
     "role": "Professional title Web & Mobile Web Developer",
     "message": "Congrats Cyril on obtaining your professional title! You have shown good maturity as a developer and you have the soft skills necessary to succeed as a freelancer."
