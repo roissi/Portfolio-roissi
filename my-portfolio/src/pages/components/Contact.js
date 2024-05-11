@@ -124,7 +124,7 @@ const ContactForm = () => {
                   />
                 </Link>
                 <Link
-                  href="mailto:cyrildegraeve@gmail.com"
+                  href="mailto:contact@cyrildegraeve.dev"
                   isExternal
                   mx={spacing}
                 >
