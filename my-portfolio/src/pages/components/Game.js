@@ -116,11 +116,10 @@ const Game = () => {
       let newGrid = [...grid];
       newGrid[index] = "X";
       setGrid(newGrid);
-      const checkResult = checkWinner(newGrid); // Modification
+      const checkResult = checkWinner(newGrid);
       if (checkResult === "X") {
         setWinner(t("game.win"));
       } else if (checkResult === "Draw") {
-        // Modification
         setWinner(t("game.draw"));
       }
       setIsPlayerTurn(false);
