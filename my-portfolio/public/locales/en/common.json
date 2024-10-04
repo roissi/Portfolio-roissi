@@ -42,6 +42,11 @@
     "method": "(methods)"
   },
 
+  "serious": {
+    "role": "Freelance fullstack developer (+ DevOps)",
+    "description": "For a Parisian publishing house, I was responsible for the complete redesign of a PHP/MySQL site into a Javascript/PostgreSQL site (and webapp).<br><br>> Front-end: Design, technical implementation and editorial (React / Next.js / Typescript / Tailwind / Framer motion) + upgraded GDPR + SEO,<br>> Back-end (Node.js / Express / PostgreSQL): creation of a Rest API and creation of a complete and fully secure Back-office (Next Auth, JWT),<br>> Development of an online store + User basket + Paypal and credit card payments + calculation of shipping costs...<br>> Responsive design for adequate display on all types of screen (version optimized for smartphones).<br><br>For this client, I was also responsible for the installation and complete configuration of the application on a VPS server. I managed the entire deployment, including server configuration (Nginx, SSL certificate, Node.js, PM2...) to ensure optimal performance and security."
+  },
+
   "clairios": {
     "role": "Freelance Front-end Developer",
     "description": "For an IT services company focused on outsourcing and consulting, I designed and developed a dynamic and modern website, focusing on accessibility, efficiency and optimal user experience:<br ><br>> Professional presentation of services: Design of a clear and intuitive user interface, highlighting the services offered, such as outsourcing, security, support, and cloud solutions, to meet the needs of SMEs and TPE.<br>> Optimized contact functionality: Creation of a user-friendly and functional contact form, allowing customers to easily get in touch for requests for information or commercial proposals.<br>> Optimization for SEO : Incorporation of meta tags and structured data to improve the visibility of the site on search engines and attract a wider audience.<br><br>For this client, I also took care of the installation and configuration complete application on a VPS server. I managed the entire deployment, including server configuration (Apache, SSL certificate, Node.js, PM2...) to ensure optimal performance and security."
@@ -95,33 +100,33 @@
   },
 
   "testimonial1": {
+    "name": "Filo S.",
+    "role": "Editor",
+    "message": "This is the second mission that I have entrusted to Cyril. He had taken over the Front-end of my site and he has just taken over the entire Back-end as well. His full-stack skills are incredible!"
+  },
+
+  "testimonial2": {
     "name": "Emmanuel P.",
     "role": "Event photographer",
     "message": "Very good project carried out efficiently and quickly by Cyril to meet a specific and urgent business request. The result exceeded initial expectations! I highly recommend this developer."
   },
 
-  "testimonial2": {
+  "testimonial3": {
     "name": "Christel M.",
     "role": "Career coach and psychotherapist",
     "message": "Cyril managed to instill creative ideas to set me apart from other existing sites. He meets deadlines, he is involved and I was aware of all the steps."
   },
 
-  "testimonial3": {
+  "testimonial4": {
     "name": "Josselin G.",
     "role": "Founder of the Clairios company",
     "message": "Very good contact with Cyril, very professional. Good support in determining the visual choices for my website. Very satisfied with the work done."
   },
 
-  "testimonial4": {
+  "testimonial5": {
     "name": "Alejandrina C.",
     "role": "President of the Don Efficace endowment fund",
     "message": "Cyril, who was very open to feedback, well organized and autonomous, is a pleasant person to work with. We highly recommend him and will work with him again in the future."
-  },
-
-  "testimonial5": {
-    "name": "Karine Y.",
-    "role": "Head of La Meute heureuse association",
-    "message": "What impressed me the most was Cyril's ability to understand my needs: his attention to detail, his responsiveness and his expertise make him a talented and available professional."
   },
 
   "testimonial6": {
