@@ -42,6 +42,11 @@
     "method": "(méthodes)"
   },
 
+  "serious": {
+    "role": "Développeur Fullstack  (+ DevOps)",
+    "description": "Pour une maison d'édition parisienne, je me suis chargé de la refonte complète d'un site PHP/MySQL en un site (et webapp) Javascript/PostgreSQL.<br><br>> Front-end : Conception, réalisation technique et éditoriale (React / Next.js / Typescript / Tailwind / Framer motion) + mis à niveau RGPD + SEO,<br>> Back-end (Node.js / Express / PostgreSQL) : réalisation d'une d'une API Rest et création d'un Back-office complet et entièrement sécurisé (Next Auth, JWT),<br>> Développement d'une la boutique en ligne + Panier user + Paiements Paypal et CB + calcul des fraits de port...<br>> Responsive design pour affichage adéquat sur tous les types d'écran (version optimisée sur smartphone).<br><br>Pour ce client, je me suis également chargé de l'installation et de la configuration complète de l'application sur un serveur VPS. J'ai géré l'ensemble du déploiement, y compris la configuration du serveur (Nginx, certificat SSL, Node.js, PM2...) pour assurer une performance et une sécurité optimales."
+  },
+
   "clairios": {
     "role": "Développeur Front freelance  (+ DevOps)",
     "description": "Pour une entreprise de services informatiques axée sur l’infogérance et le conseil, j'ai conçu et développé un site web dynamique et moderne, en mettant l'accent sur l'accessibilité, l'efficacité et l'expérience utilisateur optimale :<br><br>> Présentation professionnelle des services : Conception d'une interface utilisateur claire et intuitive, mettant en valeur les services proposés, tels que l'infogérance, la sécurité, le support, et les solutions cloud, pour répondre aux besoins des PME et TPE.<br>> Fonctionnalité de contact optimisée : Création d'un formulaire de contact convivial et fonctionnel, permettant aux clients de facilement entrer en contact pour des demandes d'information ou des propositions commerciales.<br>> Optimisation pour le référencement : Incorporation de balises méta et de données structurées pour améliorer la visibilité du site sur les moteurs de recherche et attirer un public plus large.<br><br>Pour ce client, je me suis également chargé de l'installation et de la configuration complète de l'application sur un serveur VPS. J'ai géré l'ensemble du déploiement, y compris la configuration du serveur (Apache, certificat SSL, Node.js, PM2...) pour assurer une performance et une sécurité optimales."
@@ -95,33 +100,33 @@
   },
 
   "testimonial1": {
+    "name": "Filo S.",
+    "role": "Editeur",
+    "message": "C'est la deuxième mission que je confie à Cyril. Il avait repris le Front-end de mon site et il vient de reprendre également tout le Back-end. Ses compétences full-stack sont incroyables !"
+  },
+
+  "testimonial2": {
     "name": "Emmanuel P.",
     "role": "Photographe événementiel",
     "message": "Très bon projet mené efficacement et rapidement par Cyril pour faire face à une demande métier spécifique et urgente. Le résultat a dépassé les attentes initiales ! Je recommande vivement ce développeur."
   },
 
-  "testimonial2": {
+  "testimonial3": {
     "name": "Christel M.",
     "role": "Coach de carrière et psychotérapeute",
     "message": "Cyril a réussi à insuffler des idées créatives pour me démarquer des autres sites déjà existants. Il respecte les délais, il est impliqué et j’étais au courant de toutes les étapes."
   },
 
-  "testimonial3": {
+  "testimonial4": {
     "name": "Josselin G.",
     "role": "Fondateur de la société Clairios",
     "message": "Très bon contact avec Cyril, très professionnel. Bon accompagnement dans la détermination des choix visuels de mon site internet. Très satisfait du travail réalisé."
   },
 
-  "testimonial4": {
+  "testimonial5": {
     "name": "Alejandrina C.",
     "role": "Présidente du fonds de dotation Don Efficace",
     "message": "Cyril, qui s'est montré très ouvert au feedback, bien organisé et autonome, est une personne avec laquelle il est agréable de travailler. Nous le recommandons vivement et nous travaillerons de nouveau avec lui à l'avenir."
-  },
-
-  "testimonial5": {
-    "name": "Karine Y.",
-    "role": "Responsable de l'association La Meute heureuse",
-    "message": "Ce qui m'a le plus impressionnée, c'est la capacité de Cyril à comprendre mes besoins : son souci du détail, sa réactivité et son expertise font de lui un pro talentueux et disponible."
   },
 
   "testimonial6": {

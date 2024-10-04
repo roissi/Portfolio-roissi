@@ -26,6 +26,28 @@ const MyProjects = () => {
   const projects = useMemo(
     () => [
       {
+        id: "serious",
+        title: "Serious Publishing",
+        imgSrc: "/projects/serious1.png",
+        imgSrc2: "/projects/serious2.png",
+        imgSrc3: "/projects/serious4.png",
+        alt: "HomePage Serious Publishing",
+        role: t("serious.role"),
+        description: t("serious.description"),
+        techStack: [
+          "React",
+          "Next.js",
+          "Typescript",
+          "Shadcn",
+          "Node.js",
+          "PostgreSQL",
+          "Tailwind",
+          "Framer-motion",
+        ],
+        githubUrl: "https://github.com/roissi",
+        liveUrl: "https://www.serious-publishing.fr//",
+      },
+      {
         id: "clairios",
         title: "Clairios",
         imgSrc: "/projects/clairios1.png",
