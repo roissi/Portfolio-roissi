@@ -26,6 +26,28 @@ const MyProjects = () => {
   const projects = useMemo(
     () => [
       {
+        id: "lps",
+        title: "Librairie Pierre Saunier",
+        imgSrc: "/projects/PLS1.png",
+        imgSrc2: "/projects/PLS2.png",
+        imgSrc3: "/projects/PLS3.png",
+        alt: "HomePage Librairie Pierre Saunie",
+        role: t("lps.role"),
+        description: t("lps.description"),
+        techStack: [
+          "React",
+          "Next.js",
+          "Typescript",
+          "Node.js",
+          "MySQL",
+          "Drizzle",
+          "Tailwind",
+          "Stripe",
+        ],
+        githubUrl: "https://github.com/roissi",
+        liveUrl: "https://pierre-saunier.fr/",
+      },
+      {
         id: "serious",
         title: "Serious Publishing",
         imgSrc: "/projects/serious1.png",
@@ -45,7 +67,7 @@ const MyProjects = () => {
           "Framer-motion",
         ],
         githubUrl: "https://github.com/roissi",
-        liveUrl: "https://www.serious-publishing.fr//",
+        liveUrl: "https://www.serious-publishing.fr/",
       },
       {
         id: "clairios",

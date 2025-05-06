@@ -42,6 +42,11 @@
     "method": "(methods)"
   },
 
+  "lps": {
+    "role": "Freelance fullstack developer (+ DevOps)",
+    "description": "For this bookstore-publisher specializing in rare and bibliophilic works, I carried out a complete overhaul of their website using Next.js Fullstack to modernize its interface while preserving its visual identity and ensuring long-term technical sustainability.<br><br>> Front-end: Redesign based on the existing design with complete modernization + Responsive design and improved UX/UI (Next.js / React / Typescript / Tailwind),<br>> Back-end (Next.js App Router / Node.js / Drizzle / MySQL): Migration of a MySQL database from MyISAM to InnoDB, cleaning and adaptation to the new website,<br>> Development of a dedicated API to connect the front-end to the data,<br>> Implementation of an advanced search system with multiple filters (author, publisher, year, keywords, etc.),<br>> Development of the shopping cart and integration of Stripe for credit card payments, with an option for in-store pickup,<br>> Creation of an elaborate back-office tailored to the client's specific needs (including the ability to export content to create a printed catalog).<br><br>The client can now manage their books through a clear interface with optimized loading times and enhanced visibility for new content."
+  },
+
   "serious": {
     "role": "Freelance fullstack developer (+ DevOps)",
     "description": "For a Parisian publishing house, I was responsible for the complete redesign of a PHP/MySQL site into a Javascript/PostgreSQL site (and webapp).<br><br>> Front-end: Design, technical implementation and editorial (React / Next.js / Typescript / Tailwind / Framer motion) + upgraded GDPR + SEO,<br>> Back-end (Node.js / Express / PostgreSQL): creation of a Rest API and creation of a complete and fully secure Back-office (Next Auth, JWT),<br>> Development of an online store + User basket + Paypal and credit card payments + calculation of shipping costs...<br>> Responsive design for adequate display on all types of screen (version optimized for smartphones).<br><br>For this client, I was also responsible for the installation and complete configuration of the application on a VPS server. I managed the entire deployment, including server configuration (Nginx, SSL certificate, Node.js, PM2...) to ensure optimal performance and security."
