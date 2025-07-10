@@ -26,6 +26,28 @@ const MyProjects = () => {
   const projects = useMemo(
     () => [
       {
+        id: "genAIbooks",
+        title: "Votre générateur AI",
+        imgSrc: "/projects/genAI1.png",
+        imgSrc2: "/projects/genAI2.png",
+        imgSrc3: "/projects/genAI3.png",
+        alt: "HomePage Assisant générateur AI",
+        role: t("genAIbooks.role"),
+        description: t("genAIbooks.description"),
+        techStack: [
+          "React",
+          "Next.js",
+          "Typescript",
+          "OpenAI API",
+          "shadcn/ui",
+          "Tailwind",
+          "Tesseract OCR",
+          "OpenLibrary Covers API",
+        ],
+        githubUrl: "https://github.com/roissi",
+        liveUrl: "https://assist.cyrildegraeve.dev/",
+      },
+      {
         id: "lps",
         title: "Librairie Pierre Saunier",
         imgSrc: "/projects/PLS1.png",
