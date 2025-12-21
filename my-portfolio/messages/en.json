@@ -186,7 +186,7 @@
       "required": "Required field",
       "submit": "Send",
       "sending": "Sending…",
-      "rgpd" : "I agree that my data may be used to contact me in response to my request."
+      "rgpd": "I agree that my data may be used to contact me in response to my request."
     }
   }
 }

@@ -100,9 +100,7 @@ export function SiteHeader() {
             >
               Cyril
             </Link>
-            <span className="opacity-70 text-2xl">
-              — portfolio
-            </span>
+            <span className="opacity-70 text-2xl">— portfolio</span>
           </div>
 
           {/* desktop */}
