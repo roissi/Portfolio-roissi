@@ -1,5 +1,6 @@
 "use client";
 
+import type { ComponentType } from "react";
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import { SectionTitle } from "../SectionTitle";
@@ -7,7 +8,7 @@ import { SiPostgresql, SiMysql } from "react-icons/si";
 
 type TechItem = {
   label: string;
-  Icon: (props: { className?: string }) => JSX.Element;
+  Icon: ComponentType<{ className?: string }>;
 };
 
 function IconJs({ className }: { className?: string }) {
