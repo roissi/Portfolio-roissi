@@ -1,0 +1,194 @@
+{
+  "Nav": {
+    "hardSkills": "Hard skills",
+    "projects": "Projets",
+    "testimonials": "Feedbacks",
+    "game": "Let's play!",
+    "softSkills": "Soft skills",
+    "contact": "Contact"
+  },
+  "HardSkills": {
+    "title": "HARD SKILLS",
+    "introTitle": "Qui suis-je\u202F\u202F?",
+    "introBody": "Hello, je suis <name>Cyril De Graeve</name>. Journaliste cyberculturel dans une vie antérieure, passionné par les machines et les réseaux depuis toujours, je suis depuis 5 ans Développeur Fullstack freelance.",
+    "hook1": "Tu veux un site fun, rapide, et qui convertit\u202F\u202F?",
+    "body1": "Je construis des expériences web modernes (Next/React), avec du style, de la perf, et du SEO.",
+    "hook2": "Tu veux aussi que ça tienne en prod\u202F\u202F?",
+    "body2": "Déploiements propres, logique métier carrée, et attention maniaque aux détails."
+  },
+  "Projects": {
+    "title": "PROJETS",
+    "dossier": {
+      "title": "Dossier technique",
+      "body": "Pour découvrir plus de détails sur mes projets (contexte, stack, choix techniques, livrables), tu peux consulter mon Dossier Technique.",
+      "cta": "Voir le dossier →",
+      "imageAlt": "Aperçu du Dossier Technique"
+    },
+    "items": {
+      "jffourcade": {
+        "title": "Librairie J.-F. Fourcade",
+        "role": "Développeur fullstack (+ DevOps)",
+        "desc": "Refonte intégrale du site de la librairie. Implémentation e-commerce “livres rares” : catalogue, recherche avancée. Back-office sur-mesure."
+      },
+      "genAIbooks": {
+        "title": "Assistant Fiche Livre (GenAI)",
+        "role": "Développeur fullstack (+ DevOps)",
+        "desc": "App Next.js fullstack pour générer automatiquement fiche produit, SEO, newsletter, critique et traduction à partir d’un texte ou d’une photo scannée (OCR)."
+      },
+      "lps": {
+        "title": "Librairie Pierre Saunier",
+        "role": "Développeur fullstack (+ DevOps)",
+        "desc": "Refonte Next.js intégrale Front-end, Back-end + e-commerce : catalogue, recherche avancée, panier, paiements Stripe, back-office sur-mesure et migration MySQL."
+      },
+      "serious": {
+        "title": "Serious Publishing",
+        "role": "Développeur fullstack (+ DevOps)",
+        "desc": "Refonte d’un site PHP/MySQL vers une webapp moderne : front Next/React, API Node/Express, PostgreSQL, boutique et paiements Stripe intégrés."
+      },
+      "clairios": {
+        "title": "Clairios",
+        "role": "Développeur front freelance (+ DevOps)",
+        "desc": "Site vitrine moderne orienté conversion : UI claire, accessibilité, SEO technique et déploiement VPS."
+      },
+      "sajinstudio": {
+        "title": "Sajin Studio",
+        "role": "Développeur fullstack freelance (+ DevOps)",
+        "desc": "Application web de gestion/partage de photos événementielles : événements, galerie, upload sécurisé, partage et administration."
+      },
+      "codeberry": {
+        "title": "Codeberry",
+        "role": "Développeur fullstack freelance",
+        "desc": "MVP SaaS : intégration Jira (API), récupération/affichage de tickets et automatisations côté serveur (Next.js, Supabase/Drizzle, Server Actions)."
+      },
+      "artificiallifecoach": {
+        "title": "Artificial Life Coach",
+        "role": "Développeur fullstack freelance",
+        "desc": "Coach de vie IA + agenda interactif : recommandations, ajout au calendrier, API OpenAI, backend Node/Express et PostgreSQL."
+      },
+      "telegraphe": {
+        "title": "Télégraphe",
+        "role": "Développeur fullstack freelance",
+        "desc": "Plateforme locale : avis, notes, auth, carte interactive (Google Maps) et contenus communautaires — responsive."
+      },
+      "jadopte": {
+        "title": "J’adopte un humain",
+        "role": "Product Owner & Développeur back",
+        "desc": "Projet de fin de formation : matching, rôles/permissions, auth JWT, sécurité (BCrypt) et API Rest. Backlog, user stories, rituels Scrum, coordination équipe (5 devs)."
+      },
+      "donefficace": {
+        "title": "Don Efficace",
+        "role": "Développeur front & back",
+        "desc": "i18n (i18next), intégration/édition via Sanity, conformité RGPD et travail en équipe internationale."
+      },
+      "hyperfree": {
+        "title": "Hyper-Free",
+        "role": "Product Owner & Développeur fullstack",
+        "desc": "Plateforme d’offres packagées (dev + copywriting) : contenu, structure, conversion. Internationalisation FR/EN + composants réutilisables et design responsive."
+      }
+    }
+  },
+
+  "Testimonials": {
+    "title": "FEEDBACKS",
+    "testimonial1": {
+      "name": "Filo S.",
+      "role": "Éditeur",
+      "message": "C'est la deuxième mission que je confie à Cyril. Il avait repris le Front-end de mon site et il vient de reprendre également tout le Back-end. Ses compétences full-stack sont incroyables !"
+    },
+    "testimonial2": {
+      "name": "Emmanuel P.",
+      "role": "Photographe événementiel",
+      "message": "Très bon projet mené efficacement et rapidement par Cyril pour faire face à une demande métier spécifique et urgente. Le résultat a dépassé les attentes initiales ! Je recommande vivement ce développeur."
+    },
+    "testimonial3": {
+      "name": "Christel M.",
+      "role": "Coach de carrière et psychothérapeute",
+      "message": "Cyril a réussi à insuffler des idées créatives pour me démarquer des autres sites déjà existants. Il respecte les délais, il est impliqué et j’étais au courant de toutes les étapes."
+    },
+    "testimonial4": {
+      "name": "Josselin G.",
+      "role": "Fondateur de la société Clairios",
+      "message": "Très bon contact avec Cyril, très professionnel. Bon accompagnement dans la détermination des choix visuels de mon site internet. Très satisfait du travail réalisé."
+    },
+    "testimonial5": {
+      "name": "Alejandrina C.",
+      "role": "Présidente du fonds de dotation Don Efficace",
+      "message": "Cyril, qui s'est montré très ouvert au feedback, bien organisé et autonome, est une personne avec laquelle il est agréable de travailler. Nous le recommandons vivement et nous travaillerons de nouveau avec lui à l'avenir."
+    },
+    "testimonial6": {
+      "name": "Le jury",
+      "role": "Titre professionnel Développeur Web & Web Mobile",
+      "message": "Félicitations Cyril, pour l’obtention de ton Titre professionnel ! Tu as montré une bonne maturité en tant que développeur et tu as les soft skills nécessaires pour réussir en tant que freelance."
+    }
+  },
+
+  "Game": {
+    "title": "LET’S PLAY\u202F\u202F!",
+    "message": "Ok, pause. Petit morpion. Tu joues X, je joue O. Et je ne suis pas sympa.",
+    "win": "Whaou, bravo\u202F\u202F!",
+    "fail": "Dommage. Tu retentes\u202F\u202F?",
+    "draw": "Match nul. On la refait\u202F\u202F?",
+    "reset": "Rejouer"
+  },
+  "SoftSkills": {
+    "title": "SOFT SKILLS",
+    "items": {
+      "1": {
+        "title": "Rédaction & édito",
+        "desc": "Solide culture éditoriale : rédaction, réécriture, FR/EN.",
+        "example": "20 ans de journalisme + direction de rédaction sur un média (équipe ~40)."
+      },
+      "2": {
+        "title": "Autonomie",
+        "desc": "Je prends des décisions et j’avance vite, sans perdre le cadre.",
+        "example": "Je propose des options claires, j’anticipe risques/effets, je livre."
+      },
+      "3": {
+        "title": "Veille & curiosité",
+        "desc": "Je suis les tendances produit, tech et usages.",
+        "example": "Je teste, je filtre, puis j’intègre ce qui apporte un vrai gain."
+      },
+      "4": {
+        "title": "Social & culture web",
+        "desc": "Bonne compréhension des dynamiques de diffusion et d’attention.",
+        "example": "Optimisation contenus/landing : clarté, hiérarchie, conversion."
+      },
+      "5": {
+        "title": "Flexibilité",
+        "desc": "À l’aise en remote, horaires décalés si besoin.",
+        "example": "Coordination fluide avec clients/équipes multi-agendas."
+      },
+      "6": {
+        "title": "Culture geek",
+        "desc": "Cinéma, jeux vidéo, cyberpunk : je parle “produit” et “univers”.",
+        "example": "Ça m’aide à créer des interfaces fun, lisibles et cohérentes."
+      },
+      "7": {
+        "title": "Humain (et animaux)",
+        "desc": "Tech + empathie : j’aime les systèmes… et les êtres vivants.",
+        "example": "J’écoute, je reformule, et je garde l’impact utilisateur au centre."
+      },
+      "8": {
+        "title": "Forces & lucidité",
+        "desc": "Minutieux, fiable, curieux — et à l’aise avec le feedback.",
+        "example": "Je corrige vite, j’apprends en continu, je documente."
+      }
+    }
+  },
+  "Contact": {
+    "title": "CONTACT",
+    "intro": "On travaille ensemble ? Laisse un message afin que je puisse comprendre tes besoins en matière de création, de refonte et d'optimisation de sites, de SaaS et d'applications (web et mobile), tant en front-end qu'en back-end. Je t'invite également à visiter mes espaces sur les réseaux sociaux, ainsi que mon profil sur des plateformes de marché comme Malt ou Codeur, où je propose mes services.",
+    "success": "Message envoyé ✅",
+    "error": "Oups. Erreur d’envoi. Réessaie ou écris-moi par email.",
+    "form": {
+      "name": "Nom",
+      "organisation": "Organisation",
+      "email": "Email",
+      "message": "Message",
+      "required": "Champ requis",
+      "submit": "Envoyer",
+      "sending": "Envoi…",
+      "rgpd": "J'accepte que mes données soient utilisées pour être contacté en réponse à ma demande."
+    }
+  }
+}

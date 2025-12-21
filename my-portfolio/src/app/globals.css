@@ -1,0 +1,102 @@
+/* src/app/globals.css */
+@import "tailwindcss";
+
+/* Dark mode piloté par une classe .dark (via next-themes) */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Breakpoint custom comme ton ancien Chakra 2xl ~ 1400px */
+  --breakpoint-2xl: 88rem;
+
+  /* Couleurs */
+  --color-ink: #0e1a29;
+  --color-paper: #f9f4da;
+
+  --color-banana: #fcba28;
+  --color-sky: #049dc9;
+  --color-pink: #f73b68;
+  --color-mint: #02ad59;
+  --color-orange: #f55e0a;
+  --color-violet: #8b5cf6;
+
+  /* Fonts (alias) */
+  --font-heading-family: var(--font-heading);
+  --font-body-family: var(--font-body);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body-family);
+  background: var(--color-paper);
+  color: var(--color-ink);
+  min-height: 100dvh;
+}
+
+.dark body {
+  background: var(--color-ink);
+  color: var(--color-paper);
+}
+
+/* Helpers pour garder ton ADN “text-shadow” */
+.title-shadow-yellow {
+  text-shadow:
+    -1px 0 var(--color-banana),
+    0 1px var(--color-banana),
+    5px 0 var(--color-banana),
+    0 -5px var(--color-banana);
+}
+
+.title-shadow-blue {
+  text-shadow:
+    -1px 0 var(--color-sky),
+    0 1px var(--color-sky),
+    5px 0 var(--color-sky),
+    0 -5px var(--color-sky);
+}
+
+.title-shadow-pink {
+  text-shadow:
+    -1px 0 var(--color-pink),
+    0 1px var(--color-pink),
+    5px 0 var(--color-pink),
+    0 -5px var(--color-pink);
+}
+
+.title-shadow-green {
+  text-shadow:
+    -1px 0 var(--color-mint),
+    0 1px var(--color-mint),
+    5px 0 var(--color-mint),
+    0 -5px var(--color-mint);
+}
+
+.title-shadow-orange {
+  text-shadow:
+    -1px 0 var(--color-orange),
+    0 1px var(--color-orange),
+    5px 0 var(--color-orange),
+    0 -5px var(--color-orange);
+}
+
+.title-shadow-violet {
+  text-shadow:
+    -1px 0 var(--color-violet),
+    0 1px var(--color-violet),
+    5px 0 var(--color-violet),
+    0 -5px var(--color-violet);
+}
+
+/* petit confort */
+.container-page {
+  width: min(1100px, calc(100% - 2rem));
+  margin-inline: auto;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-heading-family);
+}
