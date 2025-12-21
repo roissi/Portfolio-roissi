@@ -1,9 +1,0 @@
-# *
-User-agent: *
-Allow: /
-
-# Host
-Host: https://portfolio-roissi.vercel.app
-
-# Sitemaps
-Sitemap: https://portfolio-roissi.vercel.app/sitemap.xml
