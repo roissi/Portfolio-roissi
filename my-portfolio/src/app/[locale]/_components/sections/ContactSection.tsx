@@ -129,6 +129,8 @@ function LogoLink({
       className={[
         "group",
         "grid place-items-center",
+        "h-full w-full",
+        "overflow-hidden",
         "transition-transform",
         "hover:scale-[1.04] active:scale-[0.98]",
         "rounded-2xl",
@@ -136,7 +138,13 @@ function LogoLink({
         className,
       ].join(" ")}
     >
-      <Image src={src} alt={label} width={width} height={height} />
+      <Image
+        src={src}
+        alt={label}
+        width={width}
+        height={height}
+        className="max-w-full h-auto object-contain"
+      />
     </a>
   );
 }
@@ -188,7 +196,7 @@ export function ContactSection() {
           <p className="text-xl opacity-85 leading-relaxed">{t("intro")}</p>
 
           {/* ligne 1 */}
-          <div className="mt-10 flex items-center justify-center gap-7 sm:gap-10">
+          <div className="mt-10 flex flex-wrap items-center justify-center gap-4 sm:gap-10">
             <IconTile
               href="https://github.com/roissi"
               label="GitHub"
@@ -226,7 +234,7 @@ export function ContactSection() {
           </div>
 
           {/* ligne 2 */}
-          <div className="mt-8 flex items-center justify-center gap-10 sm:gap-14">
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-6 sm:gap-14">
             <LogoLink
               href="https://www.malt.fr/profile/cyrildegraeve"
               label="Malt"

@@ -5,10 +5,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Breakpoint custom comme ton ancien Chakra 2xl ~ 1400px */
   --breakpoint-2xl: 88rem;
 
-  /* Couleurs */
   --color-ink: #0e1a29;
   --color-paper: #f9f4da;
 
@@ -19,9 +17,22 @@
   --color-orange: #f55e0a;
   --color-violet: #8b5cf6;
 
-  /* Fonts (alias) */
   --font-heading-family: var(--font-heading);
   --font-body-family: var(--font-body);
+}
+
+/* ✅ base propre : évite les surprises de largeur */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* ✅ empêche le “décalage à droite” dû à un overflow horizontal */
+html,
+body {
+  width: 100%;
+  overflow-x: clip; /* mieux que hidden */
 }
 
 html {
@@ -38,6 +49,15 @@ body {
 .dark body {
   background: var(--color-ink);
   color: var(--color-paper);
+}
+
+/* ✅ media safe : une image/svg trop large peut créer un overflow */
+img,
+svg,
+video,
+canvas {
+  max-width: 100%;
+  height: auto;
 }
 
 /* Helpers pour garder ton ADN “text-shadow” */
