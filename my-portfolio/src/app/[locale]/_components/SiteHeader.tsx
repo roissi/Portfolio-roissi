@@ -91,8 +91,8 @@ export function SiteHeader() {
   return (
     <header className="fixed inset-x-0 top-0 z-50">
       <div className="bg-paper/90 dark:bg-ink/80 backdrop-blur border-b border-black/10 dark:border-white/10">
-        <div className="container-page flex items-center justify-between py-4">
-          <div className="flex items-baseline gap-3">
+        <div className="container-page flex items-center justify-between gap-3 py-4">
+          <div className="flex items-baseline gap-3 min-w-0">
             <Link
               href="/"
               className="font-extrabold tracking-tight text-2xl"
@@ -100,7 +100,10 @@ export function SiteHeader() {
             >
               Cyril
             </Link>
-            <span className="opacity-70 text-2xl">— portfolio</span>
+            {/* sur mobile, on évite que ça force la largeur */}
+            <span className="opacity-70 text-xl sm:text-2xl truncate">
+              — portfolio
+            </span>
           </div>
 
           {/* desktop */}
@@ -143,7 +146,7 @@ export function SiteHeader() {
             />
           </nav>
 
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 shrink-0">
             <button
               type="button"
               onClick={switchLocale}
