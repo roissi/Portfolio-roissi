@@ -27,8 +27,10 @@ export function SectionTitle({
       id={id}
       className={[
         "scroll-mt-28",
-        "text-center tracking-widest",
-        "text-5xl sm:text-6xl",
+        "text-center px-2",
+        "tracking-[0.08em] sm:tracking-widest",
+        "text-4xl sm:text-6xl",
+        "leading-[1.08]",
         "font-normal",
         toneShadowClass[tone],
         className,
