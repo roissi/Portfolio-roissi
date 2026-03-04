@@ -271,6 +271,15 @@ export function ContactSection() {
           onSubmit={handleSubmit(onSubmit)}
           className="rounded-3xl bg-black/5 dark:bg-white/5 p-7 sm:p-8"
         >
+          <div className="mb-6 grid gap-3">
+            <div className="rounded-2xl bg-orange/20 px-4 py-3 text-sm sm:text-base font-semibold text-ink/90 dark:bg-[#ff9a3d] dark:text-ink">
+              {t("trust.reply")}
+            </div>
+            <div className="rounded-2xl bg-orange/35 px-4 py-3 text-sm sm:text-base font-semibold text-ink/95 dark:bg-[#ff7a1a] dark:text-ink">
+              {t("trust.call")}
+            </div>
+          </div>
+
           <div className="grid gap-5">
             <div>
               <label className="font-semibold">{t("form.name")}</label>

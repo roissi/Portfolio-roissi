@@ -3,6 +3,7 @@ import "./globals.css";
 import type { Metadata, Viewport } from "next";
 import { ThemeProviders } from "./providers";
 import { Paytone_One, Outfit } from "next/font/google";
+import { headers } from "next/headers";
 
 const heading = Paytone_One({
   weight: "400",
@@ -113,14 +114,18 @@ export const viewport: Viewport = {
   ],
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  const h = await headers();
+  const rawLocale = h.get("x-next-intl-locale") ?? "fr";
+  const locale = rawLocale === "en" ? "en" : "fr";
+
   return (
     <html
-      lang="fr"
+      lang={locale}
       suppressHydrationWarning
       className={`${heading.variable} ${body.variable}`}
     >

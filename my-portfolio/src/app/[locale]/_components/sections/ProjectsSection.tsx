@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useRef, useState } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { SectionTitle } from "../SectionTitle";
@@ -11,6 +11,7 @@ type Project = {
   titleKey: string;
   roleKey: string;
   descKey: string;
+  resultKey?: string;
   tech: string[];
   images: string[];
   live?: string;
@@ -19,14 +20,38 @@ type Project = {
 
 export function ProjectsSection() {
   const t = useTranslations("Projects");
-  const [activeIndex, setActiveIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   const projects: Project[] = [
+    {
+      id: "kefir",
+      titleKey: "items.kefir.title",
+      roleKey: "items.kefir.role",
+      descKey: "items.kefir.desc",
+      resultKey: "items.kefir.result",
+      tech: [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Fastify",
+        "PostgreSQL",
+        "Drizzle ORM",
+        "Brevo",
+      ],
+      images: [
+        "/projects/kefir1.jpg",
+        "/projects/kefir2.png",
+        "/projects/kefir3.png",
+      ],
+      live: "https://numerok-paris.fr/",
+      github: "https://github.com/roissi",
+    },
     {
       id: "jffourcade",
       titleKey: "items.jffourcade.title",
       roleKey: "items.jffourcade.role",
       descKey: "items.jffourcade.desc",
+      resultKey: "items.jffourcade.result",
       tech: [
         "Next.js (App Router)",
         "TypeScript",
@@ -71,6 +96,7 @@ export function ProjectsSection() {
       titleKey: "items.lps.title",
       roleKey: "items.lps.role",
       descKey: "items.lps.desc",
+      resultKey: "items.lps.result",
       tech: ["Next.js", "TypeScript", "MySQL", "Drizzle", "Stripe", "Tailwind"],
       images: [
         "/projects/PLS1.png",
@@ -261,29 +287,15 @@ export function ProjectsSection() {
     },
   ];
 
-  const scrollerRef = useRef<HTMLDivElement | null>(null);
-
-  function goToIndex(nextIndex: number) {
-    const el = scrollerRef.current;
-    if (!el) return;
-
-    const cards = Array.from(
-      el.querySelectorAll<HTMLElement>("[data-card='true']"),
-    );
-    const target = cards[nextIndex];
-    if (!target) return;
-
-    el.scrollTo({ left: target.offsetLeft, behavior: "smooth" });
-    setActiveIndex(nextIndex);
-  }
-
   function prev() {
-    goToIndex(Math.max(0, activeIndex - 1));
+    setCurrentIndex((current) => Math.max(0, current - 1));
   }
 
   function next() {
-    goToIndex(Math.min(projects.length - 1, activeIndex + 1));
+    setCurrentIndex((current) => Math.min(projects.length - 1, current + 1));
   }
+
+  const activeProject = projects[currentIndex];
 
   return (
     <section id="projects" className="pt-24">
@@ -296,117 +308,108 @@ export function ProjectsSection() {
           type="button"
           onClick={prev}
           aria-label="Projets précédents"
-          className="rounded-xl px-4 py-2 bg-black/10 dark:bg-white/10 hover:scale-[1.03] transition-transform disabled:opacity-40"
-          disabled={activeIndex === 0}
+          className={[
+            "rounded-xl px-4 py-2 bg-black/10 dark:bg-white/10 transition-transform",
+            "hover:scale-[1.03]",
+            currentIndex === 0 ? "opacity-35" : "opacity-100",
+          ].join(" ")}
         >
           ◀
         </button>
+        <div className="min-w-[72px] text-center text-sm sm:text-base font-semibold text-ink/75 dark:text-paper/75">
+          {currentIndex + 1}/{projects.length}
+        </div>
         <button
           type="button"
           onClick={next}
           aria-label="Projets suivants"
-          className="rounded-xl px-4 py-2 bg-black/10 dark:bg-white/10 hover:scale-[1.03] transition-transform disabled:opacity-40"
-          disabled={activeIndex === projects.length - 1}
+          className={[
+            "rounded-xl px-4 py-2 bg-black/10 dark:bg-white/10 transition-transform",
+            "hover:scale-[1.03]",
+            currentIndex === projects.length - 1 ? "opacity-35" : "opacity-100",
+          ].join(" ")}
         >
           ▶
         </button>
       </div>
 
-      {/* Wrapper qui évite tout “peek” visuel en mobile */}
       <div className="mt-6 overflow-hidden">
-        <div
-          ref={scrollerRef}
-          className={[
-            "flex",
-            "gap-0 sm:gap-4",
-            "overflow-x-auto",
-            "scroll-smooth",
-            "snap-x snap-mandatory",
-            "pb-4",
-            "[scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden",
-          ].join(" ")}
-        >
-          {projects.map((p) => (
-            <article
-              key={p.id}
-              data-card="true"
-              className={[
-                "snap-start shrink-0",
-                "w-full sm:w-[640px] lg:w-[720px]",
-                "rounded-3xl",
-                "bg-black/5 dark:bg-white/5",
-                "p-5 sm:p-6",
-              ].join(" ")}
-            >
-              <div className="flex items-start justify-between gap-3">
-                <h3 className="text-2xl sm:text-3xl font-extrabold leading-[1.05]">
-                  {t(p.titleKey)}
-                </h3>
+        <article className="w-full px-0 sm:px-2 lg:px-6">
+          <div className="mx-auto w-full max-w-[720px] rounded-3xl bg-black/5 p-5 dark:bg-white/5 sm:p-6 lg:max-w-[980px] lg:p-8">
+            <div className="flex items-start justify-between gap-3">
+              <h3 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold leading-[1.26] tracking-[0.07em]">
+                {t(activeProject.titleKey)}
+              </h3>
 
-                <div className="flex gap-3 shrink-0">
-                  {p.github && (
-                    <a
-                      className="underline underline-offset-4 opacity-80 hover:opacity-100"
-                      href={p.github}
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      GitHub
-                    </a>
-                  )}
-                  {p.live && (
-                    <a
-                      className="underline underline-offset-4 opacity-80 hover:opacity-100"
-                      href={p.live}
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      Live
-                    </a>
-                  )}
-                </div>
-              </div>
-
-              <p className="mt-3 text-base sm:text-lg opacity-80">
-                {t(p.roleKey)}
-              </p>
-
-              <p className="mt-4 text-base sm:text-lg leading-relaxed opacity-90">
-                {t(p.descKey)}
-              </p>
-
-              <div className="mt-5 flex flex-wrap gap-2">
-                {p.tech.map((tech) => (
-                  <span
-                    key={tech}
-                    className="rounded-full bg-sky text-ink px-3 py-1 text-sm font-semibold"
+              <div className="flex gap-3 shrink-0">
+                {activeProject.github && (
+                  <a
+                    className="underline underline-offset-4 opacity-80 hover:opacity-100"
+                    href={activeProject.github}
+                    target="_blank"
+                    rel="noreferrer"
                   >
-                    {tech}
-                  </span>
-                ))}
-              </div>
-
-              <div className="mt-6 grid grid-cols-3 gap-3">
-                {p.images.slice(0, 3).map((src) => (
-                  <motion.div
-                    key={src}
-                    whileHover={{ scale: 1.05, rotate: 0.6 }}
-                    whileTap={{ scale: 0.98 }}
-                    className="rounded-2xl overflow-hidden border border-black/10 dark:border-white/10 bg-paper/50 dark:bg-ink/20"
+                    GitHub
+                  </a>
+                )}
+                {activeProject.live && (
+                  <a
+                    className="underline underline-offset-4 opacity-80 hover:opacity-100"
+                    href={activeProject.live}
+                    target="_blank"
+                    rel="noreferrer"
                   >
-                    <Image
-                      src={src}
-                      alt={t(p.titleKey)}
-                      width={900}
-                      height={600}
-                      className="h-32 sm:h-36 w-full object-cover"
-                    />
-                  </motion.div>
-                ))}
+                    Live
+                  </a>
+                )}
               </div>
-            </article>
-          ))}
-        </div>
+            </div>
+
+            <p className="mt-3 text-base sm:text-lg lg:text-xl opacity-80">
+              {t(activeProject.roleKey)}
+            </p>
+
+            <p className="mt-4 text-base sm:text-lg lg:text-xl leading-relaxed opacity-90">
+              {t(activeProject.descKey)}
+            </p>
+
+            {activeProject.resultKey ? (
+              <p className="mt-4 rounded-2xl bg-sky/35 px-4 py-3 text-sm sm:text-base font-medium text-ink/90">
+                {t(activeProject.resultKey)}
+              </p>
+            ) : null}
+
+            <div className="mt-5 flex flex-wrap gap-2">
+              {activeProject.tech.map((tech) => (
+                <span
+                  key={tech}
+                  className="rounded-full bg-sky text-ink px-3 py-1 text-sm font-semibold"
+                >
+                  {tech}
+                </span>
+              ))}
+            </div>
+
+            <div className="mt-6 grid grid-cols-3 gap-3">
+              {activeProject.images.slice(0, 3).map((src) => (
+                <motion.div
+                  key={src}
+                  whileHover={{ scale: 1.05, rotate: 0.6 }}
+                  whileTap={{ scale: 0.98 }}
+                  className="rounded-2xl overflow-hidden border border-black/10 dark:border-white/10 bg-paper/50 dark:bg-ink/20"
+                >
+                  <Image
+                    src={src}
+                    alt={t(activeProject.titleKey)}
+                    width={900}
+                    height={600}
+                    className="h-32 sm:h-36 lg:h-52 w-full object-cover"
+                  />
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </article>
       </div>
 
       {/* CTA Dossier technique (Bethere) */}
@@ -435,7 +438,7 @@ export function ProjectsSection() {
 
             {/* Texte + bouton */}
             <div className="text-center lg:text-left">
-              <h3 className="text-2xl sm:text-3xl font-extrabold leading-tight">
+              <h3 className="text-2xl sm:text-3xl font-extrabold leading-[1.26] tracking-[0.07em]">
                 {t("dossier.title")}
               </h3>
 

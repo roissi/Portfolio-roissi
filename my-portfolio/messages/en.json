@@ -1,34 +1,45 @@
 {
   "Nav": {
-    "hardSkills": "Hard skills",
-    "projects": "Projects",
-    "testimonials": "Feedbacks",
-    "game": "Let's play!",
-    "softSkills": "Soft skills",
-    "contact": "Contact"
+    "hardSkills": "What I do",
+    "projects": "Work",
+    "testimonials": "Client reviews",
+    "game": "Game break",
+    "softSkills": "How I work",
+    "contact": "Contact",
+    "switchLocale": "Switch language",
+    "toggleTheme": "Toggle theme",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
   },
   "HardSkills": {
-    "title": "HARD SKILLS",
-    "introTitle": "Who am I\u202F\u202F?",
-    "introBody": "Hi, I'm <name>Cyril De Graeve</name>. Formerly a cyberculture journalist, passionate about machines and networks for as long as I can remember, I’ve been a freelance Full-Stack developer for 5 years.",
-    "hook1": "Want a fun, fast site that converts\u202F\u202F?",
-    "body1": "I build modern web experiences (Next/React) with style, performance, and solid SEO.",
-    "hook2": "And you want it to hold up in production\u202F\u202F?",
-    "body2": "Clean deployments, strong business logic, and a slightly obsessive attention to detail."
+    "title": "WHAT I DO",
+    "introTitle": "How can I help, concretely?",
+    "introBody": "I’m <name>Cyril De Graeve</name>, a freelance developer based in Paris. I help companies and independents create, redesign, or improve their online presence with websites that are clear, effective, and reliable.",
+    "hook1": "You want a website that builds trust and drives action?",
+    "body1": "I design clear, fast, result-oriented experiences: more inquiries, more bookings, and smoother online sales.",
+    "hook2": "You want a reliable partner, not just a “nice-looking site”?",
+    "body2": "I frame the needs, propose the right solution, and deliver cleanly through launch."
   },
   "Projects": {
-    "title": "PROJECTS",
+    "title": "WORK",
     "dossier": {
-      "title": "Technical dossier",
-      "body": "To see more details about my projects (context, stack, technical choices, deliverables), you can check my Technical Dossier.",
-      "cta": "View the dossier →",
-      "imageAlt": "Preview of the Technical Dossier"
+      "title": "Project dossier",
+      "body": "Want more detail? This dossier explains context, goals, and solutions delivered across selected projects.",
+      "cta": "View full dossier →",
+      "imageAlt": "Project dossier preview"
     },
     "items": {
+      "kefir": {
+        "title": "Numero K (Kefir)",
+        "role": "Full-stack developer (+ DevOps)",
+        "desc": "Designed a full e-commerce MVP around a weekly auction model, with a member area, admin back office, and transactional email notifications.",
+        "result": "Outcome: launched with complete public/member/admin journeys, ready for fast product iteration."
+      },
       "jffourcade": {
         "title": "Librairie J.-F. Fourcade",
         "role": "Full-stack developer (+ DevOps)",
-        "desc": "Full redesign of the bookstore website. Rare-books e-commerce implementation: catalog, advanced search. Custom back office."
+        "desc": "Complete redesign with rare-book e-commerce and a bespoke admin area to manage catalog and sales independently.",
+        "result": "Outcome: autonomous catalog and sales management, with a solid base for future growth."
       },
       "genAIbooks": {
         "title": "Book Sheet Assistant (GenAI)",
@@ -38,12 +49,13 @@
       "lps": {
         "title": "Librairie Pierre Saunier",
         "role": "Full-stack developer (+ DevOps)",
-        "desc": "Complete Next.js rebuild (front + back) + e-commerce: catalog, advanced search, cart, Stripe payments, custom back office and MySQL migration."
+        "desc": "Full rebuild with online store, checkout, Stripe payments, and an admin workflow designed to simplify daily operations.",
+        "result": "Outcome: smoother day-to-day sales and admin operations, with a simpler customer journey."
       },
       "serious": {
         "title": "Serious Publishing",
         "role": "Full-stack developer (+ DevOps)",
-        "desc": "Migration from a PHP/MySQL site to a modern web app: Next/React front, Node/Express API, PostgreSQL, shop and Stripe payments."
+        "desc": "Migration from a legacy website to a modern platform: smoother user journey and easier maintenance for the team."
       },
       "clairios": {
         "title": "Clairios",
@@ -58,7 +70,7 @@
       "codeberry": {
         "title": "Codeberry",
         "role": "Freelance full-stack developer",
-        "desc": "SaaS MVP: Jira integration (API), ticket retrieval/display and server-side automations (Next.js, Supabase/Drizzle, Server Actions)."
+        "desc": "Contributed to a SaaS MVP focused on speeding up team execution through Jira-based automations."
       },
       "artificiallifecoach": {
         "title": "Artificial Life Coach",
@@ -78,7 +90,7 @@
       "donefficace": {
         "title": "Effective Giving",
         "role": "Front-end & back-end developer",
-        "desc": "i18n (i18next), integration/editing via Sanity, GDPR compliance and collaboration within an international team."
+        "desc": "Improved an international website with multilingual content, stronger editorial quality, and distributed-team collaboration."
       },
       "hyperfree": {
         "title": "Hyper-Free",
@@ -88,7 +100,7 @@
     }
   },
   "Testimonials": {
-    "title": "FEEDBACKS",
+    "title": "CLIENT REVIEWS",
     "testimonial1": {
       "name": "Filo S.",
       "role": "Publisher",
@@ -121,15 +133,15 @@
     }
   },
   "Game": {
-    "title": "LET’S PLAY\u202F\u202F!",
-    "message": "Ok, break time. A quick tic-tac-toe. You play X, I play O. And I’m not nice.",
-    "win": "Wow, well done\u202F\u202F!",
-    "fail": "Too bad. Try again\u202F\u202F?",
-    "draw": "Draw. One more\u202F\u202F?",
+    "title": "LET’S PLAY  !",
+    "message": "Ok, break. Quick game of noughts and crosses. You play X, I play O. And I don’t play nice.",
+    "win": "Wow, well done  !",
+    "fail": "Too bad. Try again  ?",
+    "draw": "Draw. One more  ?",
     "reset": "Play again"
   },
   "SoftSkills": {
-    "title": "SOFT SKILLS",
+    "title": "HOW I WORK",
     "items": {
       "1": {
         "title": "Writing & editorial",
@@ -175,7 +187,7 @@
   },
   "Contact": {
     "title": "CONTACT",
-    "intro": "Ready to build something amazing together? Please leave a message so I can understand your needs for building, redesigning and optimizing websites, SaaS products and applications (web and mobile), both front-end and back-end. Feel free to check my social profiles as well as marketplaces like Malt or Codeur, where I offer my services.",
+    "intro": "Have a website creation or redesign project? Send me your goals, context, and timeline. I’ll reply quickly with a clear and realistic proposal.",
     "success": "Message sent ✅",
     "error": "Oops. Sending failed. Try again or email me.",
     "form": {
@@ -187,6 +199,15 @@
       "submit": "Send",
       "sending": "Sending…",
       "rgpd": "I agree that my data may be used to contact me in response to my request."
+    },
+    "trust": {
+      "reply": "Reply within 24 business hours",
+      "call": "First call (phone or video) within 48h"
     }
+  },
+  "Meta": {
+    "title": "Cyril De Graeve — Website creation & redesign",
+    "description": "Result-oriented portfolio: website creation, redesign and optimization, with clear support from idea to launch.",
+    "keywords": "Cyril De Graeve, portfolio, website creation, website redesign, freelance, UX, SEO"
   }
 }
