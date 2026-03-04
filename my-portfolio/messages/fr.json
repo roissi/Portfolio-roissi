@@ -1,34 +1,45 @@
 {
   "Nav": {
-    "hardSkills": "Hard skills",
-    "projects": "Projets",
-    "testimonials": "Feedbacks",
-    "game": "Let's play!",
-    "softSkills": "Soft skills",
-    "contact": "Contact"
+    "hardSkills": "Ce que je fais",
+    "projects": "Réalisations",
+    "testimonials": "Avis clients",
+    "game": "Pause jeu",
+    "softSkills": "Méthode",
+    "contact": "Contact",
+    "switchLocale": "Changer de langue",
+    "toggleTheme": "Basculer le thème",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu"
   },
   "HardSkills": {
-    "title": "HARD SKILLS",
-    "introTitle": "Qui suis-je\u202F\u202F?",
-    "introBody": "Hello, je suis <name>Cyril De Graeve</name>. Journaliste cyberculturel dans une vie antérieure, passionné par les machines et les réseaux depuis toujours, je suis depuis 5 ans Développeur Fullstack freelance.",
-    "hook1": "Tu veux un site fun, rapide, et qui convertit\u202F\u202F?",
-    "body1": "Je construis des expériences web modernes (Next/React), avec du style, de la perf, et du SEO.",
-    "hook2": "Tu veux aussi que ça tienne en prod\u202F\u202F?",
-    "body2": "Déploiements propres, logique métier carrée, et attention maniaque aux détails."
+    "title": "CE QUE JE FAIS",
+    "introTitle": "Concrètement, je t’aide à quoi ?",
+    "introBody": "Je suis <name>Cyril De Graeve</name>, développeur freelance à Paris. J’aide les entreprises et indépendants à créer, refondre ou améliorer leur présence en ligne avec des sites utiles, clairs et performants.",
+    "hook1": "Tu veux un site qui inspire confiance et donne envie d’agir ?",
+    "body1": "Je conçois des interfaces lisibles, rapides et orientées résultats: prise de contact, demande de devis, réservation, vente.",
+    "hook2": "Tu veux un partenaire fiable, pas juste “un site joli” ?",
+    "body2": "Je cadre le besoin, je propose une solution adaptée, puis je livre proprement jusqu’à la mise en ligne."
   },
   "Projects": {
-    "title": "PROJETS",
+    "title": "RÉALISATIONS",
     "dossier": {
       "title": "Dossier technique",
       "body": "Pour découvrir plus de détails sur mes projets (contexte, stack, choix techniques, livrables), tu peux consulter mon Dossier Technique.",
-      "cta": "Voir le dossier →",
-      "imageAlt": "Aperçu du Dossier Technique"
+      "cta": "Voir le dossier complet →",
+      "imageAlt": "Aperçu du dossier projets"
     },
     "items": {
+      "kefir": {
+        "title": "Numéro K (Kefir)",
+        "role": "Développeur fullstack (+ DevOps)",
+        "desc": "Conception d’un MVP e-commerce complet autour d’une enchère hebdomadaire, avec espace membre, back-office admin et notifications email.",
+        "result": "Résultat: produit lancé avec parcours complet (visiteur, membre, admin), prêt à itérer rapidement."
+      },
       "jffourcade": {
         "title": "Librairie J.-F. Fourcade",
         "role": "Développeur fullstack (+ DevOps)",
-        "desc": "Refonte intégrale du site de la librairie. Implémentation e-commerce “livres rares” : catalogue, recherche avancée. Back-office sur-mesure."
+        "desc": "Refonte complète du site avec e-commerce “livres rares” et interface d’administration sur-mesure pour gérer catalogue et ventes en autonomie.",
+        "result": "Résultat: gestion autonome du catalogue et des ventes, avec une base solide pour les évolutions futures."
       },
       "genAIbooks": {
         "title": "Assistant Fiche Livre (GenAI)",
@@ -38,12 +49,13 @@
       "lps": {
         "title": "Librairie Pierre Saunier",
         "role": "Développeur fullstack (+ DevOps)",
-        "desc": "Refonte Next.js intégrale Front-end, Back-end + e-commerce : catalogue, recherche avancée, panier, paiements Stripe, back-office sur-mesure et migration MySQL."
+        "desc": "Refonte complète avec boutique en ligne, panier, paiement Stripe et outil d’administration pensé pour simplifier le quotidien de l’équipe.",
+        "result": "Résultat: outil de vente et d’administration plus fluide au quotidien, avec un parcours client simplifié."
       },
       "serious": {
         "title": "Serious Publishing",
         "role": "Développeur fullstack (+ DevOps)",
-        "desc": "Refonte d’un site PHP/MySQL vers une webapp moderne : front Next/React, API Node/Express, PostgreSQL, boutique et paiements Stripe intégrés."
+        "desc": "Refonte d’un site historique vers une plateforme moderne, plus fluide pour les visiteurs et plus simple à maintenir côté équipe."
       },
       "clairios": {
         "title": "Clairios",
@@ -58,7 +70,7 @@
       "codeberry": {
         "title": "Codeberry",
         "role": "Développeur fullstack freelance",
-        "desc": "MVP SaaS : intégration Jira (API), récupération/affichage de tickets et automatisations côté serveur (Next.js, Supabase/Drizzle, Server Actions)."
+        "desc": "Participation à un MVP SaaS pour accélérer la production d’équipe grâce à des automatisations autour des tickets Jira."
       },
       "artificiallifecoach": {
         "title": "Artificial Life Coach",
@@ -78,7 +90,7 @@
       "donefficace": {
         "title": "Don Efficace",
         "role": "Développeur front & back",
-        "desc": "i18n (i18next), intégration/édition via Sanity, conformité RGPD et travail en équipe internationale."
+        "desc": "Mise à jour d’un site international: contenus multilingues, meilleure qualité éditoriale et coordination avec une équipe distribuée."
       },
       "hyperfree": {
         "title": "Hyper-Free",
@@ -87,9 +99,8 @@
       }
     }
   },
-
   "Testimonials": {
-    "title": "FEEDBACKS",
+    "title": "AVIS CLIENTS",
     "testimonial1": {
       "name": "Filo S.",
       "role": "Éditeur",
@@ -121,17 +132,16 @@
       "message": "Félicitations Cyril, pour l’obtention de ton Titre professionnel ! Tu as montré une bonne maturité en tant que développeur et tu as les soft skills nécessaires pour réussir en tant que freelance."
     }
   },
-
   "Game": {
-    "title": "LET’S PLAY\u202F\u202F!",
+    "title": "LET’S PLAY  !",
     "message": "Ok, pause. Petit morpion. Tu joues X, je joue O. Et je ne suis pas sympa.",
-    "win": "Whaou, bravo\u202F\u202F!",
-    "fail": "Dommage. Tu retentes\u202F\u202F?",
-    "draw": "Match nul. On la refait\u202F\u202F?",
+    "win": "Whaou, bravo  !",
+    "fail": "Dommage. Tu retentes  ?",
+    "draw": "Match nul. On la refait  ?",
     "reset": "Rejouer"
   },
   "SoftSkills": {
-    "title": "SOFT SKILLS",
+    "title": "MA MÉTHODE",
     "items": {
       "1": {
         "title": "Rédaction & édito",
@@ -177,7 +187,7 @@
   },
   "Contact": {
     "title": "CONTACT",
-    "intro": "On travaille ensemble ? Laisse un message afin que je puisse comprendre tes besoins en matière de création, de refonte et d'optimisation de sites, de SaaS et d'applications (web et mobile), tant en front-end qu'en back-end. Je t'invite également à visiter mes espaces sur les réseaux sociaux, ainsi que mon profil sur des plateformes de marché comme Malt ou Codeur, où je propose mes services.",
+    "intro": "Tu as un projet de création ou de refonte de site ? Envoie-moi un message avec ton objectif, ton contexte et tes délais. Je te réponds rapidement avec une proposition claire et réaliste.",
     "success": "Message envoyé ✅",
     "error": "Oups. Erreur d’envoi. Réessaie ou écris-moi par email.",
     "form": {
@@ -189,6 +199,15 @@
       "submit": "Envoyer",
       "sending": "Envoi…",
       "rgpd": "J'accepte que mes données soient utilisées pour être contacté en réponse à ma demande."
+    },
+    "trust": {
+      "reply": "Réponse sous 24h ouvrées",
+      "call": "Premier échange (tél ou visio) sous 48h"
     }
+  },
+  "Meta": {
+    "title": "Cyril De Graeve — Création & refonte de sites web",
+    "description": "Portfolio orienté résultats: création, refonte et optimisation de sites web, avec un accompagnement clair de l’idée à la mise en ligne.",
+    "keywords": "Cyril De Graeve, portfolio, création site web, refonte site, freelance, UX, SEO"
   }
 }

@@ -151,7 +151,7 @@ export function SiteHeader() {
               type="button"
               onClick={switchLocale}
               className="rounded-xl px-3 py-2 font-bold tracking-wide bg-black/10 dark:bg-white/10 hover:scale-[1.03] transition-transform"
-              aria-label="Changer de langue"
+              aria-label={t("switchLocale")}
             >
               {locale === "fr" ? "EN" : "FR"}
             </button>
@@ -160,7 +160,7 @@ export function SiteHeader() {
               type="button"
               onClick={toggleTheme}
               className="rounded-xl px-3 py-2 bg-black/10 dark:bg-white/10 hover:scale-[1.03] transition-transform"
-              aria-label="Basculer dark/light"
+              aria-label={t("toggleTheme")}
             >
               {mounted ? (theme === "dark" ? "☀️" : "🌙") : "…"}
             </button>
@@ -175,7 +175,7 @@ export function SiteHeader() {
                 "bg-black/10 dark:bg-white/10",
                 "hover:scale-[1.03] transition-transform",
               ].join(" ")}
-              aria-label={mobileOpen ? "Fermer le menu" : "Ouvrir le menu"}
+              aria-label={mobileOpen ? t("closeMenu") : t("openMenu")}
               aria-expanded={mobileOpen}
               aria-controls="mobile-nav"
             >
